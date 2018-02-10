@@ -15,6 +15,16 @@ jobs:
           key: yarn-{{ checksum "yarn.lock" }}
           paths:
             - ~/node_modules
+  build-production:
+    docker:
+      - image: circleci/node:8.9.1-stretch-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - yarn-{{ checksum "yarn.lock" }}
+            - yarn-
+      - run: yarn build
   # test:
   #   docker:
   #     - image: circleci/node:8.9.1-stretch-browsers
@@ -27,6 +37,9 @@ workflows:
   merge_feature_branch:
     jobs:
       - install-dependancies
+      - build-production:
+          requires:
+            - install-dependancies
       # - test:
       #     requires:
       #       - build

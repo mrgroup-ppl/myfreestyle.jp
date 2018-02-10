@@ -6,6 +6,7 @@
   "author": "Eric Shinn <eric.shinn@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "eslint src --fix",
     "lint": "eslint src --fix"
   },
   "pre-commit": [

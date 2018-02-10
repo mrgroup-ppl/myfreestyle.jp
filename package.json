@@ -5,7 +5,14 @@
   "repository": "git@bitbucket.org:mrgroup-ppl/myfreestyle.jp.git",
   "author": "Eric Shinn <eric.shinn@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint src --fix"
+  },
+  "pre-commit": [
+    "lint"
+  ],
   "devDependencies": {
+    "eslint": "^4.17.0",
     "pre-commit": "^1.2.2"
   }
 }

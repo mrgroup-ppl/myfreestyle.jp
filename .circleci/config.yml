@@ -73,7 +73,9 @@ workflows:
   merge_feature_branch:
     jobs:
       - setup
-      - lint
+      - lint:
+          requires:
+            - setup
       # - install-dependancies
       # - build-production:
       #     requires:

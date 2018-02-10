@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build-env:
+  install-dependancies:
     docker:
       - image: circleci/node:8.9.1-stretch-browsers
     # working_directory: ~/myfreestylejp
@@ -26,7 +26,7 @@ workflows:
   version: 2
   merge_feature_branch:
     jobs:
-      - build-env
+      - install-dependancies
       # - test:
       #     requires:
       #       - build

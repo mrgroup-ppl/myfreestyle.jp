@@ -14,7 +14,7 @@ jobs:
       - save_cache:
           key: yarn-{{ checksum "yarn.lock" }}
           paths:
-            - ~/myfreestylejs/node_modules
+            - node_modules
   build-production:
     docker:
       - image: circleci/node:8.9.1-stretch-browsers

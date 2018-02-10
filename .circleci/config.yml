@@ -19,10 +19,10 @@ workflows:
   merge_feature_branch:
     jobs:
       - build
-      # - test_feature_branch:
-      #     requires:
-      #       - build
-      #     filter:
-      #       branches:
-      #         only:
-      #           - /feature\/.*/
+      - test:
+          requires:
+            - build
+          filter:
+            branches:
+              only:
+                - /feature\/.*/

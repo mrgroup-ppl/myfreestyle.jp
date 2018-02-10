@@ -6,3 +6,17 @@ jobs:
     steps:
       - checkout
       - run: echo "hello world"
+  test_feature_branch:
+    docker:
+      - image: circleci/node:8.9.1-stretch-browsers
+    steps:
+      - run: echo "Testing..."
+workflows:
+  version: 2
+  merge_feature_branch:
+    jobs:
+      - test_feature_branch:
+          filter:
+            branches:
+              only:
+                - /feature\/.*/

@@ -12,15 +12,15 @@ jobs:
     steps:
       - checkout
       - run: echo "Testing..."
-workflows:
-  version: 2
-  merge_feature_branch:
-    jobs:
-      build
-      test_feature_branch:
-          requires:
-            - build
-          filter:
-            branches:
-              only:
-                - /feature\/.*/
+# workflows:
+#   version: 2
+#   merge_feature_branch:
+#     jobs:
+#       build
+#       test_feature_branch:
+#           requires:
+#             - build
+#           filter:
+#             branches:
+#               only:
+#                 - /feature\/.*/

@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: echo "hello world"
-  test_feature_branch:
+  test:
     docker:
       - image: circleci/node:8.9.1-stretch-browsers
     working_directory: ~/myfreestylejp
@@ -19,10 +19,10 @@ workflows:
   merge_feature_branch:
     jobs:
       - build
-      - test_feature_branch:
-          requires:
-            - build
-          filter:
-            branches:
-              only:
-                - /feature\/.*/
+      # - test_feature_branch:
+      #     requires:
+      #       - build
+      #     filter:
+      #       branches:
+      #         only:
+      #           - /feature\/.*/

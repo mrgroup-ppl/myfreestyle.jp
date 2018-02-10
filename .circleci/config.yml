@@ -30,7 +30,7 @@ jobs:
   lint:
     <<: *defaults
     steps:
-      - attache_workspace:
+      - attach_workspace:
           at: /home/circleci
       - run:
           name: Lint

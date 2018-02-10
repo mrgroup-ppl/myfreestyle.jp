@@ -1,0 +1,11 @@
+{
+  "name": "myfreestyle.jp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:mrgroup-ppl/myfreestyle.jp.git",
+  "author": "Eric Shinn <eric.shinn@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
+}

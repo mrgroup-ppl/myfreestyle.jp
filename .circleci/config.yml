@@ -3,10 +3,12 @@ jobs:
   build:
     docker:
       - image: circleci/node:8.9.1-stretch-browsers
+    working_directory: ~/myfreestylejp
     steps:
       - checkout
       - run: echo "hello world"
   test_feature_branch:
+    working_directory: ~/myfreestylejp
     steps:
       - checkout
       - run: echo "Testing..."

@@ -12,13 +12,13 @@ jobs:
       - checkout
       - restore_cache:
           name: Restoring node_modules
-          key: v1-node_modules-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
       - run:
           name: Install dependancies
           command: yarn
       - save_cache:
           name: Caching node_modules
-          key: v1-node_modules-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
       - persist_to_workspace

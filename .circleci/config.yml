@@ -1,30 +1,66 @@
 version: 2
+
+defaults: &defaults
+  working_directory: /home/circleci/myfreestylejp
+  docker:
+    - image: circleci/node:8.9.1-stretch-browsers
+
 jobs:
-  install-dependancies:
-    docker:
-      - image: circleci/node:8.9.1-stretch-browsers
-    working_directory: ~/myfreestylejp
+  setup:
+    <<: *defaults
     steps:
       - checkout
       - restore_cache:
-          keys:
-            - yarn-{{ checksum "yarn.lock" }}
-            - yarn-
-      - run: yarn
+          name: Restoring node_modules
+          key: v1-node_modules-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install dependancies
+          command: yarn
       - save_cache:
-          key: yarn-{{ checksum "yarn.lock" }}
+          name: Caching node_modules
+          key: v1-node_modules-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
-  build-production:
-    docker:
-      - image: circleci/node:8.9.1-stretch-browsers
+      - persist_to_workspace
+          root: /home/circleci
+          paths:
+            - myfreestylejp
+
+  lint:
+    <<: *defaults
     steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - yarn-{{ checksum "yarn.lock" }}
-            - yarn-
-      - run: yarn build
+      - attache_workspace:
+          at: /home/circleci
+      - run:
+          name: Lint
+          command: |
+            yarn lint
+
+  # install-dependancies:
+  #   docker:
+  #     - image: circleci/node:8.9.1-stretch-browsers
+  #   working_directory: ~/myfreestylejp
+  #   steps:
+  #     - checkout
+  #     - restore_cache:
+  #         keys:
+  #           - yarn-{{ checksum "yarn.lock" }}
+  #           - yarn-
+  #     - run: yarn
+  #     - save_cache:
+  #         key: yarn-{{ checksum "yarn.lock" }}
+  #         paths:
+  #           - node_modules
+  # build-production:
+  #   docker:
+  #     - image: circleci/node:8.9.1-stretch-browsers
+  #   steps:
+  #     - checkout
+  #     - restore_cache:
+  #         keys:
+  #           - yarn-{{ checksum "yarn.lock" }}
+  #           - yarn-
+  #     - run: yarn build
   # test:
   #   docker:
   #     - image: circleci/node:8.9.1-stretch-browsers
@@ -36,10 +72,12 @@ workflows:
   version: 2
   merge_feature_branch:
     jobs:
-      - install-dependancies
-      - build-production:
-          requires:
-            - install-dependancies
+      - setup
+      - lint
+      # - install-dependancies
+      # - build-production:
+      #     requires:
+      #       - install-dependancies
       # - test:
       #     requires:
       #       - build

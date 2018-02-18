@@ -69,14 +69,14 @@ jobs:
             git fetch origin gh-pages
             git checkout gh-pages
             ls -la ../dist/
-          # cp ./CNAME ../dist/
+  # cp ./CNAME ../dist/
 
-          # mkdir -p ./dist
-          # touch ./dist/test.txt
-          # cd ./dist
-          # git init
-          # git config --list
-          # git status
+  # mkdir -p ./dist
+  # touch ./dist/test.txt
+  # cd ./dist
+  # git init
+  # git config --list
+  # git status
 
   # install-dependancies:
   #   docker:
@@ -119,7 +119,7 @@ workflows:
           requires:
             - setup
       - build:
-          require:
+          requires:
             - setup
       - deploy-gh-pages:
           requires:

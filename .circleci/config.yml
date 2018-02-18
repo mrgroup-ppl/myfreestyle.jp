@@ -113,6 +113,7 @@ jobs:
             ls -la
             git add -A
             git commit --allow-empty -m "Deploy to Github pages [ci skip]"
+            git push origin gh-pages
   # git push --force --quiet origin gh-pages > /dev/null 2>&1
 
   # mkdir -p ./dist

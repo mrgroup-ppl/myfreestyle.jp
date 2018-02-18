@@ -71,7 +71,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "66:3b:7c:d5:43:b5:fa:bf:08:45:3f:a1:f1:be:bd:b1"
-            # - "38:0d:85:45:7b:bc:5f:41:db:d2:f2:00:1e:54:19:10"
+      # - "38:0d:85:45:7b:bc:5f:41:db:d2:f2:00:1e:54:19:10"
       - attach_workspace:
           at: /home/circleci
       - restore_cache:
@@ -84,7 +84,8 @@ jobs:
       - run:
           name: Avoid hosts unknown on GitHub
           command: |
-            mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+            ssh -o StrictHostKeyChecking=no
+      #       mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Check Deployment
           command: |
@@ -93,7 +94,7 @@ jobs:
             cd ./gh-pages
             git init
             git remote add origin $remoteorigin
-            git fetch origin gh-pages
+            git fetch origin gh-pages -o
             git checkout gh-pages
             ls -la ../dist/
             cp ./CNAME ../dist/

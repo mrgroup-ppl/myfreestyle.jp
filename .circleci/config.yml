@@ -100,9 +100,9 @@ jobs:
             remoteorigin=$(git config remote.origin.url)
             mkdir ./gh-pages
             cd ./gh-pages
+            git init
             git config user.email "eshinn@mrgroup-ppl.com"
             git config user.name "CircleCI"
-            git init
             git remote add origin $remoteorigin
             git fetch origin gh-pages
             git checkout gh-pages

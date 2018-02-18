@@ -10,10 +10,10 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - add_ssh_keys:
-          fingerprints:
-            - "38:0d:85:45:7b:bc:5f:41:db:d2:f2:00:1e:54:19:10"
-            - "66:3b:7c:d5:43:b5:fa:bf:08:45:3f:a1:f1:be:bd:b1"
+      # - add_ssh_keys:
+      #     fingerprints:
+      #       - "38:0d:85:45:7b:bc:5f:41:db:d2:f2:00:1e:54:19:10"
+      #       - "66:3b:7c:d5:43:b5:fa:bf:08:45:3f:a1:f1:be:bd:b1"
       - restore_cache:
           name: Restoring node_modules
           key: v2-node_modules-{{ checksum "yarn.lock" }}
@@ -33,7 +33,6 @@ jobs:
           paths:
             - .ssh
             - myfreestylejp
-            - .gitconfig
 
   lint:
     <<: *defaults
@@ -82,9 +81,9 @@ jobs:
       - restore_cache:
           name: Restoring node_modules
           key: v2-node_modules-{{ checksum "yarn.lock" }}
-      - run:
-          name: Spill git guts
-          command: cat ~/.gitconfig
+      # - run:
+      #     name: Spill git guts
+      #     command: cat ~/.gitconfig
       # - run:
       #     name: Check fingerprint
       #     command: |
@@ -101,6 +100,8 @@ jobs:
             remoteorigin=$(git config remote.origin.url)
             mkdir ./gh-pages
             cd ./gh-pages
+            git config user.email "eshinn@mrgroup-ppl.com"
+            git config user.name "CircleCI"
             git init
             git remote add origin $remoteorigin
             git fetch origin gh-pages

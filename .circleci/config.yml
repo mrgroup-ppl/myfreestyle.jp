@@ -71,7 +71,7 @@ jobs:
             git remote add origin $remoteorigin
             git fetch origin gh-pages
             git checkout gh-pages
-            ls -la ../dist/
+  # ls -la ../dist/
   # cp ./CNAME ../dist/
 
   # mkdir -p ./dist

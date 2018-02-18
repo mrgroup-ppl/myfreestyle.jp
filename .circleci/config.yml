@@ -47,6 +47,7 @@ jobs:
       - run:
           name: Check Deployment
           command: |
+            touch ./test.txt
             git status
 
   # install-dependancies:

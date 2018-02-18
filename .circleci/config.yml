@@ -34,6 +34,9 @@ jobs:
     steps:
       - attach_workspace:
           at: /home/circleci
+      - restore_cache:
+          name: Restoring node_modules
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
       - run:
           name: Lint
           command: |
@@ -47,6 +50,9 @@ jobs:
             - "66:3b:7c:d5:43:b5:fa:bf:08:45:3f:a1:f1:be:bd:b1"
       - attach_workspace:
           at: /home/circleci
+      - restore_cache:
+          name: Restoring node_modules
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
       - run:
           name: Build Step
           command: |
@@ -61,6 +67,9 @@ jobs:
             - "66:3b:7c:d5:43:b5:fa:bf:08:45:3f:a1:f1:be:bd:b1"
       - attach_workspace:
           at: /home/circleci
+      - restore_cache:
+          name: Restoring node_modules
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
       - run:
           name: Check Deployment
           command: |
@@ -70,7 +79,7 @@ jobs:
             git init
             git remote add origin $remoteorigin
             git fetch origin gh-pages
-            git checkout gh-pages
+  # git checkout gh-pages
   # ls -la ../dist/
   # cp ./CNAME ../dist/
 

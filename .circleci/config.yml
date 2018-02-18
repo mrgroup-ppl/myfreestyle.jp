@@ -39,6 +39,16 @@ jobs:
           command: |
             yarn lint
 
+  deploy-gh-pages:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - run:
+          name: Check Deployment
+          command: |
+            git status
+
   # install-dependancies:
   #   docker:
   #     - image: circleci/node:8.9.1-stretch-browsers
@@ -77,6 +87,9 @@ workflows:
     jobs:
       - setup
       - lint:
+          requires:
+            - setup
+      - deploy-gh-pages:
           requires:
             - setup
       # - install-dependancies

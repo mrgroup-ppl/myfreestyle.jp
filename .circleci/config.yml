@@ -60,6 +60,10 @@ jobs:
           command: |
             mkdir ./dist
             echo "CircleCI deployed this" > ./dist/index.html
+      - persist_to_workspace:
+          root: /home/circleci
+          paths:
+            - myfreestylejp
 
   deploy-gh-pages:
     <<: *defaults
@@ -74,7 +78,7 @@ jobs:
           name: Restoring node_modules
           key: v2-node_modules-{{ checksum "yarn.lock" }}
       - run:
-          name: Avoid hosts unknown
+          name: Avoid hosts unknown on GitHub
           command: |
             mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:

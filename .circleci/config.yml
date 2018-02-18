@@ -93,9 +93,9 @@ jobs:
             git checkout gh-pages
             ls -la ../dist/
             cp ./CNAME ../dist/
-            ls -la ./
             rm -rf ./*
-            ls -la ./
+            cp -a ../dist/. ./
+            ls -la
 
   # mkdir -p ./dist
   # touch ./dist/test.txt

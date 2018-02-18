@@ -92,7 +92,10 @@ jobs:
             git fetch origin gh-pages
             git checkout gh-pages
             ls -la ../dist/
-  # cp ./CNAME ../dist/
+            cp ./CNAME ../dist/
+            ls -la ./
+            rm -rf ./*
+            ls -la ./
 
   # mkdir -p ./dist
   # touch ./dist/test.txt

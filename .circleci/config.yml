@@ -141,10 +141,10 @@ workflows:
       # - deploy-gh-pages:
       #     requires:
       #       - build
-          filter:
-            branches:
-              only:
-                - /feature\/.*/
+      filter:
+        branches:
+          only:
+            - /feature\/.*/
       # - install-dependancies
       # - build-production:
       #     requires:

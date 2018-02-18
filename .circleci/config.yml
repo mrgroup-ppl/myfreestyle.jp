@@ -39,19 +39,44 @@ jobs:
           command: |
             yarn lint
 
-  deploy-gh-pages:
+  build:
     <<: *defaults
     steps:
       - attach_workspace:
           at: /home/circleci
       - run:
+          name: Build Step
+          command: |
+            mkdir ./dist
+            echo "CircleCI deployed this" > ./dist/index.html
+
+  deploy-gh-pages:
+    <<: *defaults
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "66:3b:7c:d5:43:b5:fa:bf:08:45:3f:a1:f1:be:bd:b1"
+      - attach_workspace:
+          at: /home/circleci
+      - run:
           name: Check Deployment
           command: |
-            mkdir -p ./dist
-            touch ./dist/test.txt
-            cd ./dist
-            git config --list
-            git status
+            remoteorigin=$(git config remote.origin.url)
+            mkdir ./gh-pages
+            cd ./gh-pages
+            git init
+            git remote add origin $remoteorigin
+            git fetch origin gh-pages
+            git checkout gh-pages
+            ls -la ../dist/
+          # cp ./CNAME ../dist/
+
+          # mkdir -p ./dist
+          # touch ./dist/test.txt
+          # cd ./dist
+          # git init
+          # git config --list
+          # git status
 
   # install-dependancies:
   #   docker:
@@ -93,9 +118,12 @@ workflows:
       - lint:
           requires:
             - setup
+      - build:
+          require:
+            - setup
       - deploy-gh-pages:
           requires:
-            - setup
+            - build
       # - install-dependancies
       # - build-production:
       #     requires:

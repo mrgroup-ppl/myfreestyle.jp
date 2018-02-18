@@ -96,6 +96,9 @@ jobs:
             rm -rf ./*
             cp -a ../dist/. ./
             ls -la
+            git add -A
+            git commit --allow-empty -m "Deploy to Github pages [ci skip]"
+            git push --force --quiet origin gh-pages > /dev/null 2>&1
 
   # mkdir -p ./dist
   # touch ./dist/test.txt

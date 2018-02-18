@@ -42,6 +42,9 @@ jobs:
   build:
     <<: *defaults
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "66:3b:7c:d5:43:b5:fa:bf:08:45:3f:a1:f1:be:bd:b1"
       - attach_workspace:
           at: /home/circleci
       - run:

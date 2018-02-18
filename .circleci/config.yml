@@ -92,14 +92,7 @@ jobs:
             git add -A
             git commit --allow-empty -m "Deploy to Github pages [ci skip]"
             git push --force --quiet origin gh-pages > /dev/null 2>&1
-  # git push --force --quiet origin gh-pages > /dev/null 2>&1
 
-  # mkdir -p ./dist
-  # touch ./dist/test.txt
-  # cd ./dist
-  # git init
-  # git config --list
-  # git status
 
   # install-dependancies:
   #   docker:
@@ -145,9 +138,13 @@ workflows:
       - build:
           requires:
             - setup
-      - deploy-gh-pages:
-          requires:
-            - build
+      # - deploy-gh-pages:
+      #     requires:
+      #       - build
+          filter:
+            branches:
+              only:
+                - /feature\/.*/
       # - install-dependancies
       # - build-production:
       #     requires:

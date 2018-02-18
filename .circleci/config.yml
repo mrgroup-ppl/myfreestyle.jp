@@ -33,6 +33,7 @@ jobs:
           paths:
             - .ssh
             - myfreestylejp
+            - .gitconfig
 
   lint:
     <<: *defaults

@@ -1,0 +1,89 @@
+@media (min-width: 1400px) and (max-width: 1600px){
+/*    .background{ margin-top: 10%;}  */
+    
+}
+@media (min-width: 291px) and (max-width: 600px){
+    .banner-main{
+        max-height: 300px!important;
+    }   
+    
+}
+@media (max-width: 1185px){
+.part1 p{
+        font-size: 24px!important;
+    line-height: 30px!important;
+    }
+    .graph1 img{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .bottom5 img{display: none;}
+    .bottom3 img{display: none;}
+    .bottom3 p{padding-bottom: 15px;}
+    .bottom4{padding-bottom: 15px;}
+    .graph1 ul li img{margin-top: 16px;}
+    .half4{margin-left: -40px;}
+    .part1 p br{display: none;}
+    .half2{margin-left: -15px;}
+    .part1 p{margin-top: 20px;}
+    .bottom11 p{float: left;}
+    
+}
+
+@media (max-width: 720px){
+    .bottom5 img{display: none;}
+    .bottom3 img{display: none;}
+    .bottom3 p{padding-bottom: 15px;}
+    .bottom4{padding-bottom: 15px;}
+    .side2 p{font-size: 10px;}
+    .graph1 ul li img{margin-top: 16px;}
+    .half4{margin-left: 0px;}
+    .part2 p{font-size: 17px;}
+    .bottom11{margin-bottom: -34px!important;}
+    .bottom2a{margin-top: 21px;
+    margin-bottom: -9px;}
+    .half2{margin-left: -15px;}
+    .part1b p{font-size: 19px;}
+    .color-first{font-size: 18px;}
+    .chart1a{margin-top: 30px;}
+    .part2{margin-top: 20px;
+    margin-bottom: 20px;}
+    .bottom11 p{float: left;}
+    .bottom12 span{margin-left: 15px;}
+}
+
+
+@media (max-width: 520px){
+    .side2{margin-top: 60px;}
+    .graph1 ul li img{margin-top: 16px;}
+    .side3{margin-top: 120px;}
+    .bottom4 p:nth-child(3){
+    margin-top: 16px;
+    margin-left: -20px;}
+/*    .background {margin-top: -19px;}*/
+    .half2{margin-left: -15px;}
+    .bottom4a p{margin-bottom: 10px;}
+    .box{padding-left:0px;
+    padding-right: 0px;}
+    .background{padding-left: 1px;
+        padding-right: 1px;}
+    .list2 ul li{margin-left: 5px;}
+    .nav-btn-01 ul li{width: 120px;}
+    .bottom12 p{font-size: 10px;}
+/*    .background{margin-top: -4%;}*/
+    .side3 p{
+        font-size: 10px;}
+    .part1b p{font-size: 11px;}
+    .bottom1{margin-left: 0px;}
+    .bottom11{margin-left: 0px;}
+    .bottom11 span{margin-left: 0px;}
+    .color-first{font-size: 14px;}
+    .part2 p{font-size: 11px;}
+    .bottom14{margin-left: 0px;}
+    .bottom14 p{font-size: 11px;}
+    .part1 p{font-size: 24px!important;
+    margin-top: 20px;}
+    .bottom11 p{float: left;}
+    .bottom11 {float: left;}
+    .bottom14 span{margin-left: 10px;}
+}

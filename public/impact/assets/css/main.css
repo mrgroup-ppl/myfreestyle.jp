@@ -1,0 +1,252 @@
+.part1 p{
+    color: #E27017;
+    font-size: 40px!important;
+
+}
+.part1b{
+    background-color: #307ECC;
+    border-radius: 20px;
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 50px;
+}
+.part1b p{
+    color: white;
+    font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 5px;
+}
+.graph1 img{
+    width: 80%!important;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.background{
+    background-color: #FBFAFA;
+    padding-top: 20px;
+    margin-top: 5.2%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+.graph1 ul li{
+/*    background-image: url(../images/bullet.png);*/
+    background-repeat: no-repeat;
+    position: relative;
+}
+.graph1 ul li img{
+    width: 10px!important;
+    margin-top: -2px;
+    margin-left: -10px;
+}
+.graph1 h5{margin-left: 5px;}
+.side1{
+    position: absolute;
+}
+.side2{
+    position: relative;
+    line-height: 0px;
+    margin-top: 140px;
+    
+}
+.side2 p{
+    transform:rotate(270deg);
+
+}
+.side3{
+    position: relative;
+    line-height: 0px;
+    margin-top: 140px;
+    
+}
+.side3 p{
+    transform:rotate(270deg);
+}
+.bottom1{
+    position: relative;
+    margin-left: 20%;
+    font-family: 'brandon_grotesquebold';
+}
+.bottom1 span{
+    margin-left: 20px;
+    font-family: 'brandon_grotesquebold';
+    
+}
+.bottom4 p{
+    line-height: 3px;
+    font-family: 'brandon_grotesquebold';
+}
+.bottom4a p{
+    line-height: 3px;
+    font-family: 'brandon_grotesquebold';
+    margin-top: -1px;
+}
+.bottom5 p{
+    font-family: 'brandon_grotesquebold';
+}
+.bottom3 p{
+    color: #DF541C;
+    font-family: 'brandon_grotesquebold';
+}
+.bottom11{
+    position: relative;
+    margin-left: 27px;
+    margin-bottom: -30px!important;
+}
+.bottom11 span{
+    margin-left: 45px;
+
+    
+}
+.bottom2{
+    width: 80%;
+    margin-left: 10%;
+}
+.bottom2a{
+    margin-top: 10px;
+    width: 80%;
+    margin-left: 8%;
+}
+.bottom3 img{
+    width: 20%!important;
+    margin-top: -12px;
+    margin-right: 20px;
+}
+.bottom5 img{
+    width: 20%!important;
+    margin-top: 0px;
+    margin-left: -40px;
+    margin-right: 20px;
+}
+.half1{
+    padding: 0px!important;
+    margin-left: -15px;
+}
+.half1 p{
+    padding: 0px!important;
+}
+.half3{
+    padding: 0px!important;
+}
+.half3 p{
+    padding: 0px!important;
+}
+.half4{
+    padding: 0px;
+    margin-left: -55px;
+    width: 94%;
+}
+.half2{
+    padding: 0px;
+    margin-left: -72px;
+    width: 94%;
+}
+.bottom12{
+    position: relative;
+    font-family: 'brandon_grotesquebold';
+    margin-bottom: -30px;
+    margin-top: 20px;
+    margin-left: 2px;
+}
+.bottom12 span{
+    margin-left: 50px;
+   font-family: 'brandon_grotesquebold';
+    
+}
+.bottom14{
+    position: relative;
+    font-family: 'brandon_grotesquebold';
+    margin-bottom: -20px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.bottom14 span{
+    margin-left: 50px;
+   font-family: 'brandon_grotesquebold';
+    
+}
+.bottom13{
+    position: relative;
+    font-family: 'brandon_grotesquebold';
+    margin-bottom: -35px;
+    margin-top: 20px;
+}
+.bottom13 span{
+    margin-left: 20px;
+   font-family: 'brandon_grotesquebold';
+    
+}
+.box{
+    border: 4px solid #E55302;
+    padding: 20px;
+}
+.chart1b img{
+    width: 100%;
+    margin-top: 20px!important;
+    margin: auto;
+    margin-bottom: 20px!important;
+}
+.chart1a ul li img{width: 10px;}
+
+
+.list2 ul li{
+    list-style-type: disc;
+    font-family: 'brandon_grotesquebold';
+    font-size: 16px;
+}
+
+.part2{
+    background-color: #307ECC;
+    border-radius: 20px;
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.part2 p{
+    color: white;
+    font-size: 30px;
+    padding-top: 9px;
+    padding-bottom: 0px;
+    font-family: 'BrandonGrotesqueBlack';
+}
+.list3 ul li img{
+   width: 10px!important;}
+.graph4 img{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.color-ban h1{
+    color: #ffd100!important;
+}
+.color-ban p{color: #ffa500!important;}
+.color-first{
+    color: #E55302;
+font-family: 'BrandonGrotesqueBlack';}
+
+.chart1 h5{margin-left: 13px;}
+.list2{margin-left: 15px;}
+.next{
+    background: #0066CC;
+    color: white!important;
+    width: 15%;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 48px;
+    display: block;
+    border-radius: 2px;
+
+}
+.prev{
+    background: #0066CC;
+    color: white!important;
+    width: 15%;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 48px;
+    display: block;
+    border-radius: 2px;
+
+}

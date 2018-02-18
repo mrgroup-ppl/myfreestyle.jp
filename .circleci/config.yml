@@ -1,8 +1,161 @@
 version: 2
+
+defaults: &defaults
+  working_directory: /home/circleci/myfreestylejp
+  docker:
+    - image: circleci/node:8.9.1-stretch-browsers
+
 jobs:
-  build:
-    docker:
-      - image: circleci/node:8.9.1-stretch-browsers
+  setup:
+    <<: *defaults
     steps:
       - checkout
-      - run: echo "hello world"
+      - add_ssh_keys:
+          fingerprints:
+            - "66:3b:7c:d5:43:b5:fa:bf:08:45:3f:a1:f1:be:bd:b1"
+      - restore_cache:
+          name: Restoring node_modules
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install dependancies
+          command: yarn
+      - run:
+          name: Spill git guts
+          command: cat ~/.gitconfig
+      - save_cache:
+          name: Caching node_modules
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+      - persist_to_workspace:
+          root: /home/circleci
+          paths:
+            - .ssh
+            - myfreestylejp
+
+  lint:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - restore_cache:
+          name: Restoring node_modules
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
+      - run:
+          name: Lint
+          command: |
+            yarn lint
+
+  build:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - restore_cache:
+          name: Restoring node_modules
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
+      - run:
+          name: Build Step
+          command: |
+            mkdir ./dist
+            echo "CircleCI deployed this" > ./dist/index.html
+      - persist_to_workspace:
+          root: /home/circleci
+          paths:
+            - myfreestylejp
+
+  deploy-gh-pages:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - restore_cache:
+          name: Restoring node_modules
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
+      - run:
+          name: Check Deployment
+          command: |
+            remoteorigin=$(git config remote.origin.url)
+            mkdir ./gh-pages
+            cd ./gh-pages
+            git init
+            git config user.email "eshinn@mrgroup-ppl.com"
+            git config user.name "CircleCI"
+            git remote add origin $remoteorigin
+            git fetch origin gh-pages
+            git checkout gh-pages
+            ls -la ../dist/
+            cp ./CNAME ../dist/
+            rm -rf ./*
+            cp -a ../dist/. ./
+            ls -la
+            git add -A
+            git commit --allow-empty -m "Deploy to Github pages [ci skip]"
+            git push --force --quiet origin gh-pages > /dev/null 2>&1
+  # git push --force --quiet origin gh-pages > /dev/null 2>&1
+
+  # mkdir -p ./dist
+  # touch ./dist/test.txt
+  # cd ./dist
+  # git init
+  # git config --list
+  # git status
+
+  # install-dependancies:
+  #   docker:
+  #     - image: circleci/node:8.9.1-stretch-browsers
+  #   working_directory: ~/myfreestylejp
+  #   steps:
+  #     - checkout
+  #     - restore_cache:
+  #         keys:
+  #           - yarn-{{ checksum "yarn.lock" }}
+  #           - yarn-
+  #     - run: yarn
+  #     - save_cache:
+  #         key: yarn-{{ checksum "yarn.lock" }}
+  #         paths:
+  #           - node_modules
+  # build-production:
+  #   docker:
+  #     - image: circleci/node:8.9.1-stretch-browsers
+  #   steps:
+  #     - checkout
+  #     - restore_cache:
+  #         keys:
+  #           - yarn-{{ checksum "yarn.lock" }}
+  #           - yarn-
+  #     - run: yarn build
+  # test:
+  #   docker:
+  #     - image: circleci/node:8.9.1-stretch-browsers
+  #   working_directory: ~/myfreestylejp
+  #   steps:
+  #     - checkout
+  #     - run: echo "Testing..."
+
+workflows:
+  version: 2
+  merge_feature_branch:
+    jobs:
+      - setup
+      - lint:
+          requires:
+            - setup
+      - build:
+          requires:
+            - setup
+      - deploy-gh-pages:
+          requires:
+            - build
+      # - install-dependancies
+      # - build-production:
+      #     requires:
+      #       - install-dependancies
+      # - test:
+      #     requires:
+      #       - build
+      #     filter:
+      #       branches:
+      #         only:
+      #           - /feature\/.*/

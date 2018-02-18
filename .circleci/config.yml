@@ -10,10 +10,10 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      # - add_ssh_keys:
-      #     fingerprints:
-      #       - "38:0d:85:45:7b:bc:5f:41:db:d2:f2:00:1e:54:19:10"
-      #       - "66:3b:7c:d5:43:b5:fa:bf:08:45:3f:a1:f1:be:bd:b1"
+      - add_ssh_keys:
+          fingerprints:
+            - "66:3b:7c:d5:43:b5:fa:bf:08:45:3f:a1:f1:be:bd:b1"
+            # - "38:0d:85:45:7b:bc:5f:41:db:d2:f2:00:1e:54:19:10"
       - restore_cache:
           name: Restoring node_modules
           key: v2-node_modules-{{ checksum "yarn.lock" }}
@@ -72,10 +72,10 @@ jobs:
   deploy-gh-pages:
     <<: *defaults
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "66:3b:7c:d5:43:b5:fa:bf:08:45:3f:a1:f1:be:bd:b1"
-      #       - "38:0d:85:45:7b:bc:5f:41:db:d2:f2:00:1e:54:19:10"
+      # - add_ssh_keys:
+      #     fingerprints:
+      #       - "66:3b:7c:d5:43:b5:fa:bf:08:45:3f:a1:f1:be:bd:b1"
+      #       # - "38:0d:85:45:7b:bc:5f:41:db:d2:f2:00:1e:54:19:10"
       - attach_workspace:
           at: /home/circleci
       - restore_cache:

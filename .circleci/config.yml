@@ -139,6 +139,7 @@ workflows:
             branches:
               only:
                 - /feature\/.*/
+                - /develop/
       - deploy-gh-pages:
           requires:
             - build

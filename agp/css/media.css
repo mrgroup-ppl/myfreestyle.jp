@@ -1,0 +1,9 @@
+@media only screen and (max-width: 500px){
+	.embed-responsive-4by3{width: 100%!important;}
+	iframe #wrapper{
+	width: 100%!important
+}
+}
+.table2 tr td:nth-child(1){width: 300px!important;}
+.embed-responsive.embed-responsive-4by3{padding-bottom: 50%!important;}
+

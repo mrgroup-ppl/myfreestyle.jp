@@ -135,13 +135,17 @@ workflows:
       - build:
           requires:
             - setup
+          filters:
+            branches:
+              only:
+                - /feature\/.*/
       - deploy-gh-pages:
           requires:
             - build
-      # filter:
-      #   branches:
-      #     only:
-      #       - /feature\/.*/
+          filters:
+            branches:
+              only:
+                - /develop/
       # - install-dependancies
       # - build-production:
       #     requires:

@@ -59,7 +59,6 @@ jobs:
           command: |
             mkdir ./dist
             cp -a ./public/. ./dist/
-      # echo "CircleCI deployed this" > ./dist/index.html
       - persist_to_workspace:
           root: /home/circleci
           paths:
@@ -90,40 +89,6 @@ jobs:
             git commit --allow-empty -m "Deploy to Github pages [ci skip]"
             git push --force --quiet origin gh-pages > /dev/null 2>&1
 
-
-  # install-dependancies:
-  #   docker:
-  #     - image: circleci/node:8.9.1-stretch-browsers
-  #   working_directory: ~/myfreestylejp
-  #   steps:
-  #     - checkout
-  #     - restore_cache:
-  #         keys:
-  #           - yarn-{{ checksum "yarn.lock" }}
-  #           - yarn-
-  #     - run: yarn
-  #     - save_cache:
-  #         key: yarn-{{ checksum "yarn.lock" }}
-  #         paths:
-  #           - node_modules
-  # build-production:
-  #   docker:
-  #     - image: circleci/node:8.9.1-stretch-browsers
-  #   steps:
-  #     - checkout
-  #     - restore_cache:
-  #         keys:
-  #           - yarn-{{ checksum "yarn.lock" }}
-  #           - yarn-
-  #     - run: yarn build
-  # test:
-  #   docker:
-  #     - image: circleci/node:8.9.1-stretch-browsers
-  #   working_directory: ~/myfreestylejp
-  #   steps:
-  #     - checkout
-  #     - run: echo "Testing..."
-
 workflows:
   version: 2
   merge_feature_branch:
@@ -147,14 +112,3 @@ workflows:
             branches:
               only:
                 - /develop/
-      # - install-dependancies
-      # - build-production:
-      #     requires:
-      #       - install-dependancies
-      # - test:
-      #     requires:
-      #       - build
-      #     filter:
-      #       branches:
-      #         only:
-      #           - /feature\/.*/

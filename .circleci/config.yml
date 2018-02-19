@@ -146,7 +146,6 @@ workflows:
           filters:
             branches:
               only:
-                - /feature\/.*/
                 - /develop/
       # - install-dependancies
       # - build-production:

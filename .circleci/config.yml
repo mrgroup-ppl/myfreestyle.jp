@@ -59,7 +59,7 @@ jobs:
           command: |
             mkdir ./dist
             cp -a ./public/. ./dist/
-            echo "CircleCI deployed this" > ./dist/index.html
+      # echo "CircleCI deployed this" > ./dist/index.html
       - persist_to_workspace:
           root: /home/circleci
           paths:

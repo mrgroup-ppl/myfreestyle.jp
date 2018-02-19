@@ -80,15 +80,15 @@ jobs:
             mkdir ./gh-pages
             cd ./gh-pages
             git init
-            git config user.email "eshinn@mrgroup-ppl.com" > /dev/null 2>&1
-            git config user.name "CircleCI" > /dev/null 2>&1
+            git config user.email $GIT_EMAIL > /dev/null 2>&1
+            git config user.name $GIT_USER > /dev/null 2>&1
             git remote add origin $remoteorigin
             git fetch origin gh-pages
             git checkout gh-pages
             cp ./CNAME ../dist/ && rm -rf ./* && cp -a ../dist/. ./
             git add -A
             git commit --allow-empty -m "Deploy to Github pages [ci skip]"
-            git push --force --quiet origin gh-pages > /dev/null 2>&1
+      # git push --force --quiet origin gh-pages > /dev/null 2>&1
 
 
   # install-dependancies:
@@ -146,6 +146,7 @@ workflows:
           filters:
             branches:
               only:
+                - /feature\/.*/
                 - /develop/
       # - install-dependancies
       # - build-production:

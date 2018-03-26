@@ -41,3 +41,44 @@ Things you need to have access to, applications installed and how to install the
 
 1. Clone this repository to your local computer
 2. In a terminal app, `cd` into the project's directory and run `yarn install` to install all npm modules required
+
+## JIRA and GitHub
+
+Both JIRA and GitHub have been setup to work together as you find, work through, and complete tasks.
+
+### Starting a Task
+
+All tasks are assigned in JIRA. When taking on a task:
+1. Switch to `develop` branch and pull to make sure you have the latest.
+```
+git checkout develop
+git pull develop
+```
+2. Create a new feature brach from develop named the same as the ticket ID in JIRA
+```
+git checkout -b feature/MYF-4
+```
+3. Immediately push the new branch to GitHub with the ticket ID in the comment - doing so will trigger JIRA to move the ticket from `To Do` to `In Progress`
+```
+git commit --allow-empty -m "Starting MYF-4"
+git push -u origin feature/MYF-4
+```
+4. As you work on the task, remember to commit to save your work.
+```
+git add .
+git commit -m "MYF-4 #time 2d 5h This logs my time"
+```
+
+### While Working on a Task
+
+There are a few tools to help keep things nice and clean. In addition, the below will also be run each time you attempt to commit your changes.
+1. Run ESLint by running `yarn lint` and fix any errors that it catches
+2. Run testing by running `yarn test` and fix any errors that Jest catches
+
+### Finishing a Task
+
+When finishing a task you will need to have it reviewed. Every commit in a feature branch `feature/` will run CircleCI automatically. Successful continuous integration is essential for allowing your code to be merged into `develop`
+
+1. Create a pull request in GitHub
+2. Add two people to review your code
+3. Add an assignee to merge your commit

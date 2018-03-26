@@ -7,15 +7,18 @@
   "license": "MIT",
   "scripts": {
     "build": "eslint src --fix",
-    "lint": "eslint src --fix"
+    "lint": "eslint src --fix",
+    "test": "jest"
   },
   "pre-commit": [
-    "lint"
+    "lint",
+    "test"
   ],
   "devDependencies": {
     "eslint": "^4.17.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
+    "jest": "^22.4.3",
     "pre-commit": "^1.2.2"
   }
 }

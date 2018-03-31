@@ -1,0 +1,13 @@
+//- Check for meta data to include
+if meta
+  if meta.title
+    title= meta.title
+  if meta.keywords
+    meta(name="keywords" content=meta.keywords)
+  if meta.description
+    meta(name="description" content=meta.description)
+
+  //- Facebook's open-graph
+  if meta.og
+    each va, prop in meta.og
+      meta(prioperty=`og:${prop}`, content=val)

@@ -1,6 +1,7 @@
 ### Project-specific ignores
 node_modules/
 dist/
+yarn-error.log
 
 
 ### BELOW ARE GENERAL IGNORES FOR OperatingSystem / Editors, etc ###

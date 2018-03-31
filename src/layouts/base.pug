@@ -1,0 +1,11 @@
+doctype html
+html(lang='ja')
+  block html-head
+    //- include ../partials/html-head
+    //- link(rel="stylesheet" href="css/test.css")
+
+  body
+    //- block global-header
+    //-   include ../partials/header-global-default
+    block content
+      h1 boo

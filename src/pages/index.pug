@@ -1,0 +1,12 @@
+extends ../layouts/base
+
+block prepend html-head
+  -
+    meta = {
+      title: "Test Title",
+      description: "This is a description",
+    }
+
+block content
+  h1 Hello, World!!
+  input(placeholder="Type Something...")

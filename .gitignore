@@ -1,6 +1,7 @@
 ### Project-specific ignores
 node_modules/
 dist/
+coverage/
 yarn-error.log
 
 

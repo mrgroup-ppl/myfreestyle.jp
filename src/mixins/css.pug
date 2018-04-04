@@ -1,0 +1,10 @@
+//- CSS Mixin
+- htmlWebpackPlugin.files.css = []
+- locals.css = locals.css || []
+
+mixin addCss(style)
+  if !locals.css.includes(style)
+    - locals.css.push(style)
+
+mixin removeCss(style)
+  - locals.css = locals.css.filter(e => e !== style)

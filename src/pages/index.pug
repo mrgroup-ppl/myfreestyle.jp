@@ -1,12 +1,12 @@
-extends ../layouts/base
+extends /layouts/base
 
-block prepend html-head
+block append locals
   -
     meta = {
-      title: "Test Title",
-      description: "This is a description",
+      title: 'Another title all together',
+      description: 'Another day in paradise',
     }
 
 block content
   h1 Hello, World!!
-  input(placeholder="Type Something...")
+  p How are you today?

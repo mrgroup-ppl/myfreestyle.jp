@@ -1,0 +1,414 @@
+/*
+Author: Nidhish
+*/
+
+
+@charset "UTF-8";@font-face{font-family:'EMprint';src:url(../fonts/emprint-bold.eot);src:url(../fonts/emprint-bold.eot?#iefix) format("embedded-opentype"),url(../fonts/emprint-bold.woff) format("woff"),url(../fonts/emprint-bold.ttf) format("truetype"),url(../fonts/emprint-bold.svg#OpenSans) format("svg");font-weight:700;font-style:normal}@font-face{font-family:'EMprint';src:url(../fonts/emprint-regular.eot);src:url(../fonts/emprint-regular.eot?#iefix) format("embedded-opentype"),url(../fonts/emprint-regular.woff) format("woff"),url(../fonts/emprint-regular.ttf) format("truetype"),url(../fonts/emprint-regular.svg#OpenSans) format("svg");font-weight:400;font-style:normal}@font-face{font-family:'EMprint';src:url(../fonts/emprint-semibold.eot);src:url(../fonts/emprint-semibold.eot?#iefix) format("embedded-opentype"),url(../fonts/emprint-semibold.woff) format("woff"),url(../fonts/emprint-semibold.ttf) format("truetype"),url(../fonts/emprint-semibold.svg#OpenSans) format("svg");font-weight:600;font-style:normal}@font-face{font-family:'EMprint';src:url(../fonts/emprint-light.eot);src:url(../fonts/emprint-light.eot?#iefix) format("embedded-opentype"),url(../fonts/emprint-light.woff) format("woff"),url(../fonts/emprint-light.ttf) format("truetype"),url(../fonts/emprint-light.svg#OpenSans) format("svg");font-weight:lighter;font-style:normal}@font-face{font-family:'EMprint';src:url(../fonts/emprint-semibold-italic.eot);src:url(../fonts/emprint-semibold-italic.eot?#iefix) format("embedded-opentype"),url(../fonts/emprint-semibold-italic.woff) format("woff"),url(../fonts/emprint-semibold-italic.ttf) format("truetype"),url(../fonts/emprint-semibold-italic.svg#OpenSans) format("svg");font-weight:600;font-style:italic}@font-face{font-family:'EMprint';src:url(../fonts/emprint-regular-italic.eot);src:url(../fonts/emprint-regular-italic.eot?#iefix) format("embedded-opentype"),url(../fonts/emprint-regular-italic.woff) format("woff"),url(../fonts/emprint-regular-italic.ttf) format("truetype"),url(../fonts/emprint-regular-italic.svg#OpenSans) format("svg");font-weight:400;font-style:italic}@font-face{font-family:'EMprint';src:url(../fonts/emprint-light-italic.eot);src:url(../fonts/emprint-light-italic.eot?#iefix) format("embedded-opentype"),url(../fonts/emprint-light-italic.woff) format("woff"),url(../fonts/emprint-light-italic.ttf) format("truetype"),url(../fonts/emprint-light-italic.svg#OpenSans) format("svg");font-weight:lighter;font-style:italic}
+
+.modal, .modal-open {
+    overflow: hidden;
+}
+
+.modal {
+	font-family: "EMprint","Helvetica Neue",Helvetica,Arial,sans-serif;
+    bottom: 0;
+    display: none;
+    left: 0;
+    outline: 0 none;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal {
+    z-index: 3002;
+}
+
+.modal-dialog {
+    margin: 10px;
+    position: relative;
+    width: auto;
+}
+
+.modal-dialog {
+    margin: 30px auto;
+    width: 600px;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out 0s;
+}
+.modal.in .modal-dialog {
+    transform: translate(0px, 0px);
+}
+.modal.fade .modal-dialog {
+    transform: translate(0px, -100%);
+}
+.modal.in .modal-dialog {
+    display: block;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal.in .modal-dialog {
+    width: 800px;
+}
+
+
+.modal-content {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    outline: 0 none;
+    position: relative;
+}
+
+.modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal .modal-content {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #ffea00 0%, #ffd100 100%) repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    padding: 0 0 50px;
+    text-align: center;
+}
+
+.modal .modal-content {
+    display: table;
+    font-size: 34px;
+    height: 400px;
+    padding: 0 0 20px;
+    width: 100%;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px;
+}
+
+.modal .modal-content .modal-header {
+    position: absolute;
+    width: 100%;
+}
+.modal .modal-content .modal-header {
+    border-bottom: 0 none;
+    padding: 15px;
+    z-index: 1;
+}
+
+.modal .modal-content {
+    text-align: center;
+}
+
+.modal-header::after {
+    clear: both;
+}
+.modal-header::after, .modal-header::before {
+    content: " ";
+    display: table;
+}
+
+
+.modal-header::after, .modal-header::before {
+    content: " ";
+    display: table;
+}
+
+
+button, input, select, textarea {
+    margin: 0;
+    vertical-align: middle;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button {
+    overflow: visible;
+}
+button, select {
+    text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.2;
+    text-shadow: 0 1px 0 #fff;
+}
+
+
+button.close {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+}
+
+.modal .modal-content button.close {
+    color: #111;
+    font-size: 40px;
+    font-weight: 400;
+    opacity: 1;
+    text-shadow: none;
+}
+.modal-body {
+    padding: 15px;
+    position: relative;
+}
+.modal .modal-content .modal-body {
+    padding: 0 30px 15px;
+}
+.modal .modal-content .modal-body {
+    display: table-cell;
+    padding: 0 100px;
+    vertical-align: middle;
+}
+
+.newsletter-form {
+    color: #111;
+    width: 100%;
+}
+
+.newsletter-form__text {
+    color: #111;
+    font-size: 18px;
+}
+
+.modal .modal-content .newsletter-form__text, .modal .modal-content .newsletter-form__thankyou {
+    color: #111;
+    font-size: 28px;
+}
+
+.modal .modal-content .newsletter-form__text, .modal .modal-content .newsletter-form__thankyou {
+    font-size: 34px;
+}
+
+.modal .modal-content .newsletter-form__text, .modal .modal-content .newsletter-form__thankyou {
+    font-size: 45px;
+}
+
+.newsletter-form__error-message {
+    text-align: center;
+}
+.newsletter-form__error-message {
+    color: #fe000c;
+    font-size: 16px;
+    min-height: 1.5em;
+}
+
+.newsletter-form__signup {
+    display: inline-table;
+}
+
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.newsletter-form__email {
+    border: 0 none;
+    color: #000;
+    display: inline-block;
+    font-size: 16px;
+    height: 33px;
+    padding: 5px;
+}
+.newsletter-form__email {
+    font-size: 20px;
+    height: 39px;
+    padding: 5px;
+}
+
+
+.newsletter-form__email {
+    display: table-cell;
+    float: left;
+    font-size: 22px;
+    height: 41px;
+    margin-bottom: 0;
+    padding: 5px 20px;
+    position: relative;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.newsletter-form__button {
+    background: #00b4ed none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.newsletter-form__button {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.newsletter-form__button {
+    display: table-cell;
+    float: left;
+    font-size: 22px;
+    margin: 0;
+    padding: 5px 20px;
+}
+
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+.newsletter-form__cycle-option {
+    white-space: nowrap;
+}
+.newsletter-form span {
+    font-size: 14px;
+    margin-right: 10px;
+}
+.newsletter-form span {
+    font-size: 16px;
+}
+.newsletter-form span {
+    font-size: 18px;
+}
+
+input, select, textarea {
+    border: 1px solid #b0b0b0;
+    box-sizing: border-box;
+    color: #222731;
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-size: 16px;
+    line-height: normal;
+    margin: 0;
+    outline: medium none;
+    padding: 6px;
+}
+button, input, select, textarea {
+    margin: 0;
+    vertical-align: middle;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+input {
+    line-height: normal;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.newsletter-form__checkbox {
+    display: none;
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    line-height: normal;
+    margin: 4px 0 0;
+}
+
+.newsletter-form__checkbox.newsletter-form__checkbox {
+    margin: 0 5px;
+}
+
+label {
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 5px;
+    max-width: 100%;
+}
+.newsletter-form__checkbox + .newsletter-form__label {
+    background-color: #fff;
+    display: inline-block;
+    margin-right: 7px;
+    opacity: 0.9;
+    padding: 8px;
+    position: relative;
+    top: 7px;
+}
+
+
+.newsletter-modal__thanks-message {
+    display: none;
+}
+
+.newsletter-form__checkbox:checked + .newsletter-form__label {
+    background-color: #fff;
+}
+.newsletter-form__checkbox:checked + .newsletter-form__label::after {
+    color: #000;
+    content: "✔";
+    font-size: 14px;
+    left: 2px;
+    position: absolute;
+    top: 0;
+}
+
+.newsletter-form__email::-moz-placeholder {
+    color: #a2a2a2;
+}
+
+.newsletter-form__text {
+    color: #111;
+    font-size: 18px;
+}
+.modal .modal-content .newsletter-form__text, .modal .modal-content .newsletter-form__thankyou {
+    color: #111;
+    font-size: 28px;
+}
+.modal .modal-content .newsletter-form__text, .modal .modal-content .newsletter-form__thankyou {
+    font-size: 34px;
+}
+
+.modal .modal-content .newsletter-form__text, .modal .modal-content .newsletter-form__thankyou {
+    font-size: 45px;
+}
+.newsletter-form__cycle{ max-width:90%; margin: 0 auto; line-height:24px; text-align:justify; margin-top:20px; }
+
+#newsletter_modal .radio{ display:inline-table; }

@@ -269,6 +269,7 @@
 
 .mb16 {
   margin-bottom: 16px !important;
+	font-weight: 700!important;
 }
 
 .mb20 {
@@ -469,6 +470,7 @@ header:not(.mobile) a.brand {
   background: transparent url("../img/freestyle-logo.png") left center no-repeat;
   background-size: 100%;
   width: 167px;
+	margin-left: -5px;
 }
 
 header:not(.mobile) a.ch-brand {
@@ -2163,7 +2165,7 @@ section.tstrp-sec {
 }
 
 .tstrp-view .pt-view .pt {
-  border-bottom: 1px solid #fe9613;
+  
   padding-bottom: 15px;
   margin-top: 15px;
   font-size: 16px;
@@ -3968,6 +3970,7 @@ section.page-header-grey h1, section.page-header-grey h2, section.page-header-gr
   font-size: 40px;
   color: #ff9614;
   margin-bottom: 28px;
+	
 }
 
 section.page-header-grey h1.sub-title, section.page-header-grey h2.sub-title, section.page-header-grey h3.sub-title, section.page-header-grey h4.sub-title, section.page-header-grey h5.sub-title, section.page-header-grey h6.sub-title {

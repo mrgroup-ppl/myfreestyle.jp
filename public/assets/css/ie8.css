@@ -1,0 +1,309 @@
+header{
+  box-shadow: 0 1px 2px rgba(217, 217, 217, 0.9);
+  min-height: 130px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  background: white; }
+header a.brand {
+    background:url("../img/freestyle-logo.png") no-repeat;
+    display: block;
+    line-height: 130px;
+    height: 130px;
+    transition: all 0.3s ease 0s;
+    width: 167px;
+   margin-top:5px;
+}
+ 
+header a.ch-brand {
+background: url("../img/logo-abbott-header-small.png") center center no-repeat;
+width:132px;
+height:80px;
+display:block;
+}
+
+header nav {
+    min-height: 64px;
+}
+header nav > ul {
+      margin: 0;
+      padding: 0;
+      bottom: 0;
+      position: absolute;
+      text-align: right;
+      width: 111%;
+      left: -114px;
+ }
+@media (max-width: 1024px){
+    header nav > ul {
+      width: 122%;
+      left: -177px;
+    }
+}
+header nav > ul > li {
+   margin: 0 10px 0 0;
+   padding: 0;
+   list-style: none;
+   display: inline-block; 
+}
+header nav > ul > li {
+	  margin-right: 0 !important;
+ }
+header nav > ul > li.compact-only {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  margin-right: 8px;
+ }
+
+header nav > ul > li.active > a {
+  color: #ff9614;
+  text-decoration: none;
+  border-bottom: solid 2px #ff9614; }
+header nav > ul > li > a {
+  display: block;
+  font-family: 'brandon_grotesquebold', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #7d7d7d;
+  padding: 8px 12px;
+  margin: 0 auto;
+  border-bottom: solid 1px transparent;
+  position: relative; 
+}
+header nav > ul > li > a:hover, header nav > ul > li > a:focus {
+	color: #ff9614;
+	text-decoration: none;
+	border-bottom: transparent;
+	border-bottom: 2px solid #ff9614;
+}
+header nav > ul > li ul{
+	display:none;
+}
+header nav > ul > li:hover ul.submenu{
+	padding:10px 20px;
+	background:#FFF;
+	border-bottom:4px solid #f8c102;
+	position:absolute;
+	z-index:5;
+	display:block;
+	margin-left:-70px;
+	max-width:220px;
+}
+header nav > ul > li:hover ul.submenu li{
+	width:100%;
+	float:left;
+	border-bottom:2px solid #b3b3b3;
+	list-style:none;
+	
+}
+header nav > ul > li:hover ul.submenu li:hover{
+	border-bottom:2px solid #ff9614;
+}
+header nav > ul > li:hover ul.submenu li.active{
+	border-bottom:2px solid #ff9614;
+}
+header nav > ul > li:hover ul.submenu li:hover a{
+	 color: #ff9614;
+}
+header nav > ul > li:hover ul.submenu li:last-child{
+	border-bottom:0px;
+}
+header nav > ul > li:hover ul.submenu li a{
+	width:100%;
+	float:left;
+	color:#000;
+	font-size:13px;
+	text-align:center;
+	padding:8px 0;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+header nav > ul > li:hover ul.submenu li:last-child a{
+	padding-bottom:0px;
+}
+  header nav > ul > li > a.btn-compact {
+	border: solid 1px #ababab;
+	border-radius: 4px;
+	color: #ababab; }
+	header nav > ul > li > a.btn-compact:hover, header nav > ul > li > a.btn-compact:focus {
+	  color: #f7f7f7;
+	  background: #ff9614;
+	  border-color: transparent; }
+  header nav > ul > li > a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #ff9614;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px); }
+  header nav > ul > li > a:focus::after, header nav > ul > li > a:hover::after {
+	height: 1px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px); }
+header .header-options {
+background: #f7f7f7;
+padding: 12px 24px;
+margin: 0 auto;
+min-height: 36px;
+line-height: 36px; }
+header .header-options > a, header .header-options > form, header .header-options > select {
+display: inline-block; }
+header .header-options select,
+header .header-options input[type="text"],
+header .header-options input[type="search"],
+header .header-options input[type="password"],
+header .header-options button,
+header .header-options input[type="submit"] {
+line-height: normal; }
+header .header-options .bootstrap-select > button {
+border: solid 1px #aeaeae;
+background: #f7f7f7;
+color: #959595;
+padding-left: 32px; }
+header .header-options .bootstrap-select > button:before {
+content: "\f0ac";
+margin: 0;
+padding: 0;
+position: absolute;
+height: 32px !important;
+min-height: 32px !important;
+max-height: 32px !important;
+width: 32px !important;
+min-width: 32px !important;
+max-width: 32px !important;
+line-height: 32px !important;
+font-family: 'FontAwesome';
+left: 0;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%); }
+header .header-options .bootstrap-select > button > .caret {
+border: none !important;
+height: 32px !important;
+min-height: 32px !important;
+max-height: 32px !important;
+width: 32px !important;
+min-width: 32px !important;
+max-width: 32px !important;
+line-height: 32px !important;
+right: 0;
+-webkit-transform: translateY(-48%);
+-ms-transform: translateY(-48%);
+transform: translateY(-48%); }
+header .header-options .bootstrap-select > button > .caret:before {
+font-family: 'FontAwesome';
+font-weight: bold;
+content: "\f107";
+line-height: 36px; }
+header .header-options .header-options-flag > img {
+height: 36px;
+width: auto; }
+header .header-options .header-options-btn,
+header .header-options input[type="text"],
+header .header-options input[type="password"],
+header .header-options input[type="search"],
+header .header-options button[type="submit"],
+header .header-options input[type="submit"] {
+border: solid 1px #aeaeae;
+border-radius: 4px;
+font-family: 'brandon_grotesque_regularRg', sans-serif;
+font-size: 12px;
+text-transform: uppercase;
+background: #f7f7f7;
+color: #959595; }
+header .header-options .header-options-btn:hover,
+header .header-options input[type="text"]:hover,
+header .header-options input[type="password"]:hover,
+header .header-options input[type="search"]:hover,
+header .header-options button[type="submit"]:hover,
+header .header-options input[type="submit"]:hover {
+background: #eee; }
+header .header-options .header-options-btn:focus,
+header .header-options input[type="text"]:focus,
+header .header-options input[type="password"]:focus,
+header .header-options input[type="search"]:focus,
+header .header-options button[type="submit"]:focus,
+header .header-options input[type="submit"]:focus {
+outline: none;
+background: #E6E6E6;
+box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset; }
+header .header-options .header-options-btn > i,
+header .header-options input[type="text"] > i,
+header .header-options input[type="password"] > i,
+header .header-options input[type="search"] > i,
+header .header-options button[type="submit"] > i,
+header .header-options input[type="submit"] > i {
+margin-left: 24px;
+font-weight: bold; }
+header:not(.mobile) .header-options .header-options-btn,
+header:not(.mobile) .header-options input[type="text"],
+header:not(.mobile) .header-options input[type="password"],
+header:not(.mobile) .header-options input[type="search"] {
+line-height: 17px; }
+header .header-options form input[type="text"],
+header .header-options form input[type="password"],
+header .header-options form input[type="search"] {
+padding: 6px 8px !important;
+line-height: normal !important;
+border-radius: 4px 0 0 4px; }
+header .header-options form button[type="submit"],
+header .header-options form input[type="submit"] {
+border-left: none;
+border-radius: 0 4px 4px 0;
+line-height: 17px;
+min-height: 31px;
+padding: 0 12px; }
+header .header-options form button[type="submit"] > i,
+header .header-options form input[type="submit"] > i {
+margin-left: 0;
+font-weight: normal; }
+
+header .header-options select.selectpicker{
+display:inline-block !important;
+}
+header.compact {
+    min-height: 88px;
+}
+
+   background-image: url("../img/logo-abbott-header-small.png");
+}
+header.compact a.brand {
+    background-image: url("../img/freestyle-logo.png");
+    line-height: 88px;
+    min-height: 88px;
+    width: 130px;
+}
+header.compact .header-options {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+.carousel-caption img{
+   display:none;
+}
+.row .img-view IMG{
+ width:auto;
+max-width:auto;
+}
+.row .phlist ul li .desc-view{
+ width:65%;
+}
+footer{
+   padding-bottom:0px;
+}

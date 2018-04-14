@@ -614,7 +614,7 @@
                     c = e.split("."),
                     n = c[0] + "." + c[1];
                 new Set(t).has(e) || "130.36" == n ? console.log("White-listed") : "US" == o.country_code || "CA" == o.country_code ?
-                    (console.log("Redirect him to myfreestyle.com"), window.top_location_href = "https://www.myfreestyle.com/") :
+                    (console.log("Redirect him to myfreestyle.com"), window.top.location.href = "https://www.myfreestyle.com/") :
                     console.log("IP not found")
             }
         });

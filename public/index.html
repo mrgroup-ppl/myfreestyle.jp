@@ -762,24 +762,27 @@
 	<script src="assets/js/jquery.flexslider-min.js"></script>
 	<script type="text/javascript">
 		$(window).load(function () {
-			jQuery("#closeGeoIp").click(function () {
-				Cookies.set("visit_check", "yes", {
-					expires: 7
-				})
+			jQuery("#closeGeoIp, .close-reveal-modal").click(function () {
+				Cookies.set("visit_check", "yes", { expires: 7 })
 			});
+
 			var o = Cookies.get("visit_check");
-			console.log(Cookies.get("visit_check")), "yes" != "JP" != currentCountry && (console.log(
-				"You are not in JAPAN show model now..."), $(".geo-popup").reveal({
-				animation: "fadeAndPop",
-				animationspeed: 300,
-				closeonbackgroundclick: !0,
-				dismissmodalclass: "close-reveal-modal"
-			}), $(".geo-popup").css({
-				left: "50%",
-				marginLeft: -$(".geo-popup").width() / 2
-			})), $("#closeGeoIp").click(function () {
-				$("#closeGeoIp2").click()
-			})
+
+      if (o !== "yes") {
+        $('.geo-popup').reveal({
+          animation: "fadeAndPop",
+          animationspeed: 300,
+          closeonbackgroundclick: true,
+          dismissmodalclass: 'close-reveal-modal'
+        })
+        $('.geo-popup').css({
+          left: '50%',
+          marginLeft: - ($('.geo-popup').width() / 2)
+        });
+        $('#closeGeoIp').click(function() {
+          $('.close-reveal-modal').click()
+        })
+      }
 		});
 	</script>
 	<script type="text/javascript">

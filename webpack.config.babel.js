@@ -13,7 +13,7 @@ export default env => {
     // Add in all style sheets found in the base 'src/styles' directory
     Object.assign(entry, ...glob.sync('*.styl', {cwd: 'src/styles'}).map(e => ({[`css/${e.replace('.styl', '')}`]: `./src/styles/${e}`})))
   } else {
-    Object.assign(entry, {'.tmp': glob.sync('./src/styles/*.styl').concat(glob.sync('./src/pages/**/*.pug'))})
+    Object.assign(entry, {'.tmp': glob.sync('./src/styles/*.styl').concat(glob.sync('./pages/**/*.pug'))})
   }
 
   const output = {
@@ -52,7 +52,19 @@ export default env => {
         ],
       },
     }],
-  },{
+  }, {
+    test: /\.(png)$/,
+    exclude: /node_modules/,
+    use: [
+      {
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+          outputPath: a => a.replace('assets/', ''),
+        },
+      },
+    ],
+  }, {
     test: /\.pug$/,
     exclude: /node_modules/,
     use: [
@@ -77,13 +89,18 @@ export default env => {
             },
           },
           {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
             loader: 'stylus-loader',
             options: {
               sourceMap: true,
             },
           },
         ],
-        publicPath: 'testCSS',
       }),
     }]
     // Production
@@ -98,6 +115,12 @@ export default env => {
             name: '[name].css',
           },
         },
+        {
+          loader: 'postcss-loader',
+          options: {
+            sourceMap: true,
+          }
+        },
         'stylus-loader',
       ]
     }]
@@ -105,10 +128,10 @@ export default env => {
 
   const plugins = [
     new CleanWebpackPlugin(['dist']),
-    ...glob.sync('src/pages/**/*.pug').map(page => {
+    ...glob.sync('pages/**/*.pug').map(page => {
       return new HtmlWebpackPlugin({
         template: `${page}`,
-        filename: page.replace('src/pages/', '').replace('.pug', '.html'),
+        filename: page.replace('pages/', '').replace('.pug', '.html'),
       })
     }),
   ].concat(env.development
@@ -117,6 +140,14 @@ export default env => {
     // Production
     : []
   )
+
+  const resolve = {
+    extensions: ['.js', '.styl'],
+    modules: ['node_modules', 'src'],
+    alias: {
+      assets: `${__dirname}/assets`,
+    }
+  }
 
   const stats = {}
 
@@ -137,6 +168,7 @@ export default env => {
     plugins,
     module: { rules },
     stats,
+    resolve,
     devtool: 'source-map',
     devServer,
     mode: env.production ? 'production' : 'development',

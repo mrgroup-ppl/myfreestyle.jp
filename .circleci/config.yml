@@ -19,9 +19,9 @@ jobs:
       - run:
           name: Install dependancies
           command: yarn
-      - run:
-          name: Spill git guts
-          command: cat ~/.gitconfig
+      # - run:
+      #     name: Spill git guts
+      #     command: cat ~/.gitconfig
       - save_cache:
           name: Caching node_modules
           key: v2-node_modules-{{ checksum "yarn.lock" }}
@@ -100,9 +100,10 @@ jobs:
       - run:
           name: Check Deployment
           command: |
-            ls -la
-            pwd
-            ls -la
+            apt-get update && apt-get install -y python-pip
+            pip install awscli
+            apt-get clean && apt-get autoclean
+            awscli s3 sync ./public s3://myfreestyle.jp
 
 workflows:
   version: 2

@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
 
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KC96J5Z');</script>
-<!-- End Google Tag Manager -->
+<head>
 
   <!-- Google Tag Manager -->
   <script>
-    (function(w, d, s, l, i) {
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KC96J5Z');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
         'gtm.start': new Date().getTime(),
@@ -35,12 +47,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta charset="utf-8">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>血糖測定関連製品 | 医療関係者の皆様 | アボット ジャパン</title>
+  <meta name="description" content="他の一部のウェブサイトにおいて、FreeStyleリブレについて誤解を招きかねない表現が散見されます。 本サイトがアボットの公式サイトであり、FreeStyleリブレの適正使用については、このサイトをご覧ください。">
+    <meta name="keywords" content="血糖測定関連製品, 血糖, 血糖測定, 血糖測定機, 血糖測定関連製品, 糖尿, 糖尿病, フリースタイル, プレシジョンネオ, ネオ, フリースタイルフリーダムライト, プレシジョン エクシード, フリースタイルプレシジョンプロ, プレシジョンプロ, MyFreeStyle, Neo, Lite, Xceed, PrecisionPro, diabetes, DM, diabetes-mellitus, インスリン, インスリン患者, insulin, insulin patient, ポケットランセット™, ポケットランセット, ランセット, 電極, 電極β-ケトン測定電極, プレシジョン血糖測定電極, FreeStyle Auto-Assist Neo, 自己検査用グルコース測定器">
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="../assets/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/editable.css">
   <link rel="stylesheet" href="../assets/css/reveal.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
   <!--[if IE 8]>
             <link rel="stylesheet" type="text/css" href="../assets/css/ie8.css" />
         <![endif]-->
@@ -52,6 +67,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- jquery definition -->
   <script src="../assets/js/jquery-1.11.1.min.js"></script>
   <style>
+    .page-nav li {
+      margin: auto !important;
+    }
+
     .buy_now_button {
       display: none;
     }
@@ -63,36 +82,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .compact .top-nav {
       margin-top: 0px;
     }
+
     /*marquee*/
 
     .marque_effect {
-			background-color: #000;
-			color: #fff;
-			font-size: 18px;
-			height: 40px;
-			overflow: hidden;
-			padding: 8px 0;
-			position: relative;
-		}
+      background-color: #000;
+      color: #fff;
+      font-size: 110%;
+      height: 40px;
+      overflow: hidden;
+      padding: 8px 0;
+      position: relative;
+    }
 
     .marque_effect p {
-			color: #fff;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			margin: 0;
-			text-align: center;
-			font-weight: bold;
-			/* Starting position */
-			-moz-transform: translateX(100%);
-			-webkit-transform: translateX(100%);
-			transform: translateX(100%);
-			/* Apply animation to this element */
-			-moz-animation: marque_effect 40s linear infinite;
-			-webkit-animation: marque_effect 40s linear infinite;
-			animation: marque_effect 40s linear infinite;
-			white-space: nowrap;
-		}
+      color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+      /* Starting position */
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      /* Apply animation to this element */
+      -moz-animation: marque_effect 40s linear infinite;
+      -webkit-animation: marque_effect 40s linear infinite;
+      animation: marque_effect 40s linear infinite;
+      white-space: nowrap;
+    }
+
     /* Move it (define the animation) */
 
     @-moz-keyframes marque_effect {
@@ -135,15 +156,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body>
 
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC96J5Z"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC96J5Z" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPZLGL"
-                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPZLGL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
 
 
@@ -152,22 +176,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- MENU STARTS HERE  -->
   <header class="mobile visible-xs visible-sm">
     <div class="marque_effect marq_01">
-      <p>2017年9月1日より、FreeStyleリブレが全てのインスリン患者さんを対象に保険適用されました。
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        FreeStyleリブレは、自己血糖測定間の血糖値トレンドを推定するためのものです。詳細については、添付文書をご覧ください。
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      他の一部のウェブサイトにおいて、FreeStyleリブレについて誤解を招きかねない表現が散見されます。 本サイトがアボットの公式サイトであり、FreeStyleリブレの適正使用については、このサイトをご覧ください。</p>
+      <p>2017年9月1日より、FreeStyleリブレが全てのインスリン患者さんを対象に保険適用されました。 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        FreeStyleリブレは、自己血糖測定間の血糖値トレンドを推定するためのものです。詳細については、添付文書をご覧ください。 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        他の一部のウェブサイトにおいて、FreeStyleリブレについて誤解を招きかねない表現が散見されます。 本サイトがアボットの公式サイトであり、FreeStyleリブレの適正使用については、このサイトをご覧ください。</p>
     </div>
     <nav>
       <div class="container">
         <div class="row">
           <div class="col-xs-3 text-center nopadding">
-            <a href="../" class="brand  pull-left"></a>
+            <a href="../" class="brand  pull-left">&nbsp;</a>
           </div>
           <div class="col-xs-6 text-center inline-block">
           </div>
           <div class="col-xs-3">
-            <a href="#" class="nav-toggle pull-right"><i class="fa fa-bars"></i></a>
+            <a href="#" class="nav-toggle pull-right">
+              <i class="fa fa-bars"></i>
+            </a>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -175,8 +199,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
     <div class="container-fluid" style="background:#f6cd47; box-shadow:0 3px 11px 0 rgba(0,0,0,0.15);">
       <div class="row">
-        <div class="col-xs-12 col-md-6" style="margin-top:10px; margin-bottom:10px; font-weight:600; ">
-          【公式】FreeStyleリブレオフィシャルサイト
+        <div class="col-xs-12 col-md-6 mainfont" style="">
+          <p>【公式】FreeStyleリブレオフィシャルサイト</p>
         </div>
       </div>
     </div>
@@ -186,38 +210,80 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="row">
           <div class="col-xs-12">
             <ul>
-              <li class="sub"><a href="../">ホーム</a></li>
-              <li><a title="FreeStyle リブレ" href="freestyle-libre-system.html">FreeStyle リブレ</a></li>
-              <li><a title="FreeStyle リブレ Pro" href="freestyle-libre-pro-system.html">FreeStyle リブレ Pro</a></li>
-              <li><a title="フリースタイル プレシジョンネオ" href="freestyle-precision-neo.html">フリースタイル プレシジョンネオ</a></li>
-              <li><a title="フリースタイル フリーダム ライト" href="freestyle-freedom-lite.html">フリースタイル フリーダム ライト</a></li>
-				<li class="#"><a href="../agp/">AGP</a></li>
+              <li class="sub">
+                <a href="../">ホーム</a>
+              </li>
+              <li>
+                <a title="FreeStyle リブレ" href="freestyle-libre-system.html">FreeStyle リブレ</a>
+              </li>
+              <li>
+                <a title="FreeStyle リブレ Pro" href="freestyle-libre-pro-system.html">FreeStyle リブレ Pro</a>
+              </li>
+              <li>
+                <a title="フリースタイル プレシジョンネオ" href="freestyle-precision-neo.html">フリースタイル プレシジョンネオ</a>
+              </li>
+              <li>
+                <a title="フリースタイル フリーダム ライト" href="freestyle-freedom-lite.html">フリースタイル フリーダム ライト</a>
+              </li>
+              <li class="sub">
+                <a href="../agp/">AGP</a>
+              </li>
+              <li class="sub">
+                <a href="../isf/">ISFとは</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
+    </div>
+	  
+	  <div class="subnav">
+      <div class="container">
+        <div class="black">
+          <ul class="list-inline">
+            <li>
+              <a href="javascript:void(0)" class="document11">特長</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="faqs11"> 資料</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="case11">添付文書</a>
+            </li>
+            <li style="margin-right:5px;">
+              <a href="javascript:void(0)" class="related11">電極</a>
+            </li>
+          
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
     </div>
 
   </header>
   <header class="hidden-xs hidden-sm">
     <div class="marque_effect marq_01">
       <p>
-        2017年9月1日より、FreeStyleリブレが全てのインスリン患者さんを対象に保険適用されました。
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          FreeStyleリブレは、自己血糖測定間の血糖値トレンドを推定するためのものです。詳細については、添付文書をご覧ください。
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      他の一部のウェブサイトにおいて、FreeStyleリブレについて誤解を招きかねない表現が散見されます。 本サイトがアボットの公式サイトであり、FreeStyleリブレの適正使用については、このサイトをご覧ください。</p>
+        2017年9月1日より、FreeStyleリブレが全てのインスリン患者さんを対象に保険適用されました。 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        FreeStyleリブレは、自己血糖測定間の血糖値トレンドを推定するためのものです。詳細については、添付文書をご覧ください。 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        他の一部のウェブサイトにおいて、FreeStyleリブレについて誤解を招きかねない表現が散見されます。 本サイトがアボットの公式サイトであり、FreeStyleリブレの適正使用については、このサイトをご覧ください。</p>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-2">
-          <a href="../" class="brand "></a>
+          <a href="../" class="brand ">&nbsp;</a>
         </div>
 
         <div class="col-xs-12 col-md-10 top-nav">
           <ul id="menuu" class="list-unstyled head" style="width:100%;">
-            <li><a href="http://jp.abbott-diabetescare.com/" target="_blank">
-							<img src="../assets/images/logo.png" style="height:40px;width:auto;text-align:right;float:right;margin-top:20px;" alt="img-name" /></a></li>
+            <li>
+              <a href="http://jp.abbott-diabetescare.com/" target="_blank">
+                <img src="../assets/images/logo.png" style="height:40px;width:auto;text-align:right;float:right;margin-top:20px;" alt="img-name"
+                />
+              </a>
+            </li>
           </ul>
           <div class="clearfix"></div>
         </div>
@@ -232,21 +298,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="col-xs-12 col-md-6">
             <nav id="menu">
               <ul class="clearfix">
-                <li class="sub"><a href="../">ホーム</a></li>
-                <li class="sub"><a href="#">製品情報</a>
+                <li class="sub">
+                  <a href="../">ホーム</a>
+                </li>
+                <li class="sub">
+                  <a href="#">製品情報</a>
                   <ul class="sub-menu">
-                    <li><a title="FreeStyle リブレ" href="freestyle-libre-system.html">FreeStyle リブレ</a></li>
-                    <li><a title="FreeStyle リブレ Pro" href="freestyle-libre-pro-system.html">FreeStyle リブレ Pro</a></li>
-                    <li><a title="フリースタイル プレシジョンネオ" href="freestyle-precision-neo.html">フリースタイル プレシジョンネオ</a></li>
-                    <li><a title="フリースタイル フリーダム ライト" href="freestyle-freedom-lite.html">フリースタイル フリーダム ライト</a></li>
+                    <li>
+                      <a title="FreeStyle リブレ" href="freestyle-libre-system.html">FreeStyle リブレ</a>
+                    </li>
+                    <li>
+                      <a title="FreeStyle リブレ Pro" href="freestyle-libre-pro-system.html">FreeStyle リブレ Pro</a>
+                    </li>
+                    <li>
+                      <a title="フリースタイル プレシジョンネオ" href="freestyle-precision-neo.html">フリースタイル プレシジョンネオ</a>
+                    </li>
+                    <li>
+                      <a title="フリースタイル フリーダム ライト" href="freestyle-freedom-lite.html">フリースタイル フリーダム ライト</a>
+                    </li>
                   </ul>
                 </li>
-				  <li class="#"><a href="../agp/">AGP</a></li>
+                <li class="sub agplocal">
+                  <a href="../agp/">AGP</a>
+                </li>
+                <li class="sub">
+                  <a href="../isf/">ISFとは</a>
+                </li>
               </ul>
             </nav>
           </div>
         </div>
       </div>
+    </div>
+	  
+	  <div class="subnav">
+      <div class="container">
+        <div class="black">
+          <ul class="list-inline pull-right">
+            <li>
+              <a href="javascript:void(0)" class="document11">特長</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="faqs11"> 資料</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="case11">添付文書</a>
+            </li>
+            <li style="margin-right:5px;">
+              <a href="javascript:void(0)" class="related11">電極</a>
+            </li>
+          
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
     </div>
   </header>
 
@@ -256,23 +363,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="page-header-grey">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12">
-            <h2 class="has-border-bottom pb20">フリースタイルフリーダム<sup>ＴＭ</sup>　ライト</h2>
+          <div class="col-xs-12 gap6">
+            <h1 class="has-border-bottom pb20">フリースタイルフリーダム
+              <sup>ＴＭ</sup>　ライト</h1>
             <h4 class="small mb16">概要</h4>
             <p>0.3μLという世界最小レベルの血液量、そして60秒以内なら点着し直すことができるので、１回目の血液量が不足しても慌てることなくスムーズに血糖測定が可能です。</p>
-            <div class="has-border-bottom"> </div>
-            <div class="page-nav-wrapper">
-              <ul class="page-nav">
-                <li class="active"><a href="#features"><img src="../assets/img/icon-page-nav-features.png" alt="" /><span>特長</span></a></li>
-                <li><a href="#test-strips"><img src="../assets/img/icon-page-nav-test-strips.png" alt="" /><span>電極</span></a></li>
-                <!-- Don't have content for this now <li><a href="#data-management"><img src="../assets/img/icon-page-nav-data-management.png" alt="" /><span>データ管理</span></a></li> -->
-                <!--	<li><a href="#accessories"><img src="../assets/img/icon-page-nav-accessories.png" alt="" /><span>
-                                            アクセサリ</span></a></li> -->
-                <!--	<li><a href="#faq"><img src="../assets/img/icon-page-nav-faq.png" alt="" /><span>よくある質問</span></a></li>-->
-                <li><a href="../assets/pdf3/2.Lite-ProductBrochure.pdf" target="_blank"><img src="../assets/img/icon-page-nav-pdf.png" alt="" /><span>資料</span></a></li>
-                <li><a href="https://freestyleserver.com/distribution/fxaa20.aspx?product=ifu_art23181-001&version=latest&os=all&region=jp&language=xx_yy" target="_blank"><img src="../assets/img/icon-page-nav-accessories.png" alt=""><span>添付文書</span></a></li>
-              </ul>
-            </div>
+            
+            
           </div>
           <!--/ .col-xs-12 -->
         </div>
@@ -284,11 +381,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="tab-content-head"></div>
     <div class="product-benefits mt52 product-element active" id="features">
       <div class="container">
+		  <div class="title document12">
+                <span>
+                  <span>
+                    <strong>特長</strong>
+                  </span>
+                </span>
+              </div>
         <div class="row category">
           <div class="col-xs-12">
             <ul class="f-view">
-              <li class="active"><a href="#benefit1">新形状「ZipWik®」</a></li>
-              <li><a href="#benefit2">名称および特徴</a></li>
+              <li class="active">
+                <a href="#benefit1">新形状「ZipWik®」</a>
+              </li>
+              <li>
+                <a href="#benefit2">名称および特徴</a>
+              </li>
             </ul>
           </div>
           <!--/ .col-xs-12 -->
@@ -296,9 +404,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!--/ .row -->
         <div class="row content">
           <div class="col-xs-12">
-            <div class="content-item active" id="benefit1"> <img src="../assets/img/benefit-meter-freedom-1_2_1-104.jpg" alt="Key Features" class="img-responsive" /> </div>
+            <div class="content-item active" id="benefit1">
+              <img src="../assets/img/benefit-meter-freedom-1_2_1-104.jpg" alt="Key Features" class="img-responsive" /> </div>
             <!--/ .content-item -->
-            <div class="content-item" id="benefit2"> <img src="../assets/img/product_features_3_1-104.jpg" alt="Key Features" class="img-responsive" /> </div>
+            <div class="content-item" id="benefit2">
+              <img src="../assets/img/product_features_3_1-104.jpg" alt="Key Features" class="img-responsive" /> </div>
             <!--/ .content-item -->
           </div>
           <!--/ .col-xs-12 -->
@@ -310,16 +420,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!--/ .product-benefits -->
 
     <script>
-      $(document).ready(function() {
+      $(document).ready(function () {
         if ($('#features').length > 0) {
-          $('#features .category ul > li > a').each(function(index, value) {
-            $(this).click(function() {
+          $('#features .category ul > li > a').each(function (index, value) {
+            $(this).click(function () {
               var href = $(this).attr('href');
               $('#features .category ul > li').removeClass('active');
               $(this).parent().addClass('active');
-              $('#features .content .content-item.active').stop().fadeOut('fast', function() {
+              $('#features .content .content-item.active').stop().fadeOut('fast', function () {
                 $('#features .content .content-item').removeClass('active');
-                $('#features .content .content-item' + href).stop().fadeIn('fast', function() {
+                $('#features .content .content-item' + href).stop().fadeIn('fast', function () {
                   $(this).addClass('active');
                 });
               });
@@ -338,16 +448,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         startSetInterval();
 
         // hover behaviour
-        $('#features ul.f-view li a').hover(function() {
+        $('#features ul.f-view li a').hover(function () {
           clearInterval(timer);
-        }, function() {
+        }, function () {
           startSetInterval();
         });
 
         // hover behaviour
-        $('#features .content-item img').hover(function() {
+        $('#features .content-item img').hover(function () {
           clearInterval(timer);
-        }, function() {
+        }, function () {
           startSetInterval();
         });
 
@@ -365,14 +475,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
       });
     </script>
+	  
+	  <section style="padding:51px 0 50px!important; background:#f9f9f9;">
+		  <div class="container">
+	  <div class="faqs12">
+                <a href="../assets/pdf3/2.Lite-ProductBrochure.pdf" type='application/pdf'>
+                  <h3 class="title mb24">
+                    <span>
+                      <strong>資料</strong>
+                    </span>
+                    <br><span style="color:#888 !important; font-size: 50% !important">7.2MB PDF</span>
+                  </h3>
+                </a>
+                <div class="clearfix"></div>
+              </div>
+		  <div class="case12">
+                <a href="https://freestyleserver.com/distribution/fxaa20.aspx?product=ifu_art23181-001&version=latest&os=all&region=jp&language=xx_yy">
+                  <h3 class="title mb24">
+                    <span>
+                      <strong>添付文書</strong>
+                    </span>
+                  </h3>
+                </a>
+                <div class="clearfix"></div>
+              </div>
+			  </div>
+</section>
 
-
-    <div class="product-showcase page-element product-element  tstrp-sec " id="test-strips">
+    <div class="product-showcase page-element tstrp-sec related12" id="test-strips">
       <div class="container">
         <div class="row section-title">
           <div class="col-xs-6 tst-col">
             <div class="tstrp-view">
-              <div class="title"><span style="color:#FF8C00;"><span style="font-size: 18px;"><strong>電極</strong></span></span>
+              <div class="title" style="margin-top:30px!important;">
+                <span>
+                  <span>
+                    <strong>電極</strong>
+                  </span>
+                </span>
               </div>
 
               <div class="title">&nbsp;</div>
@@ -400,9 +540,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <!--/ .col-xs-12 -->
         </div>
         <!--/ .row -->
-        <div class="row" style="padding-bottom: 15px;">
+        <div class="row" style="margin-bottom: 75px;margin-top: 55px;">
           <img alt="Strips Usage" src="../assets/img/fsfl_tcycle_2_1.png" class="tcycle" />
         </div>
+		  
       </div>
       <!--/ .container -->
     </div>
@@ -410,25 +551,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-    <div class="product-showcase page-element product-element" id="data-management">
+    <div class="product-showcase page-element product-element " id="data-management">
       <div class="caption alt-orange mt64">
         <div class="container">
           <div class="row">
-            <div class="col-xs-6 col-md-6 dmgt-col"><img src="../assets/img/freestyle-autoassist-neo_4.gif" alt="" class="img-responsive"></div>
+            <div class="col-xs-6 col-md-6 dmgt-col">
+              <img src="../assets/img/freestyle-autoassist-neo_4.gif" alt="" class="img-responsive">
+            </div>
             <div class="col-xs-6 col-md-5 dmgt-col">
-              <p style='font-size:16px;'>良質なインスリン治療をサポートするデータ管理ソフト</p>
+              <p style='font-size:100%;'>良質なインスリン治療をサポートするデータ管理ソフト</p>
 
-              <p style='font-size:16px;'><span style="font-size:16px;"><strong><span style="color:#FF8C00;">FreeStyle Auto-Assist Neo</span></strong>
+              <p style='font-size:100%;'>
+                <span style="font-size:100%;">
+                  <strong>
+                    <span style="color:#FF8C00;">FreeStyle Auto-Assist Neo</span>
+                  </strong>
                 </span>
               </p>
 
-              <p style='font-size:16px;'>データ管理、およびフリースタイルプレシジョンネオのカスタム設定がすばやく簡単にできます。</p>
+              <p style='font-size:100%;'>データ管理、およびフリースタイルプレシジョンネオのカスタム設定がすばやく簡単にできます。</p>
 
-              <p style='font-size:16px;'>フリースタイル オートアシスト ネオ ソフトウェアは、インスリン投与設定、複数のインスリン設定テンプレートの保存、視覚的なチャートの生成が行え、さらに血糖の傾向やインスリン投与状況、その他イベントについての洞察を示します。</p>
+              <p style='font-size:100%;'>フリースタイル オートアシスト ネオ ソフトウェアは、インスリン投与設定、複数のインスリン設定テンプレートの保存、視覚的なチャートの生成が行え、さらに血糖の傾向やインスリン投与状況、その他イベントについての洞察を示します。</p>
 
               <p>&nbsp;</p>
 
-              <p style='font-size:16px;'> フリースタイル オートアシスト ネオ ソフトウェアをダウンロードし、USBケーブルでお持ちの測定器とコンピュータを接続してください。ソフトウェアのインストール手順が自動的に開始します。</p>
+              <p style='font-size:100%;'> フリースタイル オートアシスト ネオ ソフトウェアをダウンロードし、USBケーブルでお持ちの測定器とコンピュータを接続してください。ソフトウェアのインストール手順が自動的に開始します。</p>
               <a href="#" target="_blank" class="learn-more-btn mbtn btn btn-ghost-orange ">ダウンロードする</a>
               <p>Windows XP、Windows 7、およびWindows 8用のダウンロード</p>
             </div>
@@ -477,15 +624,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="col-xs-12 col-md-4">
             <div class="faq-questions has-slimscroll">
               <ul>
-                <li class="active"><a href="#faq1">Which test strips should I use with the FreeStyle Freedom Lite meter?</a></li>
-                <li><a href="#faq2">What is included in the FreeStyle Freedom Lite retail system kit?</a></li>
-                <li><a href="#faq3">How do I set the time and date on the FreeStyle Freedom Lite meter?</a></li>
-                <li><a href="#faq4">Can the FreeStyle Freedom Lite system be used to test on alternate sites?</a></li>
-                <li><a href="#faq5">What is the glucose result range for the FreeStyle Freedom Lite system?</a></li>
-                <li><a href="#faq6">Can I upload results from the FreeStyle Freedom Lite system into a data management system?</a></li>
-                <li><a href="#faq7">How accurate are the FreeStyle Lite test strips?</a></li>
-                <li><a href="#faq8">How do the ZipWik tabs work on the FreeStyle Lite test strips?</a></li>
-                <li><a href="#faq9">Is coding required with the FreeStyle Freedom Lite meter?</a></li>
+                <li class="active">
+                  <a href="#faq1">Which test strips should I use with the FreeStyle Freedom Lite meter?</a>
+                </li>
+                <li>
+                  <a href="#faq2">What is included in the FreeStyle Freedom Lite retail system kit?</a>
+                </li>
+                <li>
+                  <a href="#faq3">How do I set the time and date on the FreeStyle Freedom Lite meter?</a>
+                </li>
+                <li>
+                  <a href="#faq4">Can the FreeStyle Freedom Lite system be used to test on alternate sites?</a>
+                </li>
+                <li>
+                  <a href="#faq5">What is the glucose result range for the FreeStyle Freedom Lite system?</a>
+                </li>
+                <li>
+                  <a href="#faq6">Can I upload results from the FreeStyle Freedom Lite system into a data management system?</a>
+                </li>
+                <li>
+                  <a href="#faq7">How accurate are the FreeStyle Lite test strips?</a>
+                </li>
+                <li>
+                  <a href="#faq8">How do the ZipWik tabs work on the FreeStyle Lite test strips?</a>
+                </li>
+                <li>
+                  <a href="#faq9">Is coding required with the FreeStyle Freedom Lite meter?</a>
+                </li>
               </ul>
             </div>
             <!--/ .faq-questions -->
@@ -497,7 +662,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>The FreeStyle Freedom Lite meter is intended to be used with FreeStyle Lite blood glucose test strips only.</p>
               </div>
               <div class="item" id="faq2">
-                <p>FreeStyle Freedom Lite retail system kit includes:</p><br>
+                <p>FreeStyle Freedom Lite retail system kit includes:</p>
+                <br>
                 <ul>
                   <li>1 FreeStyle Freedom Lite meter</li>
                   <li>1 Lancing device</li>
@@ -508,11 +674,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
               <!--/ .item -->
               <div class="item" id="faq3">
-                <p>Watch the <a href="https://www.youtube.com/watch?v=1GYG7gDE0Dw&amp;feature=youtu.be&amp;autoplay=1&amp;rel=0" target="_blank">Quick Start video</a></p>
+                <p>Watch the
+                  <a href="https://www.youtube.com/watch?v=1GYG7gDE0Dw&amp;feature=youtu.be&amp;autoplay=1&amp;rel=0"
+                    target="_blank">Quick Start video</a>
+                </p>
               </div>
               <!--/ .item -->
               <div class="item" id="faq4">
-                <p>Yes, you can test on upper arms and palms. However, when testing for hypoglycemia or if you have hypoglycemia unawareness, we recommend testing on the finger only.</p>
+                <p>Yes, you can test on upper arms and palms. However, when testing for hypoglycemia or if you have hypoglycemia
+                  unawareness, we recommend testing on the finger only.</p>
               </div>
               <!--/ .item -->
               <div class="item" id="faq5">
@@ -524,15 +694,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
               <!--/ .item -->
               <div class="item" id="faq7">
-                <p>FreeStyle Lite test strips are accurate. The FreeStyle Lite test strips with GDH-FAD chemistry minimize interference from 22 common substances, such as acetaminophen, ascorbic acid (vitamin C), uric acid, maltose and galactose. ⱡ<br>
-                  <i
-                    style="font-size:11px; color:#666;">ⱡ Do not use during xylose absorption testing. Study conducted in 2009. Data on file, Abbott Diabetes Care Inc.</i>
+                <p>FreeStyle Lite test strips are accurate. The FreeStyle Lite test strips with GDH-FAD chemistry minimize interference
+                  from 22 common substances, such as acetaminophen, ascorbic acid (vitamin C), uric acid, maltose and galactose.
+                  ⱡ
+                  <br>
+                  <i style="font-size:90%; color:#666;">ⱡ Do not use during xylose absorption testing. Study conducted in 2009. Data on file, Abbott Diabetes Care
+                    Inc.</i>
                 </p>
               </div>
               <!--/ .item -->
               <div class="item" id="faq8">
-                <p>The tapered ZipWik tabs work by breaking the surface tension of the blood sample (meniscus), allowing easy blood application and fast uptake onto the test strip. The result is an easy‐to‐use test strip that is designed to improve the overall
-                  blood glucose testing experience.</p>
+                <p>The tapered ZipWik tabs work by breaking the surface tension of the blood sample (meniscus), allowing easy
+                  blood application and fast uptake onto the test strip. The result is an easy‐to‐use test strip that is
+                  designed to improve the overall blood glucose testing experience.</p>
               </div>
               <!--/ .item -->
               <div class="item" id="faq9">
@@ -555,25 +729,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="row">
         <div class="col-xs-12 col-md-1">
           <a href="http://www.abbott.com/" class="brand">
-                            <img src="../assets/img/logo-abbott-footer.png" alt="Abbott Logo" class="">
-                        </a>
+            <img src="../assets/img/logo-abbott-footer.png" alt="Abbott Logo" class="">
+          </a>
         </div>
         <!--/ .col-xs-12 -->
         <div class="col-xs-12 col-md-11">
-          <p class="copyright">© 2017 Abbott. All Rights Reserved. DM2017-001 Ver 1.8 11/17 詳細については法律条項をご覧ください。
+          <p class="copyright">© 2018 Abbott. All Rights Reserved. DM2018-001 Ver 1.4 05/18 詳細については法律条項をご覧ください。
             <br> 特に記述のない限り、このインターネットサイトで使用されている製品名およびサービス名は、アボットまたはその子会社や関連会社が所有またはライセンス供与を受けている製品名およびサービス名です。本サイトのアボットの商標、商標名、トレードドレスは、書面による事前の許可がない限り、当社の製品またはサービスを特定する目的以外での使用を禁じます。
           </p>
         </div>
         <!--/ .col-xs-12 -->
         <!-- Footer Links 00083 -->
         <div class="col-xs-12 col-md-12 links-style">
-          <div class="ftr-lgl" style="display:none;">&copy; 2016 Abbott. All Rights Reserved.</div>
+          <div class="ftr-lgl" style="display:none;">&copy; 2018 Abbott. All Rights Reserved.</div>
           <div class="col-xs-6 col-md-6 text-left">
             <a href="http://www.abbott.co.jp/privacy-policy.html" target="_blank" id="ftr-privacy">オンラインプライバシーポリシー</a> &nbsp;|&nbsp;
             <a href="http://www.abbott.co.jp/online-terms-and-conditions.html" target="_blank" id="ftr-terms">オンライン利用規約</a>
           </div>
           <div class="col-xs-6 col-md-6">
-            <div class="veeva">ABJ DM2017-001 Rev 1.9 12/17</div>
+            <div class="veeva">DM2018-001 Ver 1.4 05/18</div>
           </div>
         </div>
         <!-- Footer Links End 00083 -->
@@ -599,7 +773,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="../assets/js/jquery.flexslider-min.js"></script>
   <script>
     $(document).ready(() => {
-      $(".page-nav li a").click(function() {
+      $(".page-nav li a").click(function () {
         setTimeout(() => {
           $("html, body").animate({
             scrollTop: $('#tab-content-head').offset().top - 120
@@ -623,13 +797,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       url: '//freegeoip.net/json/',
       type: 'POST',
       dataType: 'jsonp',
-      success: function(location) {
+      success: function (location) {
         // If the visitor is browsing from outside US/Canada.
         console.log(location.country_code);
         console.log(location.ip);
         var user_ip = location.ip;
-        var array_ip = ['167.1.171.21', '167.1.174.21', '167.1.173.21', '216.21.167.198', '54.77.182.89', '54.77.182.92', '54.77.183.5', '54.77.183.29', '54.77.183.107', '54.77.183.155', '54.77.183.182', '54.77.184.118', '54.77.184.134',
-          '54.77.184.226', '54.77.184.249', '54.77.184.67', '82.71.246.3', '134.222.104.250', '213.71.179.110', '139.4.72.210', '134.222.105.22', '42.61.7.246', '202.94.122.78', '180.169.79.146', '12.250.122.26', '50.203.223.170'
+        var array_ip = ['167.1.171.21', '167.1.174.21', '167.1.173.21', '216.21.167.198', '54.77.182.89',
+          '54.77.182.92', '54.77.183.5', '54.77.183.29', '54.77.183.107', '54.77.183.155', '54.77.183.182',
+          '54.77.184.118', '54.77.184.134',
+          '54.77.184.226', '54.77.184.249', '54.77.184.67', '82.71.246.3', '134.222.104.250', '213.71.179.110',
+          '139.4.72.210', '134.222.105.22', '42.61.7.246', '202.94.122.78', '180.169.79.146', '12.250.122.26',
+          '50.203.223.170'
         ];
         //  abbott=='130.36.0.0'
         var part_ip = user_ip.split(".");
@@ -641,13 +819,95 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         } else if (location.country_code == 'US' || location.country_code == 'CA') {
           // Redirect him to myfreestyle.com.
           console.log('Redirect him to myfreestyle.com');
-          window.top.location.foobar = 'https://www.myfreestyle.com/';
+          window.top.location.href = 'https://www.myfreestyle.com/';
         } else {
           console.log("IP not found");
         }
       }
     });
   </script>
+	
+	
+	
+	
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".document11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.document12').offset().top - 260
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.document12').offset().top - 230
+            })
+          }
+        })
+      })
+    </script>
+
+    
+
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".faqs11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.faqs12').offset().top - 250
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.faqs12').offset().top - 240
+            })
+          }
+        })
+      })
+    </script>
+   
+
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".case11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.case12').offset().top - 250
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.case12').offset().top - 235
+            })
+          }
+        })
+      })
+    </script>
+    
+
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".related11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.related12').offset().top - 230
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.related12').offset().top - 210
+            })
+          }
+        })
+      })
+    </script>
+	
+	
+	
 </body>
 
 </html>

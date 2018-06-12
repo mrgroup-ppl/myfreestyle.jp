@@ -2,18 +2,28 @@
 <html lang="ja">
 
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KC96J5Z');</script>
-<!-- End Google Tag Manager -->
-
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KC96J5Z');
+  </script>
+  <!-- End Google Tag Manager -->
 
   <!-- Google Tag Manager -->
   <script>
-    (function(w, d, s, l, i) {
+    (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
         'gtm.start': new Date().getTime(),
@@ -33,17 +43,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>血糖測定関連製品 | 医療関係者の皆様 | アボット ジャパン</title>
+  <meta name="description" content="他の一部のウェブサイトにおいて、FreeStyleリブレについて誤解を招きかねない表現が散見されます。 本サイトがアボットの公式サイトであり、FreeStyleリブレの適正使用については、このサイトをご覧ください。">
+    <meta name="keywords" content="血糖測定関連製品, 血糖, 血糖測定, 血糖測定機, 血糖測定関連製品, 糖尿, 糖尿病, フリースタイル, プレシジョンネオ, ネオ, フリースタイルフリーダムライト, プレシジョン エクシード, フリースタイルプレシジョンプロ, プレシジョンプロ, MyFreeStyle, Neo, Lite, Xceed, PrecisionPro, diabetes, DM, diabetes-mellitus, インスリン, インスリン患者, insulin, insulin patient, ポケットランセット™, ポケットランセット, ランセット, 電極, 電極β-ケトン測定電極, プレシジョン血糖測定電極, FreeStyle Auto-Assist Neo, 自己検査用グルコース測定器">
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="../assets/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/editable.css">
   <link rel="stylesheet" href="../assets/css/reveal.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
   <!--[if IE 8]>
             <link rel="stylesheet" type="text/css" href="../assets/css/ie8.css" />
         <![endif]-->
@@ -69,7 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .test(navigator.userAgent.substr(0, 4)))
       isMobile = true;
 
-    jQuery(document).ready(function() {
+    jQuery(document).ready(function () {
       // isMobile = true;
       if (isMobile) {
         jQuery(".vimeoVideo").show();
@@ -84,6 +96,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </script>
 
   <style>
+    .page-nav li {
+      margin: auto !important;
+    }
+
     .displaynone {
       display: none;
     }
@@ -103,36 +119,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .compact .top-nav {
       margin-top: 0px;
     }
+
     /*marquee*/
 
     .marque_effect {
-			background-color: #000;
-			color: #fff;
-			font-size: 18px;
-			height: 40px;
-			overflow: hidden;
-			padding: 8px 0;
-			position: relative;
-		}
+      background-color: #000;
+      color: #fff;
+      font-size: 110%;
+      height: 40px;
+      overflow: hidden;
+      padding: 8px 0;
+      position: relative;
+    }
+
+    .btn {
+      background-color: transparent;
+      color: #337ab7;
+      margin-left: -12px;
+      margin-top: -17px;
+    }
+
+    .btn:hover {
+      background-color: transparent;
+      color: #23527c;
+      margin-left: -12px;
+      margin-top: -17px;
+    }
+
+    .btn:visited {
+      background-color: transparent;
+      color: #337ab7;
+    }
+
+    .dropdown-menu>li>a {
+      color: #337ab7;
+    }
+
+    .dropdown-menu>li>a:hover {
+      color: #23527c;
+    }
 
     .marque_effect p {
-			color: #fff;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			margin: 0;
-			text-align: center;
-			font-weight: bold;
-			/* Starting position */
-			-moz-transform: translateX(100%);
-			-webkit-transform: translateX(100%);
-			transform: translateX(100%);
-			/* Apply animation to this element */
-			-moz-animation: marque_effect 40s linear infinite;
-			-webkit-animation: marque_effect 40s linear infinite;
-			animation: marque_effect 40s linear infinite;
-			white-space: nowrap;
-		}
+      color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+      /* Starting position */
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      /* Apply animation to this element */
+      -moz-animation: marque_effect 40s linear infinite;
+      -webkit-animation: marque_effect 40s linear infinite;
+      animation: marque_effect 40s linear infinite;
+      white-space: nowrap;
+    }
+
     /* Move it (define the animation) */
 
     @-moz-keyframes marque_effect {
@@ -184,7 +229,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     .video-thumbs ul li img {
-      width: 260px;
+      width: 275px;
     }
 
     .activeVideo {
@@ -195,6 +240,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .video-thumbs ul li iframe {
       display: none;
     }
+
     /*.video-thumbs ul{padding:0 25px;}*/
 
     .video-thumbs {
@@ -240,47 +286,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     @media screen and (max-width: 400px) {
       .vimeoVideo {
         height: 151px;
+		  border: 1px solid white!important;
       }
       .vimeoBigVideo {
         height: 250px;
+		  border: 1px solid white!important;
       }
     }
 
     @media screen and (max-width: 375px) {
       .vimeoVideo {
         height: 140px;
+		  border: 1px solid white!important;
       }
       .vimeoBigVideo {
         height: 200px;
+		  border: 1px solid white!important;
       }
     }
 
     @media screen and (max-width: 320px) {
       .vimeoVideo {
-        height: 121px;
+        height: 130px;
+		  border: 1px solid white!important;
       }
     }
 
     .openModal {
       cursor: pointer
     }
-
   </style>
 </head>
 
 <body>
 
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC96J5Z"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe title="vime video" src="https://www.googletagmanager.com/ns.html?id=GTM-KC96J5Z" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPZLGL"
-                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe title="vime video" src="https://www.googletagmanager.com/ns.html?id=GTM-NPZLGL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
 
 
@@ -289,22 +340,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <header class="mobile visible-xs visible-sm">
     <div class="marque_effect marq_01">
       <p>
-        2017年9月1日より、FreeStyleリブレが全てのインスリン患者さんを対象に保険適用されました。
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          FreeStyleリブレは、自己血糖測定間の血糖値トレンドを推定するためのものです。詳細については、添付文書をご覧ください。
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      他の一部のウェブサイトにおいて、FreeStyleリブレについて誤解を招きかねない表現が散見されます。 本サイトがアボットの公式サイトであり、FreeStyleリブレの適正使用については、このサイトをご覧ください。</p>
+        2017年9月1日より、FreeStyleリブレが全てのインスリン患者さんを対象に保険適用されました。 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        FreeStyleリブレは、自己血糖測定間の血糖値トレンドを推定するためのものです。詳細については、添付文書をご覧ください。 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        他の一部のウェブサイトにおいて、FreeStyleリブレについて誤解を招きかねない表現が散見されます。 本サイトがアボットの公式サイトであり、FreeStyleリブレの適正使用については、このサイトをご覧ください。</p>
     </div>
     <nav>
       <div class="container">
         <div class="row">
           <div class="col-xs-3 text-center nopadding">
-            <a href="../" class="brand  pull-left"></a>
+            <a href="../" class="brand  pull-left">&nbsp;</a>
           </div>
           <div class="col-xs-6 text-center inline-block">
           </div>
           <div class="col-xs-3">
-            <a href="#" class="nav-toggle pull-right"><i class="fa fa-bars"></i></a>
+            <a href="#" class="nav-toggle pull-right">
+              <i class="fa fa-bars"></i>
+            </a>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -312,8 +363,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
     <div class="container-fluid" style="background:#f6cd47; box-shadow:0 3px 11px 0 rgba(0,0,0,0.15);">
       <div class="row">
-        <div class="col-xs-12 col-md-6" style="margin-top:10px; margin-bottom:10px; font-weight:600; ">
-          【公式】FreeStyleリブレオフィシャルサイト
+        <div class="col-xs-12 col-md-6 mainfont" style="">
+          <p>【公式】FreeStyleリブレオフィシャルサイト</p>
         </div>
       </div>
     </div>
@@ -323,38 +374,98 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="row">
           <div class="col-xs-12">
             <ul>
-              <li class="sub"><a href="../">ホーム</a></li>
-              <li><a title="FreeStyle リブレ" href="freestyle-libre-system.html">FreeStyle リブレ</a></li>
-              <li><a title="FreeStyle リブレ Pro" href="freestyle-libre-pro-system.html">FreeStyle リブレ Pro</a></li>
-              <li><a title="フリースタイル プレシジョンネオ" href="freestyle-precision-neo.html">フリースタイル プレシジョンネオ</a></li>
-              <li><a title="フリースタイル フリーダム ライト" href="freestyle-freedom-lite.html">フリースタイル フリーダム ライト</a></li>
-				 <li class="#"><a href="../agp/">AGP</a></li>
+              <li class="sub">
+                <a href="../">ホーム</a>
+              </li>
+              <li>
+                <a title="FreeStyle リブレ" href="freestyle-libre-system.html">FreeStyle リブレ</a>
+              </li>
+              <li>
+                <a title="FreeStyle リブレ Pro" href="freestyle-libre-pro-system.html">FreeStyle リブレ Pro</a>
+              </li>
+              <li>
+                <a title="フリースタイル プレシジョンネオ" href="freestyle-precision-neo.html">フリースタイル プレシジョンネオ</a>
+              </li>
+              <li>
+                <a title="フリースタイル フリーダム ライト" href="freestyle-freedom-lite.html">フリースタイル フリーダム ライト</a>
+              </li>
+              <li class="sub">
+                <a href="../agp/">AGP</a>
+              </li>
+              <li class="sub">
+                <a href="../isf/">ISFとは</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
+    </div>
+	  
+	  <div class="subnav">
+      <div class="container">
+        <div class="black">
+          <ul class="list-inline">
+            <li>
+              <a href="javascript:void(0)" class="video11">特長</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="systemreq11"> ビデオ</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="AGP11">AGP</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="product11">シミュレータ</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flash11">添付文書</a>
+            </li>
+            
+            <li>
+              <a href="javascript:void(0)" class="document11">資料</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="related11">関連資材</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="case11">ケースレポート</a>
+            </li>
+			  <li>
+              <a href="javascript:void(0)" class="package11">データ管理</a>
+            </li>
+            <li style=" margin-right:10px; padding-right:0px;">
+              <a href="javascript:void(0)" class="faqs11">よくある質問</a>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
     </div>
 
   </header>
   <header class="hidden-xs hidden-sm">
     <div class="marque_effect marq_01">
       <p>
-        2017年9月1日より、FreeStyleリブレが全てのインスリン患者さんを対象に保険適用されました。
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          FreeStyleリブレは、自己血糖測定間の血糖値トレンドを推定するためのものです。詳細については、添付文書をご覧ください。
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      他の一部のウェブサイトにおいて、FreeStyleリブレについて誤解を招きかねない表現が散見されます。 本サイトがアボットの公式サイトであり、FreeStyleリブレの適正使用については、このサイトをご覧ください。</p>
+        2017年9月1日より、FreeStyleリブレが全てのインスリン患者さんを対象に保険適用されました。 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        FreeStyleリブレは、自己血糖測定間の血糖値トレンドを推定するためのものです。詳細については、添付文書をご覧ください。 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        他の一部のウェブサイトにおいて、FreeStyleリブレについて誤解を招きかねない表現が散見されます。 本サイトがアボットの公式サイトであり、FreeStyleリブレの適正使用については、このサイトをご覧ください。</p>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-2">
-          <a href="../" class="brand "></a>
+          <a href="../" class="brand ">&nbsp;</a>
         </div>
 
         <div class="col-xs-12 col-md-10 top-nav">
           <ul id="menuu" class="list-unstyled head" style="width:100%;">
-            <li><a href="http://jp.abbott-diabetescare.com/" target="_blank">
-							<img src="../assets/images/logo.png" style="height:40px;width:auto;text-align:right;float:right;margin-top:20px;" alt="img-name" /></a></li>
+            <li>
+              <a href="http://jp.abbott-diabetescare.com/" target="_blank">
+                <img src="../assets/images/logo.png" style="height:40px;width:auto;text-align:right;float:right;margin-top:20px;" alt="Libre Pro Examroom"
+                />
+              </a>
+            </li>
           </ul>
           <div class="clearfix"></div>
         </div>
@@ -369,22 +480,85 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="col-xs-12 col-md-6">
             <nav id="menu">
               <ul class="clearfix">
-                <li class="sub"><a href="../">ホーム</a></li>
-                <li class="sub"><a href="#">製品情報</a>
+                <li class="sub">
+                  <a href="../">ホーム</a>
+                </li>
+                <li class="sub">
+                  <a href="#">製品情報</a>
                   <ul class="sub-menu">
-                    <li><a title="FreeStyle リブレ" href="freestyle-libre-system.html">FreeStyle リブレ</a></li>
-                    <li><a title="FreeStyle リブレ Pro" href="freestyle-libre-pro-system.html">FreeStyle リブレ Pro</a></li>
-                    <li><a title="フリースタイル プレシジョンネオ" href="freestyle-precision-neo.html">フリースタイル プレシジョンネオ</a></li>
-                    <li><a title="フリースタイル フリーダム ライト" href="freestyle-freedom-lite.html">フリースタイル フリーダム ライト</a></li>
+                    <li>
+                      <a title="FreeStyle リブレ" href="freestyle-libre-system.html">FreeStyle リブレ</a>
+                    </li>
+                    <li>
+                      <a title="FreeStyle リブレ Pro" href="freestyle-libre-pro-system.html">FreeStyle リブレ Pro</a>
+                    </li>
+                    <li>
+                      <a title="フリースタイル プレシジョンネオ" href="freestyle-precision-neo.html">フリースタイル プレシジョンネオ</a>
+                    </li>
+                    <li>
+                      <a title="フリースタイル フリーダム ライト" href="freestyle-freedom-lite.html">フリースタイル フリーダム ライト</a>
+                    </li>
                   </ul>
                 </li>
-				  <li class="#"><a href="../agp/">AGP</a></li>
+                <li class="sub agplocal">
+                  <a href="../agp/">AGP</a>
+                </li>
+                <li class="sub">
+                  <a href="../isf/">ISFとは</a>
+                </li>
               </ul>
             </nav>
           </div>
         </div>
       </div>
     </div>
+	  <div class="" style="background-color:black;">
+		   <div class="container">
+	  <div class=" nav navbar-nav">
+     
+        <div class="black">
+          <ul class="list-inline">
+            <li>
+              <a href="javascript:void(0)" class="video11">特長</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="systemreq11"> ビデオ</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="AGP11">AGP</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="product11">シミュレータ</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flash11">添付文書</a>
+            </li>
+            
+            <li>
+              <a href="javascript:void(0)" class="document11">資料</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="related11">関連資材</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="case11" >ケースレポート</a>
+            </li>
+			  <li style="margin-right:62px;">
+              <a href="javascript:void(0)" class="package11">データ管理</a>
+            </li>
+            <li style=" margin-right:10px; padding-right:0px;">
+              <a href="javascript:void(0)" class="faqs11">よくある質問</a>
+            </li>
+			  
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+		  <div class="clearfix"></div>
+		  </div>
   </header>
 
   <!-- MENU ENDS HERE  -->
@@ -398,7 +572,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!--/ .carousel-indicators -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img width="1600" height="600" alt="" class="img-responsive" src="../assets/img/Libre_Pro_Header_Swimmer.jpg">
+            <img width="1600" height="600" alt="Libre Pro Examroom" class="img-responsive" src="../assets/img/Libre_Pro_Header_Swimmer.jpg">
           </div>
           <!--/ .item -->
         </div>
@@ -406,27 +580,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <!--/ .carousel -->
     </div>
+	  </div>
     <section class="page-header-grey">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <h2 class="has-border-bottom pb20">FreeStyle リブレ Pro システム</h2>
+            <h1 class="has-border-bottom pb20" style="margin-top:30px;">FreeStyle リブレ Pro システム</h1>
             <h4 class="small mb16">概要</h4>
             <p>FreeStyle リブレ Pro フラッシュグルコースモニタリングシステムは、フラッシュグルコースモニタリング技術によって、糖尿病患者さんの治療を一人ひとりカスタマイズすることができます。</p>
-            <div class="has-border-bottom"> </div>
+           
             <div class="page-nav-wrapper">
-              <ul class="page-nav">
-                <li class="active"><a href="#features"><img src="../assets/img/icon-page-nav-features.png" alt="" /><span>特長</span></a></li>
-                <li><a href="#video" target="_blank"><img src="../assets/img/icon-page-nav-how-to-use.png" alt="" /><span>ビデオ</span></a></li>
-                <li><a href="../agp/agp-tour/" target="_blank"><img src="../assets/img/icon-page-nav-ambulatory.png" alt="" /><span>AGP</span></a></li>
-                <li><a href="#ambulatory"><img src="../assets/img/icon-page-nav-simulator.png" alt="シミュレータ"><span>シミュレータ</span></a></li>
-                <li><a href="#productDocuments" target="_blank"><img src="../assets/img/icon-page-nav-accessories.png" alt=""><span>添付文書</span></a></li>
-                <li><a href="#data-management"><img alt="" src="../assets/img/icon-page-nav-data-management.png"><span>データ管理</span></a></li>
-                <li><a href="../assets/documents/freestyle-libre-pro/LibrePro_brochure_170308.pdf" target="_blank"><img src="../assets/img/icon-page-nav-pdf.png" alt="LibrePro HCP ProductBrochure DOC35473 JP" /><span>資料</span></a></li>
-                <li><a href="../assets/documents/freestyle-libre-pro/Pro_TakeHomeGuide_170308.pdf" target="_blank"><img src="../assets/img/icon-one-page.png" alt="FreeStyle Libre Pro DOC36433 RevA JP" /><span>関連資材</span></a></li>
-                <li><a href="../agp/case-studies/" target="_blank"><img src="../assets/img/case_study.png" alt="ケースレポート" /><span>ケースレポート</span></a></li>
-                <li><a href="#faq"><img src="../assets/img/icon-page-nav-faq.png" alt="" /><span>よくある質問</span></a></li>
-              </ul>
+              
             </div>
           </div>
           <!--/ .col-xs-12 -->
@@ -435,27 +599,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <!--/ .container -->
     </section>
-    <!--/ .page-header-grey -->
+  
 
     <div id="tab-content-head"></div>
 
-    <div class="product-benefits mt52 product-element active" id="features">
+    <div class="product-benefits mt52 product-element active video12"  id="features">
       <div class="container">
+		 <div class="smallhead">
+              <p>
+                <strong>特長</strong>
+              </p>
+            </div>
         <div class="row category">
           <div class="col-xs-12">
+			
             <ul class="f-view">
-              <li class="active"><a href="#benefit1">主な特長</a></li>
-              <li><a href="#benefit2">測定器の特長</a></li>
+              <li class="active">
+                <a href="#benefit1">主な特長</a>
+              </li>
+              <li>
+                <a href="#benefit2">測定器の特長</a>
+              </li>
             </ul>
           </div>
           <!--/ .col-xs-12 -->
         </div>
         <!--/ .row -->
+		 
         <div class="row content">
           <div class="col-xs-12">
-            <div class="content-item active" id="benefit1"> <img src="../assets/img/lp_feature2.jpg" alt="Key Features" class="img-responsive" /> </div>
+            <div class="content-item active" id="benefit1">
+				
+              <img src="../assets/img/lp_feature2.jpg" alt="Key Features" class="img-responsive" /> </div>
             <!--/ .content-item -->
-            <div class="content-item" id="benefit2"> <img src="../assets/img/feature1-1-.jpg" alt="Key Features" class="img-responsive" /> </div>
+            <div class="content-item" id="benefit2">
+              <img src="../assets/img/feature1-1-.jpg" alt="Key Features" class="img-responsive" /> </div>
             <!--/ .content-item -->
           </div>
           <!--/ .col-xs-12 -->
@@ -464,102 +642,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <!--/ .container -->
     </div>
-    <!--/ .product-benefits -->
-    <script>
-      $(document).ready(function() {
-        if ($('#features').length > 0) {
-          $('#features .category ul > li > a').each(function(index, value) {
-            $(this).click(function() {
-              var href = $(this).attr('href');
-              $('#features .category ul > li').removeClass('active');
-              $(this).parent().addClass('active');
-              $('#features .content .content-item.active').stop().fadeOut('fast', function() {
-                $('#features .content .content-item').removeClass('active');
-                $('#features .content .content-item' + href).stop().fadeIn('fast', function() {
-                  $(this).addClass('active');
-                });
-              });
-              return false;
-            });
-          });
-        }
-        var timer = null;
+    
+    
 
-        function startSetInterval() {
-          timer = setInterval(rotate_slides, 9000);
-        }
-        // start function on page load
-        startSetInterval();
-
-        // hover behaviour
-        $('#features ul.f-view li a').hover(function() {
-          clearInterval(timer);
-        }, function() {
-          startSetInterval();
-        });
-
-        // hover behaviour
-        $('#features .content-item img').hover(function() {
-          clearInterval(timer);
-        }, function() {
-          startSetInterval();
-        });
-
-        function rotate_slides() {
-          if ($('ul.f-view li').length > 0) {
-            var itemCount = $('ul.f-view li').length;
-            var itemNext = parseInt($('ul.f-view li.active').attr('data')) + 1;
-            if (itemNext - 1 == itemCount) {
-              itemNext = 1;
-            } else {}
-
-            $('#features ul.f-view li:nth-child(' + itemNext + ') a').click();
-          }
-        }
-      });
-    </script>
-    <div class="product-benefits mt52 product-element" id="video">
-      <section class="page-container flat-container">
+      <section class="page-container flat-container systemreq12">
         <div class="region region-content">
           <div id="block-system-main" class="block block-system">
             <div class="container">
+				<div class="smallhead">
+              <p>
+                <strong>ビデオ</strong>
+              </p>
+            </div>
               <div id="contents">
                 <div id="main-contents">
                   <div class="container">
+					  
 
 
                     <div class="row" style="text-align:center; margin:0 auto; margin-top:30px;">
                       <div class="col">
-                        <iframe id="main-video" class="vimeoVideo vimeoBigVideo" src="https://player.vimeo.com/video/216985049"></iframe>
+                        <iframe title="vime video" id="main-video" class="vimeoVideo vimeoBigVideo" style="border: 1px solid white!important;" src="https://player.vimeo.com/video/216985049"></iframe>
                         <p>&nbsp;</p>
                       </div>
                     </div>
                     <div class="row video-thumbs">
                       <div class="col-sm-12 text-center">
                         <div class="col-sm-4 text-center">
-                          <h2 class="myfreestyle-heading onMobile">FreeStyle リブレ Pro システム製品説明ビデオ</h2>
+                          <h1 class="myfreestyle-heading onMobile">FreeStyle リブレ Pro システム製品説明ビデオ</h1>
                           <a class="video-link" href="javascript:openVideo('216985049');">
-                                                            <img src="../assets/images/video-thumb/libre-pro-thumb-01.jpg" alt="img-name" />
-                                                        </a>
-                          <iframe class="vimeoVideo" src="https://player.vimeo.com/video/216985049"></iframe>
-                          <h2 class="myfreestyle-heading onDesktop">FreeStyle リブレ Pro システム製品説明ビデオ</h2>
+                            <img src="../assets/images/video-thumb/libre-pro-thumb-01.jpg" alt="Libre Pro Examroom" />
+                          </a>
+                          <iframe title="vime video" class="vimeoVideo" src="https://player.vimeo.com/video/216985049"></iframe>
+                          <h1 class="myfreestyle-heading onDesktop">FreeStyle リブレ Pro システム製品説明ビデオ</h1>
                         </div>
                         <div class="col-sm-4 text-center">
-                          <h2 class="myfreestyle-heading onMobile">センサー装着説明ビデオ</h2>
+                          <h1 class="myfreestyle-heading onMobile">センサー装着説明ビデオ</h1>
                           <a class="video-link" href="javascript:openVideo('216980616');">
-                                                            <img src="../assets/images/video-thumb/libre-pro-thumb-02.jpg" alt="img-name" />
-                                                        </a>
-                          <iframe class="vimeoVideo" src="https://player.vimeo.com/video/216980616"></iframe>
-                          <h2 class="myfreestyle-heading onDesktop">センサー装着説明ビデオ</h2>
+                            <img src="../assets/images/video-thumb/libre-pro-thumb-02.jpg" alt="Libre Pro Examroom" />
+                          </a>
+                          <iframe title="vime video" class="vimeoVideo" src="https://player.vimeo.com/video/216980616"></iframe>
+                          <h1 class="myfreestyle-heading onDesktop">センサー装着説明ビデオ</h1>
                         </div>
                         <div class="col-sm-4 text-center">
-                          <h2 class="myfreestyle-heading onMobile">レポートの作成説明ビデオ</h2>
+                          <h1 class="myfreestyle-heading onMobile">レポートの作成説明ビデオ</h1>
                           <a class="video-link" href="javascript:openVideo('216980707');">
-                                                            <img src="../assets/images/video-thumb/libre-pro-thumb-03.jpg" alt="img-name" />
-                                                        </a>
-                          <iframe class="vimeoVideo" src="https://player.vimeo.com/video/216980707"></iframe>
-                          <h2 class="myfreestyle-heading onDesktop">レポートの作成説明ビデオ</h2>
+                            <img src="../assets/images/video-thumb/libre-pro-thumb-03.jpg" alt="Libre Pro Examroom" />
+                          </a>
+                          <iframe title="vime video" class="vimeoVideo" src="https://player.vimeo.com/video/216980707"></iframe>
+                          <h1 class="myfreestyle-heading onDesktop">レポートの作成説明ビデオ</h1>
                         </div>
+
+
                       </div>
                     </div>
 
@@ -571,117 +705,251 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </section>
-
-      <!--/ .row -->
-    </div>
-    <!--/ .container -->
-  </div>
-  <!--/ .product-benefits -->
-  <section class="product-showcase page-element product-element  tstrp-sec " id="test-strips">
-    <div class="container">
-      <div class="row section-title">
-        <div class="col-xs-6 tst-col">
-          <div class="tstrp-view">
-            <h3 class="title"><span style="color:#DAA520;"><strong>電極 </strong></span></h3>
-            <p><span style="color:#FF8C00;"><strong>FSプレシジョン血糖測定電極</strong></span></p>
-            <div class="desc">
-              <!-- p>フリースタイルプレシジョンネオに用いられるFSプレシジョン血糖測定電極は、デュアルフィルデザインを採用した点着しやすい電極です。</p -->
-              FSプレシジョン血糖測定電極は、先端点着に加え、手の震える患者さんにも点着しやすい上部点着も可能です。</div>
-            <div class="pt-view">
-              <div class="pt">
-                <ul>
-                  <li>必要血液量：0.6&mu;L</li>
-                  <li>測定時間：5秒</li>
-                  <li>先端および上部点着可能</li>
-                  <li>個別包装</li>
-                </ul>
-                <p><span style="color:#FF8C00;"><strong>電極&beta;-ケトン測定電極Ⅲ</strong></span></p>
-                <!-- p>フリースタイルプレシジョンネオは&beta;-ケトン測定電極Ⅲを用いることで血中のケトン体濃度を測定できます。</p -->
-                <ul>
-                  <li>必要血液量：1.5&mu;L</li>
-                  <li>測定時間：10秒</li>
-                  <li>測定範囲：0.3～8.0mmol/L</li>
-                  <li>先端および上部点着可能</li>
-                  <li>個別包装</li>
-                </ul>
-              </div>
+	  
+	  <section class="AGP12">
+      <div class="grey3">
+        <div class="container">
+          <div>
+            <div class="smallhead">
+              <p>
+                <strong>AGP</strong>
+              </p>
             </div>
+            <div class="col-md-8">
+              <div>
+                <a href="../agp/agp-tour/" target="_blank">
+                  <img class="gap2 img-responsive" src="../assets/img/img4.png" alt="AGP Tour">
+                </a>
+
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+            <div class="col-md-4">
+              <a href="../agp/agp-tour/" target="_blank">
+                <img class="gap3 img-responsive pull-right" src="../assets/img/img3.png" alt="AGP Tour">
+              </a>
+              <a href="../agp/agp-tour/" target="_blank">
+                <img class="img-responsive pull-right" src="../assets/img/img5.png" alt="AGP Tour">
+              </a>
+
+              <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="learnmore pull-left">
+            <a href="../agp/agp-tour/" target="_blank">詳しく見る</a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </section>
+
+
+ 
+
+	
+    <section>
+      
+        <div class="container product12" >
+          <div class="row">
+            <div class="col-md-7">
+              <div class="flash12">
+				  <h3 class="title mb24" style="">
+                      <span style="color:#FF9614; font-size:110%;">
+                        <strong>シミュレータ</strong>
+                      </span>
+                    </h3>
+
+                <div class="curveimg">
+                  <a href="simulator-flashfile%20-pro.html" target="_blank">
+                    <img class="img-responsive" style="width:70%!important; margin-left:15px;" src="../assets/img/pic2.png" alt="stmulitor">
+                  </a>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="col-md-5">
+              <div class="product-showcase page-element " id="productDocuments">
+    <div class="caption alt-orange">
+      <div class="">
+        <div class="row mb24">
+          <h3 class="title mb24">
+            <span>
+              <strong>添付文書</strong>
+            </span>
+          </h3>
+          <div class="col-xs-12 col-md-8 dmgt-col">
+            <p style='font-size:100%;'>
+              <a href="	https://freestyleserver.com/distribution/fxaa20.aspx?product=ifu_art35394_001&version=latest&os=all&region=jp&language&language=xx_yy"
+                target="_blank">1. FreeStyleリブレPro Reader 添付文書</a>
+              <br>
+              
+              <a href="https://freestyleserver.com/distribution/fxaa20.aspx?product=ifu_art35395_001&version=latest&os=all&region=jp&language&language=xx_yy"
+                target="_blank">2. FreeStyleリブレProセンサー 添付文書</a>
+              
+             
+            </p>
           </div>
         </div>
-        <div class="col-xs-6 tst-col">
-          <img alt="Strips" src="../assets/img/fsonbk-strips.png" />
-        </div>
-        <!--/ .col-xs-12 -->
+        <!--/ .row -->
       </div>
-      <!--/ .row -->
-      <div class="row">
-      </div>
+      <!--/ .container -->
     </div>
-    <!--/ .container -->
-  </section>
-  <!--/ -->
+    <!--/ .caption -->
+  </div>
 
 
-  <section class="product-benefits mt52 product-element" id="ambulatory">
-    <h2 class="displaynone">heading</h2>
-    <div class="container">
-      <div class="row content">
-        <div class="col-xs-12">
-          <div class="col-xs-12" style="position:relative" id="libre_pro_simulataor">
-            <iframe width="1028" height="772" style="margin:0 auto; border:none;" src="http://outoftheblue.com/sim/proJP/">
-                            </iframe>
+   <div class="product-showcase page-element document12" >
+    <div class="caption alt-orange">
+      <div class="">
+        <div class="row mb24">
+          <h3 class="title mb24">
+            <span >
+              <strong>資料</strong>
+            </span>
+          </h3>
+          <div class="col-xs-12 col-md-12 dmgt-col">
+
+            <a href="../assets/documents/freestyle-libre-pro/LibrePro_brochure_170308.pdf" type='application/pdf' target="_blank">1. FreeStyleリブレProパンフレット</a>
+            <br><span style="color:#888 !important; font-size: 50% !important">817KB PDF</span>
+            <br>
+            <br>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">2. X線、MRI、CT検査施行時の留意点
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../assets/documents/product-info/Xe-CT-MRIyvuwdtzi_A3pyu.pdf"
+                    target="_blank" type='application/pdf'>X線-CT-MRI検査対応ポスター_A3サイズ.pdf 
+                    <span style="color:#888 !important; font-size: 50% !important">704KB PDF</span>
+                     </a>
+                </li>
+
+                <li>
+                  <a href="../assets/documents/product-info/Xe-CT-MRIyvuwdtzi_B2pyu.pdf"
+                    target="_blank" type='application/pdf'>X線-CT-MRI検査対応ポスター_B2サイズ.pdf
+                    <span style="color:#888 !important; font-size: 50% !important">744KB PDF</span>
+                     </a>
+                </li>
+
+                <li>
+                  <a href="../assets/documents/product-info/Xe-CT-MRIyvuwdtzi_B4pyu.pdf"
+                    target="_blank" type='application/pdf'>X線-CT-MRI検査対応ポスター_B4サイズ.pdf
+                    <span style="color:#888 !important; font-size: 50% !important">741KB PDF</span>
+                     </a>
+                </li>
+
+
+                <li>
+                  <a href="../assets/documents/product-info/Xe-CT-MRIyvuwqivsdi.pdf"
+                    target="_blank" type='application/pdf'>X線-CT-MRI検査対応リーフレット.pdf
+                    <span style="color:#888 !important; font-size: 50% !important">590KB PDF</span>
+                     </a>
+                </li>
+              </ul>
+            </div>
+            
+        
+
           </div>
-          <!--/ .col-xs-12 -->
         </div>
-        <!--/ .col-xs-12 -->
+        <!--/ .row -->
       </div>
-      <!--/ .row -->
+      <!--/ .container -->
     </div>
-    <!--/ .container -->
-  </section>
-  <!--/ .product-benefits -->
-  <section class="product-showcase page-element product-element" id="productDocuments">
-  <div class="caption alt-orange">
-  <div class="container">
-  <div class="row mb24">
-  <h3 class="title mb24"><span style="color:#DAA520;"><strong>添付文書</strong></span></h3>
-  <div class="col-xs-12 col-md-8 dmgt-col">
-  <p style='font-size:16px;'>
-  <a href="	https://freestyleserver.com/distribution/fxaa20.aspx?product=ifu_art35394_001&version=latest&os=all&region=jp&language&language=xx_yy" target="_blank">1. FreeStyleリブレPro Reader 添付文書</a><br><br>
-  <a href="https://freestyleserver.com/distribution/fxaa20.aspx?product=ifu_art35395_001&version=latest&os=all&region=jp&language&language=xx_yy" target="_blank">2. FreeStyleリブレProセンサー 添付文書</a><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br>
-  </p>
+    <!--/ .caption -->
   </div>
-  </div>
-  <!--/ .row -->
-  </div>
-  <!--/ .container -->
-  </div>
-  <!--/ .caption -->
-  </section>
+              <div class="related12">
+                <a href="../assets/documents/freestyle-libre-pro/Pro_TakeHomeGuide_170308.pdf" type='application/pdf'>
+                  <h3 class="title mb24">
+                    <span style="color:#FF9614;  font-size:110%;font-family:'brandon_grotesquebold'; font-weight:700;">
+                      <strong >関連資材</strong>
+                    </span>
+                    <br><span style="color:#888 !important; font-size: 30% !important">6.2MB PDF</span>
+                  </h3>
+                </a>
+                
+                <div class="clearfix"></div>
+              </div>
+              <div class="case12">
+                <a href="../agp/case-studies/">
+                  <h3 class="title mb24">
+                    <span style="color:#FF9614;  font-size:110%; font-family:'brandon_grotesquebold'; font-weight:700;">
+                      <strong>ケースレポート</strong>
+                    </span>
+                  </h3>
+                </a>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
 
-  <section class="product-showcase page-element product-element" id="data-management">
+            
+            <div class="clearfix"></div>
+
+
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      
+
+
+
+    </section>
+
+
+
+  <section class="product-showcase page-element package12"  style="background-color:#f0eeef;">
     <div class="caption alt-orange">
       <div class="container">
         <div class="row mb24">
-          <h3 class="title mb24"><span style="color:#DAA520;"><strong>データ管理ソフト</strong></span></h3>
+          <h3 class="title mb24">
+            <span>
+              <strong>データ管理ソフト</strong>
+            </span>
+          </h3>
           <div class="col-xs-12 col-md-8 dmgt-col">
 
-            <p style='font-size:16px;'>システム要件　2016年１０月現在<br /> • Microsoft Windows 7 (32 または 64 bit)<br /> • Microsoft Windows 8 (32 または 64 bit)<br /> • Microsoft Windows 10 (32 または 64 bit)<br /> • OS X El Capitan<br /> &deg; 接続には測定器本体に付属のケーブルをご使用ください。<br /> &deg; USB2.0ハブ、1.6GHｚデュアルコアプロセッサ、2GB
-              RAM以上が搭載されたコンピュータが必要です。 PDF形式のレポートを表示するため、Adobe® Readerが推奨されます。<br /> &deg; 測定器データのコンピュータへの保存は、PDF形式（レポート画面）もしくはテキストファイル形式でのみ 行なうことができます。本ソフトウェア内には記録されません。
+            <p style='font-size:100%; margin-left:15px;'>システム要件　2018年03月現在
+              <br /> • Microsoft Windows 7 (32または64 bit)
+                <br /> • Microsoft Windows 8 (32または64 bit)
+                <br /> • Microsoft Windows 10 (32または64 bit)
+                <br /> • macOS High Sierra 
+              <br /> &deg; 接続には測定器本体に付属のケーブルをご使用ください。
+              <br /> &deg; USB2.0ハブ、1.6GHｚデュアルコアプロセッサ、2GB RAM以上が搭載されたコンピュータが必要です。 PDF形式のレポートを表示するため、Adobe® Readerが推奨されます。
+              <br /> &deg; 測定器データのコンピュータへの保存は、PDF形式（レポート画面）もしくはテキストファイル形式でのみ 行なうことができます。本ソフトウェア内には記録されません。
             </p>
             <p>&nbsp;</p>
             <div class="col-xs-12 col-md-4" style="margin:0 auto; text-align:center;">
-              <a href="https://freestyleserver.com/distribution/fxaa20.aspx?product=fslibrepro_10&version=latest&os=win&region=jp&language=xx_yy" class="windows_download" onclick="ga('send', 'event', 'link', 'software-download', 'FreeStyle-Libre-Pro-Windows');"><img alt="Windows用のダウンロード" style="margin:0 auto; display:block;" src="../assets/img/windows-logo.png">Windows用のダウンロード</a>
+              <a href="https://freestyleserver.com/distribution/fxaa20.aspx?product=fslibrepro_10&version=latest&os=win&region=jp&language=xx_yy"
+                class="windows_download" onclick="ga('send', 'event', 'link', 'software-download', 'FreeStyle-Libre-Pro-Windows');">
+                <img alt="Windows用のダウンロード" style="margin:0 auto; display:block;" src="../assets/img/windows-logo.png" alt="Windows用のダウンロード">Windows用のダウンロード</a>
 
             </div>
             <div class="col-xs-12 col-md-4" style="margin:0 auto; text-align:center;">
-              <a href="https://freestyleserver.com/distribution/fxaa20.aspx?product=fslibrepro_10&version=latest&os=mac&region=jp&language=xx_yy" class="mac_download" onclick="ga('send', 'event', 'link', 'software-download', 'FreeStyle-Libre-Pro-Mac');"><img alt="MAC用のダウンロード" style="margin:0 auto; display:block;" src="../assets/img/apple-logo.png">MAC用のダウンロード</a>
+              <a href="https://freestyleserver.com/distribution/fxaa20.aspx?product=fslibrepro_10&version=latest&os=mac&region=jp&language=xx_yy"
+                class="mac_download" onclick="ga('send', 'event', 'link', 'software-download', 'FreeStyle-Libre-Pro-Mac');">
+                <img alt="MAC用のダウンロード" style="margin:0 auto; display:block;" src="../assets/img/apple-logo.png" alt="MAC用のダウンロード">MAC用のダウンロード</a>
 
             </div>
-            <div class="col-xs-12 col-md-4" style="margin:0 auto; text-align:center;"><a style="font-size:18px;" href="../assets/documents/freestyle-libre-pro/ART34825-002_rev-A-Web.pdf" target="_blank"><img alt="添付文書ダウンロード" style="margin:0 auto; display:block;" src="../assets/img/brochure_button.png">添付文書ダウンロード</a></div>
+            <div class="col-xs-12 col-md-4" style="margin:0 auto; text-align:center;">
+              <a style="font-size:100%" href="../assets/documents/freestyle-libre-pro/ART34825-002_rev-A-Web.pdf" type='application/pdf' target="_blank">
+                <img alt="添付文書ダウンロード" style="margin:0 auto; display:block;" src="../assets/img/brochure_button.png">添付文書ダウンロード</a>
+                <br><span style="color:#888 !important; font-size: 50% !important">422KB PDF</span>
+            </div>
           </div>
-          <div class="col-xs-12 col-md-4 dmgt-col"><img style="margin:0 auto; max-height:270px;" src="../assets/img/freestyle-libre-pro-data-management.png" alt="" class="img-responsive"></div>
+          <div class="col-xs-12 col-md-4 dmgt-col">
+            <img style="margin:0 auto; max-height:270px;" src="../assets/img/freestyle-libre-pro-data-management.png" alt="Libre"
+              class="img-responsive">
+          </div>
           <!--/ .col-xs-12 -->
         </div>
         <!--/ .row -->
@@ -692,11 +960,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
   <!--/ .section-header -->
 
-  <section class="faq product-element" id="faq">
+  <section class="faq faqs12" >
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h3 class="title mb8">よくある質問</h3>
+          <h3 class="title mb8"  style="font-size:110%; font-family:'brandon_grotesquebold'; font-weight:700;">よくある質問</h3>
         </div>
         <!--/ .col-xs-12 -->
       </div>
@@ -705,35 +973,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-xs-12 col-md-4">
           <div class="faq-questions has-slimscroll">
             <ul>
-              <li class="active"><a onclick="showFaq();" href="#faq1">フラッシュ・グルコース・モニタリング(検査)とはどのようなものですか?</a></li>
-              <li><a onclick="showFaq();" href="#faq2">FreeStyle リブレ Pro システムとはどのようなものですか?</a></li>
-              <li><a onclick="showFaq();" href="#faq3">患者は、MRI や CT スキャンを受ける際にセンサーを外さなければなりませんか?</a></li>
-              <li><a onclick="showFaq();" href="#faq4">なぜ FreeStyle リブレ PRO システムは、測定器の調整の必要がないのですか?</a></li>
-              <li><a onclick="showFaq();" href="#faq5">FreeStyle リブレ Pro システムには何が含まれていますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq6">センサーの大きさはどのくらいですか?</a></li>
-              <li><a onclick="showFaq();" href="#faq7">センサーの装着中が気になりますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq8">センサー装着中に入浴、シャワー、水泳、運動をすることができますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq9">グルコース値を洋服の上から Reader にダウンロードすることができますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq10">センサーは測定器の調整が必要ですか?</a></li>
-              <li><a onclick="showFaq();" href="#faq11">センサーはどのように体に取りつけますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq12">センサーはどのくらいの頻度で測定と測定データの記録を行いますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq13">14日間の装着期間の後、センサーはどうなりますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq14">センサーが Reader にスキャンされた後、Reader が他のセンサーをスキャンした場合、データはどうなりますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq15">Reader からはどのような種類のレポートが入手可能ですか?</a></li>
-              <li><a onclick="showFaq();" href="#faq16">Reader はどのくらいの頻度で充電する必要がありますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq17">Reader の充電にはどのくらい時間がかかりますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq18">Reader の電源が切れるとどうなりますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq19">Reader の電源が切れると、データが失われてしまいますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq20">Reader の電源は自動的に切れますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq21">充電中も Reader を使えますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq22">センサーが装着されてからの14日間、患者さんがすべきことは何でしょうか?</a></li>
-              <li><a onclick="showFaq();" href="#faq23">FreeStyle リブレ Pro システムは、他の機器と比べてどのような特徴がありますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq24">ソフトウェアを利用するためにはどのようなシステム仕様が必要ですか?</a></li>
-              <li><a onclick="showFaq();" href="#faq25">医療従事者はどうすれば FreeStyle リブレ Pro のソフトウェアを入手できますか?</a></li>
-              <li><a onclick="showFaq();" href="#faq26">センサーから患者のデータを Reader にダウンロードした後、どのようにレポートが作られるのですか?</a></li>
-              <li><a onclick="showFaq();" href="#faq27">ソフトウェアのレポートは、どのように患者さんひとりひとりのデータを識別するのですか?</a></li>
-              <li><a onclick="showFaq();" href="#faq28">この製品の保管方法を教えてください？</a></li>
-              <li><a onclick="showFaq();" href="#faq29">センサーパックやセンサーアプリケーターなどの使い捨ての部品をどのように廃棄処分しますか?</a></li>
+              <li class="active">
+                <a onclick="showFaq();" href="#faq1">フラッシュ・グルコース・モニタリング(検査)とはどのようなものですか?</a>
+              </li>
+              <li>
+                <a onclick="showFaq();" href="#faq2">FreeStyle リブレ Pro システムとはどのようなものですか?</a>
+              </li>
+              <li>
+                <a onclick="showFaq();" href="#faq3">患者は、MRI や CT スキャンを受ける際にセンサーを外さなければなりませんか?</a>
+              </li>
+              <li>
+                <a onclick="showFaq();" href="#faq4">なぜ FreeStyle リブレ PRO システムは、測定器の調整の必要がないのですか?</a>
+              </li>
+              <li>
+                <a onclick="showFaq();" href="#faq5">FreeStyle リブレ Pro システムには何が含まれていますか?</a>
+              </li>
+              <li>
+                <a onclick="showFaq();" href="#faq6">センサーの大きさはどのくらいですか?</a>
+              </li>
+              <li>
+                <a onclick="showFaq();" href="#faq7">センサーの装着中が気になりますか?</a>
+              </li>
+              <li>
+                <a onclick="showFaq();" href="#faq8">センサー装着中に入浴、シャワー、水泳、運動をすることができますか?</a>
+              </li>
+              
+              
+            
+            
+             
             </ul>
           </div>
           <!--/ .faq-questions -->
@@ -743,24 +1011,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="faq-answers has-slimscroll">
 
             <div class="item active" id="faq1">
-              <p>フラッシュグルコースモニタリングは 、より詳細な血糖状態を知るうえで必要とされる十分なグルコースデータを、より手 軽 に、より簡単な操作で得られるようにデザインされています。フラッシュグルコースモニタリングのユニークな点は、センサー上を Reader (読取装置)でスキャンすることによってグルコースデータを収集できることです。<br /><br />フラッシュグルコースモニタリングシステムのもうひとつの重要な特徴は、小型で完全に使い捨てのセンサーであることです。このセンサーは、測定器の調整も指先穿刺も必要とせず、自動的にグルコースデータを測定、記録、データ保存することができます。</p>
+              <p>フラッシュグルコースモニタリングは 、より詳細な血糖状態を知るうえで必要とされる十分なグルコースデータを、より手 軽 に、より簡単な操作で得られるようにデザインされています。フラッシュグルコースモニタリングのユニークな点は、センサー上を
+                Reader (読取装置)でスキャンすることによってグルコースデータを収集できることです。
+                <br />
+                <br />フラッシュグルコースモニタリングシステムのもうひとつの重要な特徴は、小型で完全に使い捨てのセンサーであることです。このセンサーは、測定器の調整も指先穿刺も必要とせず、自動的にグルコースデータを測定、記録、データ保存することができます。</p>
               <br />
               <div style="text-align:center; margin:0 auto;">
-                <img style="max-height:250px;" alt="Libre Pro applicator" src="../assets/img/libre-pro-faq/FreeStyle-Libre-Pro-ExamRoom-Bryan-Lucy-Applicator.png" />
-                <img style="max-height:250px; margin-left:10px;" alt="Libre Pro Examroom" src="../assets/img/libre-pro-faq/FreeStyle-Libre-Pro-ExamRoom-Bryan-Lucy-Reader-Sensor.png" />
+                <img style="max-height:250px;" alt="Libre Pro applicator" src="../assets/img/libre-pro-faq/FreeStyle-Libre-Pro-ExamRoom-Bryan-Lucy-Applicator.png" alt="applicator"
+                />
+                <img style="max-height:250px; margin-left:10px;" alt="Libre Pro Examroom" src="../assets/img/libre-pro-faq/FreeStyle-Libre-Pro-ExamRoom-Bryan-Lucy-Reader-Sensor.png"
+                />
               </div>
             </div>
             <!--/ .item -->
             <div class="item" id="faq2">
-              <p>FreeStyle リブレ Pro フラッシュグルコースモニタリングシステムとは、フラッシュグルコースモニタリングの区分では初めての製品であり、指先穿刺 の煩わしさから患者を解放し、これまでよりも多くの情報に基づいて治療内 容を決定するために、深い洞察を主治医に提供できるようデザインされています。</p>
+              <p>FreeStyle リブレ Pro フラッシュグルコースモニタリングシステムとは、フラッシュグルコースモニタリングの区分では初めての製品であり、指先穿刺 の煩わしさから患者を解放し、これまでよりも多くの情報に基づいて治療内
+                容を決定するために、深い洞察を主治医に提供できるようデザインされています。</p>
               <br />
               <div style="text-align:center; margin:0 auto;">
-                <img style="max-height:250px;" alt="Sensor Applicator Reader" src="../assets/img/libre-pro-faq/Libre-pro-reader-applicator-sensor-combined.png" />
+                <img style="max-height:250px;" alt="Sensor Applicator Reader" src="../assets/img/libre-pro-faq/Libre-pro-reader-applicator-sensor-combined.png"
+                />
               </div>
             </div>
             <!--/ .item -->
             <div class="item" id="faq3">
-              <p>X 線、 MRI （核磁気共鳴画像法）または CT （コンピュータ断層撮影法）スキャンなど、強度の磁気や電磁放射線を含む受診を予約している場合、装着したセンサーを取り外し、検査終了後に新しいセンサーを貼 付する必要があります。これらの検査 がシステムの性能に及ぼす影響については評価されていません。</p>
+              <p>X 線、 MRI （核磁気共鳴画像法）または CT （コンピュータ断層撮影法）スキャンなど、強度の磁気や電磁放射線を含む受診を予約している場合、装着したセンサーを取り外し、検査終了後に新しいセンサーを貼 付する必要があります。これらの検査
+                がシステムの性能に及ぼす影響については評価されていません。</p>
             </div>
             <!--/ .item -->
             <div class="item" id="faq4">
@@ -772,12 +1048,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <br />
               <ul>
                 <li>センサーキットには、センサー パック（センサーアプリケーターと共にセンサーの準備に使用）、センサーアプリケーター（センサーを上腕の後ろ 側 に装着する）、取扱説明書（センサーの装着方法の説明）が含まれます。</li>
-                <li>Reader キットには FreeStyle リブレ Pro Reader （患者さんに装着したセンサーを起動し、グルコース値を収集）、 USB ケーブル（コンピュータに接続してレポートの作成や Reader の充電に使用）、電源アダプター（ USB ケーブルと共にバッテリーを充電するために使用）、取扱説明書（システムの操作に必要なすべての情報）、クイックスタートガイド（患者さんがすぐに使い始められるようにするためのガイド）、が含まれます。</li>
+                <li>Reader キットには FreeStyle リブレ Pro Reader （患者さんに装着したセンサーを起動し、グルコース値を収集）、 USB ケーブル（コンピュータに接続してレポートの作成や Reader
+                  の充電に使用）、電源アダプター（ USB ケーブルと共にバッテリーを充電するために使用）、取扱説明書（システムの操作に必要なすべての情報）、クイックスタートガイド（患者さんがすぐに使い始められるようにするためのガイド）、が含まれます。</li>
                 <li>ソフトウェアは医療従事者が患者さんの効果的な糖尿病健康管理プログラムをサポートできるようにすることを目的としており、オンラインおよび CD で入手することができます。</li>
               </ul>
               <br />
               <div style="text-align:center; margin:0 auto;">
-                <img style="max-height:250px;" alt="Sensor Reader applicator" src="../assets/img/libre-pro-faq/Libre-pro-reader-applicator-sensor-combined.png" />
+                <img style="max-height:250px;" alt="Sensor Reader applicator" src="../assets/img/libre-pro-faq/Libre-pro-reader-applicator-sensor-combined.png"
+                />
               </div>
             </div>
             <!--/ .item -->
@@ -785,8 +1063,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <p>センサーは厚さ5mm、直径35mmです。</p>
               <br />
               <div style="text-align:center; margin:0 auto;">
-                <img style="max-height:250px;" alt="Sensor Side Filament" src="../assets/img/libre-pro-faq/Sensor-FreeStyle-Libre-Side-Filament.png" />
-                <img style="max-height:250px; margin-left:10px;" alt="Sensor" src="../assets/img/libre-pro-faq/Sensor-Angle-Right-FreeStyle-Libre.png" />
+                <img style="max-height:250px;" alt="Sensor Side Filament" src="../assets/img/libre-pro-faq/Sensor-FreeStyle-Libre-Side-Filament.png"
+                />
+                <img style="max-height:250px; margin-left:10px;" alt="Sensor" src="../assets/img/libre-pro-faq/Sensor-Angle-Right-FreeStyle-Libre.png" 
+                />
               </div>
             </div>
             <!--/ .item -->
@@ -794,8 +1074,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <p> Abbott Diabetes Care が実施した試験では、調査対象患者の93.4%（n=30）がセンサー装着中に皮下の不快感を訴えませんでした。</p>
               <br />
               <div style="text-align:center; margin:0 auto;">
-                <img style="max-height:271px;" alt="Sensor Side Filament" src="../assets/img/libre-pro-faq/Sensor-FreeStyle-Libre-Side-Filament.png" />
-                <img style="max-height:271px; margin-left:10px;" alt="Sensor Usage" src="../assets/img/libre-pro-faq/Illustration_FreeStyle_Libre_Pro_H_1.png" />
+                <img style="max-height:271px;" alt="Sensor Side Filament" src="../assets/img/libre-pro-faq/Sensor-FreeStyle-Libre-Side-Filament.png"
+                />
+                <img style="max-height:271px; margin-left:10px;" alt="Sensor Usage" src="../assets/img/libre-pro-faq/Illustration_FreeStyle_Libre_Pro_H_1.png"
+                />
               </div>
             </div>
             <!--/ .item -->
@@ -803,146 +1085,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <p>はい。センサーは入浴中、シャワー中、水泳中、運動中も装着することができます。ただし、 水深1mより深いところにセンサーを入れないでください。また、30分以上水に浸さないでください。粘着剤 はセンサーを最長14日間快適に固定できるよう設計されています。</p>
             </div>
             <!--/ .item -->
-            <div class="item" id="faq9">
-              <p>はい。厚さ4cm以内の衣服の上からリーダーで読み取ることができます。</p>
-              <br />
-              <div style="text-align:center; margin:0 auto;">
-                <img style="max-height:500px; max-width:90%;" alt="Reader usage over clothes" src="../assets/img/libre-pro-faq/feature1-1-.jpg" />
-              </div>
-            </div>
+            
             <!--/ .item -->
-            <div class="item" id="faq10">
-              <p>FreeStyle リブレ Pro センサーは工場出荷時に測定器の調整がされており、14日間の装着期間中は穿刺による測定器の調整は必要ありません。
-              </p>
-            </div>
+            
             <!--/ .item -->
-            <div class="item" id="faq11">
-              <p>センサーの装着には、センサーアプリケーターと呼ばれる使い捨て器具を用います。センサーアプリケーターを上腕の後ろ側に置きセンサーが身体に装着されるまでしっかりと下方に押し込みます。センサーアプリケーターをそっと身体から引き離します。これでセンサーは皮膚に装着されます。</p>
-              <br />
-              <div style="text-align:center; margin:0 auto;">
-                <img style="max-width:90%;" alt="Sensor attaches to Body" src="../assets/img/libre-pro-faq/FreeStyle-Libre-Pro-ExamRoom-Bryan-Lucy-Applicator.png" />
-              </div>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq12">
-              <p>FreeStyle リブレ Pro システムのセンサーでは14日間にわたり15分ごとの記録を測定し、記録することができます。</p>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq13">
-              <p>センサーは14日間の装着期間終了後、グルコース値の測定を自動的に停止します。</p>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq14">
-              <p>Reader のホーム画面の「センサーデータを取得します」をタッチすると、未報告のセンサーデータがあることを知らせる表示が現れます。このデータを新しいセンサーデータで上書きするかどうかを選択することができます。</p>
-              <br />
-              <div style="text-align:center; margin:0 auto;">
-                <img style="max-width:90%;" alt="Reader Data to Report Screen" src="../assets/img/libre-pro-faq/Reader-Overhead-FreeStyle-Libre-Pro-Data-to-Report.png" />
-              </div>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq15">
-              <p>日内グラフにはセンサーが測定したグルコース値が日別に表示され、 Reader に設定した 目標グルコース値範囲が表示されます。ホーム画面のオプション記号をタッチし、目標範囲 を選択すると目標グルコース値範囲を変更することができます。グラフにはグルコース値 が350mg/dLまで表示されます。グルコース値が350mg/dLを超える場合は350 mg/dLまで表示されます。</p>
-              <br />
-              <div style="text-align:center; margin:0 auto;">
-                <img style="max-height:354px; max-width:90%;" alt="Reader Report" src="../assets/img/libre-pro-faq/4_LibrePro_09_mg_JA.png" />
-              </div>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq16">
-              <p>完全に充電したバッテリーは最長2週間持続します。バッテリーの寿命は使用状況によって変わります。</p>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq17">
-              <p>バッテリーを完全に充電するには、少なくとも3時間充電してください。</p>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq18">
-              <p>Reader を使い続けるためには、バッテリーの残量が少なくなったら（低バッテリーアイコンが表示されます）、 Reader を充電しなければなりません。充電が切れたら再充電する必要があります。</p>
-              <br />
-              <div style="text-align:center; margin:0 auto;">
-                <img style="max-height:354px; max-width:90%;" alt="Reader Low Battery" src="../assets/img/libre-pro-faq/FreeStyle_Libre_Pro_LOW_BATTERY_JA.png" />
-              </div>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq19">
-              <p>Reader 上に保存されたグルコース値データは失われません。</p>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq20">
-              <p>Reader は60秒後にディスプレイを自動的にオフにします。</p>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq21">
-              <p>ご使用いただけません。</p>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq22">
-              <p>腕上の後ろ側にセンサーが装着された後は14日間そのままでいるだけで大丈夫です。患者さんが何かをする必要はなく、入浴中、シャワー中、水泳中*、運動中も装着することができます。
-                <br><br>*センサーは水深1メートルまで耐水性能が保証されています。30分以上水に浸さないでください。</p>
-              <br />
-              <div style="text-align:center; margin:0 auto;">
-                <img style="max-width:90%; max-height:350px;" alt="Patient with sensor" src="../assets/img/libre-pro-faq/Illustration_FreeStyle_Libre_Pro_H_1.png" />
-              </div>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq23">
-              <p>FreeStyle リブレ Pro システムは、14日間にわたり正確性、安定性、一貫性を維持することが臨床的に確認されています。指先穿刺による測定器の調整の必要はありません。</p><br />
-              <ul>
-                <li>FreeStyle リブレ Pro センサーは工場出荷時に測定器の調整がされ、センサー間のばらつきを最小限に抑えるよう製造されています。指先穿刺によるキャリブレーションの必要はありません。</li>
-                <!-- <li>安定した性能を得るために、 FreeStyle リブレ Pro センサーは Wired Enzyme テクノロジーを採用しています。これには次のような特徴があります。</li>
-                <li style="list-style:circle; margin-left:15px;">血糖値を測定するのに酸素に依存しません。</li>
-                <li style="list-style:circle; margin-left:15px;">センサーは銀・塩化銀電極と比較して40mVと非常に低い電位で作動します。
-                </li> -->
-              </ul>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq24">
-              <p>FreeStyle リブレ Pro ソフトウェアのシステム要件として、以下のオペレーティングシステムが動作するコンピュータ上でご利用ください。</p><br />
-              <ul>
-                <li>Microsoft Windows 7 （ 32 または 64 bit ）</li>
-                <li>Microsoft Windows 8 （ 32 または 64 bit ）</li>
-                <li>Microsoft Windows XP （ Service Pack 3 ）</li>
-                <li>OS X Mavericks</li>
-              </ul>
-              少なくとも、1.6 GHzプロセッサおよび2GB RAM 搭載の USB 2.0 対応のハブを備えたコンピュータが必要です。
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq25">
-              <p>FreeStyle リブレ Pro ソフトウェアアプリケーションはオンラインまたは CD で提供しています。</p>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq26">
-              <ul>
-                <li>レポートを作成するには、 Reader キット付属の USB ケーブルを使用して Reader をコンピュータに接 続します。</li>
-                <li>接続されるとホーム画面が現れ、 Reader の接続が完了します。 FreeStyle リブレ Pro ソフトウェアのホーム画面からレポートの作成や Reader の設定変更など、さまざまな機能にアクセスできます。</li>
-                <li>レポート作成 画面ではレポートを選択し、レポートのパラメータを設定します。アップロードされたセンサーごとに氏名または患者IDを選択しプロファイルを作成します。</li>
-                <li>表示または印刷するレポートを選択します。複数選択することもできます。</li>
-                <li>時間設定のレポートパラメータ（すべてのレポートに使用されるデータ範囲）および目標グルコース範囲（一部の血糖値グラフに表示され、目標範囲内であった時間 の計算に使用される）はすべてのレポートに使われます。グルコース変動パターン レポートにはこれ以外のパラメータも必要になります。</li>
-                <li>レポートのパラメータが設定されると、 Reader が接続されている間にレポートを印刷するか、レポートを表示するか選択することができます。</li>
-              </ul>
-              <br />
-              <div style="text-align:center; margin:0 auto;">
-                <img style="max-height:354px; max-width:90%;" alt="Download Reader Data" src="../assets/img/libre-pro-faq/3_LibrePro_16_JA.png" />
-              </div>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq27">
-              <p>アップロードされたセンサーごとにプロファイルが必要になります。氏名または患者 ID が保存されると、作成されたレポートに自動的に入力されます。</p>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq28">
-              <p>センサーアプリケーターおよびセンサーパックは4～25℃で保管してください。。 Reader は−20～60°Cで保管してください。</p>
-            </div>
-            <!--/ .item -->
-            <div class="item" id="faq29">
-              <p>電気機器、電池、とがっているものおよび体液に曝露した可能性のある物質の廃棄に関する、自治体の規制に従って廃棄する必要があります。システム部品の適切な廃棄に関する詳細は、カスタマーサービスにお問い合わせください。</p>
-            </div>
+            
+       
+            
             <!--/ .item -->
           </div>
           <!--/ .faq-answers -->
         </div>
         <!--/ .col-xs-12 -->
       </div>
+		<div class="learnmore pull-left" style="margin-top:20px;">
+            <a href="../products/faq2.html" target="_blank">詳しく見る</a>
+            <div class="clearfix"></div>
+          </div>
       <!--/ .row -->
     </div>
     <!--/ .container -->
@@ -953,25 +1112,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="row">
         <div class="col-xs-12 col-md-1">
           <a href="http://www.abbott.com/" class="brand">
-                        <img src="../assets/img/logo-abbott-footer.png" alt="Abbott Logo" class="">
-                    </a>
+            <img src="../assets/img/logo-abbott-footer.png" alt="Abbott Logo" class="">
+          </a>
         </div>
         <!--/ .col-xs-12 -->
         <div class="col-xs-12 col-md-11">
-          <p class="copyright">© 2017 Abbott. All Rights Reserved. DM2017-001 Ver 1.8 11/17 詳細については法律条項をご覧ください。
+          <p class="copyright">© 2018 Abbott. All Rights Reserved. DM2018-001 Ver 1.4 05/18 詳細については法律条項をご覧ください。
             <br> 特に記述のない限り、このインターネットサイトで使用されている製品名およびサービス名は、アボットまたはその子会社や関連会社が所有またはライセンス供与を受けている製品名およびサービス名です。本サイトのアボットの商標、商標名、トレードドレスは、書面による事前の許可がない限り、当社の製品またはサービスを特定する目的以外での使用を禁じます。
           </p>
         </div>
         <!--/ .col-xs-12 -->
         <!-- Footer Links 00083 -->
         <div class="col-xs-12 col-md-12 links-style">
-          <div class="ftr-lgl" style="display:none;">&copy; 2016 Abbott. All Rights Reserved.</div>
+          <div class="ftr-lgl" style="display:none;">&copy; 2018 Abbott. All Rights Reserved.</div>
           <div class="col-xs-6 col-md-6 text-left">
             <a href="http://www.abbott.co.jp/privacy-policy.html" target="_blank" id="ftr-privacy">オンラインプライバシーポリシー</a> &nbsp;|&nbsp;
             <a href="http://www.abbott.co.jp/online-terms-and-conditions.html" target="_blank" id="ftr-terms">オンライン利用規約</a>
           </div>
           <div class="col-xs-6 col-md-6">
-            <div class="veeva">ABJ DM2017-001 Rev 1.9 12/17</div>
+            <div class="veeva">DM2018-001 Ver 1.4 05/18</div>
           </div>
         </div>
         <!-- Footer Links End 00083 -->
@@ -1001,7 +1160,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <script>
     $(document).ready(() => {
-      $(".page-nav li a").click(function() {
+      $(".page-nav li a").click(function () {
         setTimeout(() => {
           $("html, body").animate({
             scrollTop: $('#tab-content-head').offset().top - 120
@@ -1012,10 +1171,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     function showFaq() {
       if ($(window).width() < 992) {
-        $('body').scrollTo('.faq-answers', 500);
+        $('body').scrollTo(4750, 600);
         console.log("mobile");
       } else {
-        $('body').scrollTo(650, 500);
+        $('body').scrollTo(3850, 500);
       }
     }
 
@@ -1034,13 +1193,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       url: '//freegeoip.net/json/',
       type: 'POST',
       dataType: 'jsonp',
-      success: function(location) {
+      success: function (location) {
         // If the visitor is browsing from outside US/Canada.
         console.log(location.country_code);
         console.log(location.ip);
         var user_ip = location.ip;
-        var array_ip = ['167.1.171.21', '167.1.174.21', '167.1.173.21', '216.21.167.198', '54.77.182.89', '54.77.182.92', '54.77.183.5', '54.77.183.29', '54.77.183.107', '54.77.183.155', '54.77.183.182', '54.77.184.118', '54.77.184.134',
-          '54.77.184.226', '54.77.184.249', '54.77.184.67', '82.71.246.3', '134.222.104.250', '213.71.179.110', '139.4.72.210', '134.222.105.22', '42.61.7.246', '202.94.122.78', '180.169.79.146', '12.250.122.26', '50.203.223.170'
+        var array_ip = ['167.1.171.21', '167.1.174.21', '167.1.173.21', '216.21.167.198', '54.77.182.89',
+          '54.77.182.92', '54.77.183.5', '54.77.183.29', '54.77.183.107', '54.77.183.155', '54.77.183.182',
+          '54.77.184.118', '54.77.184.134',
+          '54.77.184.226', '54.77.184.249', '54.77.184.67', '82.71.246.3', '134.222.104.250', '213.71.179.110',
+          '139.4.72.210', '134.222.105.22', '42.61.7.246', '202.94.122.78', '180.169.79.146', '12.250.122.26',
+          '50.203.223.170'
         ];
         //  abbott=='130.36.0.0'
         var part_ip = user_ip.split(".");
@@ -1052,13 +1215,252 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         } else if (location.country_code == 'US' || location.country_code == 'CA') {
           // Redirect him to myfreestyle.com.
           console.log('Redirect him to myfreestyle.com');
-          window.top.location.foobar = 'https://www.myfreestyle.com/';
+          window.top.location.href = 'https://www.myfreestyle.com/';
         } else {
           console.log("IP not found");
         }
       }
     });
   </script>
+	<script>
+      $(document).ready(function () {
+        if ($('#features').length > 0) {
+          $('#features .category ul > li > a').each(function (index, value) {
+            $(this).click(function () {
+              var href = $(this).attr('href');
+              $('#features .category ul > li').removeClass('active');
+              $(this).parent().addClass('active');
+              $('#features .content .content-item.active').stop().fadeOut('fast', function () {
+                $('#features .content .content-item').removeClass('active');
+                $('#features .content .content-item' + href).stop().fadeIn('fast', function () {
+                  $(this).addClass('active');
+                });
+              });
+              return false;
+            });
+          });
+        }
+        var timer = null;
+
+        function startSetInterval() {
+          timer = setInterval(rotate_slides, 9000);
+        }
+        // start function on page load
+        startSetInterval();
+
+        // hover behaviour
+        $('#features ul.f-view li a').hover(function () {
+          clearInterval(timer);
+        }, function () {
+          startSetInterval();
+        });
+
+        // hover behaviour
+        $('#features .content-item img').hover(function () {
+          clearInterval(timer);
+        }, function () {
+          startSetInterval();
+        });
+
+        function rotate_slides() {
+          if ($('ul.f-view li').length > 0) {
+            var itemCount = $('ul.f-view li').length;
+            var itemNext = parseInt($('ul.f-view li.active').attr('data')) + 1;
+            if (itemNext - 1 == itemCount) {
+              itemNext = 1;
+            } else {}
+
+            $('#features ul.f-view li:nth-child(' + itemNext + ') a').click();
+          }
+        }
+      });
+    </script>
+	
+	
+	 <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".video11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.video12').offset().top - 300
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.video12').offset().top - 180
+            })
+          }
+        })
+      })
+    </script>
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".AGP11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.AGP12').offset().top - 300
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.AGP12').offset().top - 180
+            })
+          }
+        })
+      })
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".systemreq11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.systemreq12').offset().top - 300
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.systemreq12').offset().top - 200
+            })
+          }
+        })
+      })
+    </script>
+
+  
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".product11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.product12').offset().top - 300
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.product12').offset().top - 220
+            })
+          }
+        })
+      })
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".flash11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.flash12').offset().top - 100
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.flash12').offset().top - 220
+            })
+          }
+        })
+      })
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".package11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.package12').offset().top - 300
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.package12').offset().top - 200
+            })
+          }
+        })
+      })
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".document11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.document12').offset().top - 300
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.document12').offset().top - 200
+            })
+          }
+        })
+      })
+    </script>
+
+   
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".faqs11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.faqs12').offset().top - 300
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.faqs12').offset().top - 180
+            })
+          }
+        })
+      })
+    </script>
+   
+
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".case11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.case12').offset().top - 320
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.case12').offset().top - 220
+            })
+          }
+        })
+      })
+    </script>
+  
+
+    <script>
+      $(document).ready(function () {
+        var mobileWidth = $(window).width();
+        $(".related11").click(function () {
+          if (mobileWidth < '420') {
+
+            $("body,html").animate({
+              "scrollTop": $('.related12').offset().top - 320
+            })
+          } else {
+            $("body,html").animate({
+              "scrollTop": $('.related12').offset().top - 220
+            })
+          }
+        })
+      })
+    </script>
+
+	
 </body>
 
 </html>

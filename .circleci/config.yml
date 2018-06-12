@@ -101,7 +101,7 @@ jobs:
           name: Check Deployment
           command: |
             sudo apt-get update && sudo apt-get install -y python-pip
-            pip install awscli
+            sudo pip install awscli
             # apt-get clean && apt-get autoclean
             awscli s3 sync ./public s3://myfreestyle.jp
 

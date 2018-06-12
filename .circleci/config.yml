@@ -89,6 +89,21 @@ jobs:
             git commit --allow-empty -m "Deploy to Github pages [ci skip]"
             git push --force --quiet origin gh-pages > /dev/null 2>&1
 
+  deploy-aws:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - restore_cache:
+          name: Restoring node_modules
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
+      - run:
+          name: Check Deployment
+          command: |
+            ls -la
+            pwd
+            ls -la
+
 workflows:
   version: 2
   merge_feature_branch:
@@ -112,3 +127,10 @@ workflows:
             branches:
               only:
                 - /develop/
+      - deploy-aws:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - /feature\/dev-env-setup/

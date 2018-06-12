@@ -100,11 +100,10 @@ jobs:
       - run:
           name: Check Deployment
           command: |
-            sudo apt-get update
-          # && apt-get install -y python-pip
-          # pip install awscli
+            sudo apt-get update && sudo apt-get install -y python-pip
+          pip install awscli
           # apt-get clean && apt-get autoclean
-          # awscli s3 sync ./public s3://myfreestyle.jp
+          awscli s3 sync ./public s3://myfreestyle.jp
 
 workflows:
   version: 2

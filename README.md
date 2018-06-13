@@ -2,7 +2,7 @@
 
 Welcome to the myfreestyle.jp development area on GitHub. This README will guide you through each step of working within the project from the initial dev environment setup to finding and working in tasks assigned in JIRA and performing your development work in GitHub.
 
-## Getting Started
+### Getting Started
 
 ### Prerequisites
 

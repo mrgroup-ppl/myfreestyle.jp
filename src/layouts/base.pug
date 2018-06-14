@@ -1,0 +1,27 @@
+include /mixins/css
+
+block locals
+  - locals.lang = 'ja'
+  - locals.viewport = 'width=device-width, initial-scale=1.0, shrink-to-fit=no'
+  +addCss('/css/main.css')
+
+doctype html
+html(lang=locals.lang || 'en')
+
+  head
+    block html-head
+      include /components/html-head/default
+
+  body
+    block global-header
+      include /components/global-header/default
+
+
+
+    block content
+      h1 boo
+
+
+
+    block global-footer
+      include /components/global-footer/default

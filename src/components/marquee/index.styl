@@ -1,0 +1,28 @@
+@keyframes marquee
+  0%
+    transform translateX(100%)
+  100%
+    transform translateX(0%)
+
+.marquee
+  white-space nowrap
+  padding-right 100%
+  float right
+  animation marquee calc(80 * 1s) 0.5s linear infinite
+
+  &_container
+    box-sizing border-box
+    position relative
+    width 100%
+    overflow-x hidden
+    display inline-block
+    padding 0.25em 0
+    background-color black
+    color white
+
+  &_item
+    display inline-block
+    padding-right 14em
+
+    &:last-of-type
+      padding-right 0

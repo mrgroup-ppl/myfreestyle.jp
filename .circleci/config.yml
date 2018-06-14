@@ -121,6 +121,7 @@ workflows:
               only:
                 - /feature\/.*/
                 - /develop/
+                - /master/
       - deploy-gh-pages:
           requires:
             - build

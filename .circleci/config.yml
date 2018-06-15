@@ -105,7 +105,7 @@ jobs:
             # apt-get clean && apt-get autoclean
             aws s3 sync ./public s3://dev.myfreestyle.jp
 
-  deploy-aws:
+  deploy-aws-qa:
     <<: *defaults
     steps:
       - attach_workspace:
@@ -119,7 +119,23 @@ jobs:
             sudo apt-get update && sudo apt-get install -y python-pip
             sudo pip install awscli
             # apt-get clean && apt-get autoclean
-            aws s3 sync ./public s3://myfreestyle.jp
+            aws s3 sync ./public s3://qa.myfreestyle.jp
+
+  # deploy-aws:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: /home/circleci
+  #     - restore_cache:
+  #         name: Restoring node_modules
+  #         key: v2-node_modules-{{ checksum "yarn.lock" }}
+  #     - run:
+  #         name: Check Deployment
+  #         command: |
+  #           sudo apt-get update && sudo apt-get install -y python-pip
+  #           sudo pip install awscli
+  #           # apt-get clean && apt-get autoclean
+  #           aws s3 sync ./public s3://myfreestyle.jp
 
 workflows:
   version: 2
@@ -151,10 +167,17 @@ workflows:
             branches:
               only:
                 - /develop/
-      - deploy-aws:
+      - deploy-aws-qa:
           requires:
             - build
           filters:
             branches:
               only:
                 - /master/
+      # - deploy-aws:
+      #     requires:
+      #       - build
+      #     filters:
+      #       branches:
+      #         only:
+      #           - /master/

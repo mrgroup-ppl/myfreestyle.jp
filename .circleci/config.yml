@@ -19,9 +19,6 @@ jobs:
       - run:
           name: Install dependancies
           command: yarn
-      - run:
-          name: Spill git guts
-          command: cat ~/.gitconfig
       - save_cache:
           name: Caching node_modules
           key: v2-node_modules-{{ checksum "yarn.lock" }}
@@ -89,6 +86,38 @@ jobs:
             git commit --allow-empty -m "Deploy to Github pages [ci skip]"
             git push --force --quiet origin gh-pages > /dev/null 2>&1
 
+  deploy-aws-dev:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - restore_cache:
+          name: Restoring node_modules
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
+      - run:
+          name: Check Deployment
+          command: |
+            sudo apt-get update && sudo apt-get install -y python-pip
+            sudo pip install awscli
+            # apt-get clean && apt-get autoclean
+            aws s3 sync ./public s3://dev.myfreestyle.jp
+
+  deploy-aws-qa:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - restore_cache:
+          name: Restoring node_modules
+          key: v2-node_modules-{{ checksum "yarn.lock" }}
+      - run:
+          name: Check Deployment
+          command: |
+            sudo apt-get update && sudo apt-get install -y python-pip
+            sudo pip install awscli
+            # apt-get clean && apt-get autoclean
+            aws s3 sync ./public s3://qa.myfreestyle.jp
+
 workflows:
   version: 2
   merge_feature_branch:
@@ -105,6 +134,7 @@ workflows:
               only:
                 - /feature\/.*/
                 - /develop/
+                - /master/
       - deploy-gh-pages:
           requires:
             - build
@@ -112,3 +142,17 @@ workflows:
             branches:
               only:
                 - /develop/
+      - deploy-aws-dev:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - /develop/
+      - deploy-aws-qa:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - /master/

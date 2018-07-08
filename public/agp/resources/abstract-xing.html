@@ -353,6 +353,12 @@
                             <li class="sub">
                                 <a href="../../isf/">ISFとは</a>
                             </li>
+                            <li>
+                                <a title="ビデオストーリー" href="../../video-story.html">ビデオストーリー</a>
+                            </li>
+                            <li>
+                                <a title="新・FreeStyle リブレ&リブレProパンフ" href="../../assets/pdf/CGM-Combined-20180425-FINAL.pdf" target="_blank">新・FreeStyle リブレ&リブレProパンフ</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -419,7 +425,18 @@
                                     <a href="../">AGP</a>
                                 </li>
                                 <li class="sub">
-                                    <a href="../../isf/">ISFとは</a>
+                                    <a href="#">NEW</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a title="ISFとは" href="../../isf/">ISFとは</a>
+                                        </li>
+                                        <li>
+                                            <a title="ビデオストーリー" href="../../video-story.html">ビデオストーリー</a>
+                                        </li>
+                                        <li>
+                                            <a title="新・FreeStyle リブレ&リブレProパンフ" href="../../assets/pdf/CGM-Combined-20180425-FINAL.pdf" target="_blank">新・FreeStyle リブレ&リブレProパンフ</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </nav>
@@ -473,18 +490,21 @@
                                         <p class="heading">DIABETES TECHNOLOGY &amp; THERAPEUTICS</p>
                                         <p>Volume 11, Number 3, 2011</p>
                                         <br>
-                                        <p>Optimal Sampling Intervals to Assess Long-Term Glycemic Control Using Continuous Glucose Monitoring Xing et al</p>
+                                        <p>Optimal Sampling Intervals to Assess Long-Term Glycemic Control Using Continuous
+                                            Glucose Monitoring Xing et al</p>
                                     </div>
-                                    <p>Intermittent short-term use (3–5 days) of blinded continuous glucose monitoring (CGM) technology continues to be
-                                        used for retrospective adjustments in treatment regimens for type 1 diabetes (T1D). However, the optimal duration
-                                        and frequency of such monitoring to accurately reflect long-term glycemic control have not been assessed.</p>
-                                    <p>Data from two 6-month randomized clinical trials and 6-month extension studies evaluating the effectiveness of real-time
-                                        CGM in 451 intensively treated patients with T1D suggest:</p>
+                                    <p>Intermittent short-term use (3–5 days) of blinded continuous glucose monitoring (CGM)
+                                        technology continues to be used for retrospective adjustments in treatment regimens
+                                        for type 1 diabetes (T1D). However, the optimal duration and frequency of such monitoring
+                                        to accurately reflect long-term glycemic control have not been assessed.</p>
+                                    <p>Data from two 6-month randomized clinical trials and 6-month extension studies evaluating
+                                        the effectiveness of real-time CGM in 451 intensively treated patients with T1D suggest:</p>
                                     <ul>
-                                        <li>Longer monitoring periods of 12–15-days every 3 months are needed to obtain an accurate assessment of overall glucose
-                                            control.
+                                        <li>Longer monitoring periods of 12–15-days every 3 months are needed to obtain an accurate
+                                            assessment of overall glucose control.
                                         </li>
-                                        <li>Shorter periods of sampling can be useful, but the correlation with 3-month measures of glycemic control is lower.</li>
+                                        <li>Shorter periods of sampling can be useful, but the correlation with 3-month measures
+                                            of glycemic control is lower.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -550,16 +570,16 @@
             var o = Cookies.get("visit_check");
             console.log(Cookies.get("visit_check")), "yes" != "JP" != currentCountry && (console.log(
                 "You are not in JAPAN show model now..."), $(".geo-popup").reveal({
-                animation: "fadeAndPop",
-                animationspeed: 300,
-                closeonbackgroundclick: !0,
-                dismissmodalclass: "close-reveal-modal"
-            }), $(".geo-popup").css({
-                left: "50%",
-                marginLeft: -$(".geo-popup").width() / 2
-            })), $("#closeGeoIp").click(function () {
-                $("#closeGeoIp2").click()
-            })
+                    animation: "fadeAndPop",
+                    animationspeed: 300,
+                    closeonbackgroundclick: !0,
+                    dismissmodalclass: "close-reveal-modal"
+                }), $(".geo-popup").css({
+                    left: "50%",
+                    marginLeft: -$(".geo-popup").width() / 2
+                })), $("#closeGeoIp").click(function () {
+                    $("#closeGeoIp2").click()
+                })
         });
     </script>
     <script type="text/javascript">
@@ -586,10 +606,10 @@
                     var e = $(this).find(".active").attr("data-interval");
                     $("#carousel-home").carousel("pause"), o = setTimeout("$('#carousel-home').carousel();", e - 1e3)
                 }), $(".custom-control.right").on("click", function () {
-                clearTimeout(o)
-            }), $(".custom-control.left").on("click", function () {
-                clearTimeout(o)
-            })
+                    clearTimeout(o)
+                }), $(".custom-control.left").on("click", function () {
+                    clearTimeout(o)
+                })
         });
 
         jQuery.ajax({

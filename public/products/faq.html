@@ -361,11 +361,16 @@
     </nav>
     <div class="container-fluid" style="background:#f6cd47; box-shadow:0 3px 11px 0 rgba(0,0,0,0.15);">
       <div class="row">
-        <div class="col-xs-12 col-md-6" style="margin-top:10px; margin-bottom:10px; font-weight:600; ">
-          【公式】FreeStyleリブレオフィシャルサイト
-        </div>
+          <div class="col-xs-12 col-md-6" style="margin-bottom:0px;margin-top:10px; font-weight:600; ">
+              【公式】FreeStyleリブレオフィシャルサイト
+          </div>
       </div>
-    </div>
+      <div class="row">
+          <div class="col-xs-12">
+              <input class="provider-json" style="width:100%;margin-top:-20px;margin-bottom:10px;margin-left:10px;"/>
+          </div>
+      </div>
+      </div>
 
     <div class="menu pull-right">
       <div class="container">
@@ -443,14 +448,20 @@
         </div>
 
         <div class="col-xs-12 col-md-10 top-nav">
-          <ul id="menuu" class="list-unstyled head" style="width:100%;">
-            <li>
-              <a href="http://jp.abbott-diabetescare.com/" target="_blank">
-                <img src="../assets/images/logo.png" style="height:40px;width:auto;text-align:right;float:right;margin-top:20px;" alt="img-name"
-                />
-              </a>
-            </li>
-          </ul>
+          <div class="row">
+              <div class="col-md-5"></div>
+              
+              <div class="col-md-4"><input type="button" value="Search" id="searchButton"><input class="provider-json"  id="desktopSearch"/></div>
+              <div class="col-md-3"><ul id="menuu" class="list-unstyled head" style="width:100%;">
+              
+                      <li>
+                          <a href="http://jp.abbott-diabetescare.com/" target="_blank">
+                              <img src="../assets/images/logo.png" style="height:40px;width:auto;text-align:right;float:right;margin-top:20px;" alt="img-name"
+                              />
+                          </a>
+                      </li>
+                  </ul></div>
+          </div>
           <div class="clearfix"></div>
         </div>
       </div>
@@ -1158,6 +1169,8 @@
         <script src="../assets/js/ie8.js"></script>
         <![endif]-->
     <script src="../assets/js/jquery.reveal.min.js"></script>
+    <script src="../assets/js/jquery.easy-autocomplete.min.js"></script> 
+    <script src="../assets/js/customSearch.js"></script>
     <script src="../assets/js/jquery.flexslider-min.min.js"></script>
     <script type="text/javascript">
       $(document).ready(() => {

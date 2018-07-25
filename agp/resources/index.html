@@ -308,6 +308,29 @@
             }
         }
 
+        header:not(.mobile) nav {
+            min-height: 50px;
+        }
+
+        header:not(.mobile) nav>ul>li.active>a {
+            color: #191b22;
+            text-decoration: none;
+            border-bottom: solid 2px #191b22;
+        }
+
+        header:not(.mobile) nav>ul>li>a {
+            display: block;
+            font-family: 'MS PGothic', Osaka, Arial, sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #484747;
+            padding: 8px 12px;
+            margin: 0 auto;
+            border-bottom: solid 1px transparent;
+            position: relative;
+        }
+
         .marq_01 {}
     </style>
 </head>
@@ -388,14 +411,8 @@
                             <li class="sub">
                                 <a href="../">AGP</a>
                             </li>
-                            <li>
-                                <a title="ISFとは" href="../../isf/">ISFとは</a>
-                            </li>
-                            <li>
-                                <a title="ビデオストーリー" href="../../video-story.html">ビデオストーリー</a>
-                            </li>
-                            <li>
-                                <a title="新・FreeStyle リブレ&リブレProパンフ" href="../../assets/pdf/CGM-Combined-20180425-FINAL.pdf" target="_blank">新・FreeStyle リブレ&リブレProパンフ</a>
+                            <li class="sub">
+                                <a href="../../new.html">NEW</a>
                             </li>
                         </ul>
                     </div>
@@ -417,21 +434,15 @@
                     <a href="../../" class="brand ">&nbsp;</a>
                 </div>
 
-                <div class="col-xs-12 col-md-10 top-nav">
-                    <div class="row">
-                        <div class="col-md-5"></div>
-                        
-                        <div class="col-md-4"><input type="button" value="Search" id="searchButton"><input class="provider-json"  id="desktopSearch"/></div>
-                        <div class="col-md-3"><ul id="menuu" class="list-unstyled head" style="width:100%;">
-                        
-                                <li>
-                                    <a href="http://jp.abbott-diabetescare.com/" target="_blank">
-                                        <img src="../../assets/images/logo.png" style="height:40px;width:auto;text-align:right;float:right;margin-top:20px;" alt="img-name"
-                                        />
-                                    </a>
-                                </li>
-                            </ul></div>
-                    </div>
+                <div class="col-xs-12 col-md-10 top-nav ">
+                    <ul id="menuu " class="list-unstyled head " style="width:100%; ">
+                        <li>
+                            <a href="http://jp.abbott-diabetescare.com/ " target="_blank ">
+                                <img src="../../assets/images/logo.png " style="height:40px;width:auto;text-align:right;float:right;margin-top:20px;
+                        " alt="img-name " />
+                            </a>
+                        </li>
+                    </ul>
                     <div class="clearfix "></div>
                 </div>
             </div>
@@ -525,8 +536,8 @@
                         </div>
                         <div class="inner-content ">
                             <div class="container ">
-                                <p>The expert perspectives collected on this page represent the latest thinking in diabetes treatment and the AGP. Come
-                                    back to this page often to see the latest updates.</p>
+                                <p>The expert perspectives collected on this page represent the latest thinking in diabetes
+                                    treatment and the AGP. Come back to this page often to see the latest updates.</p>
 
                                 <div class="resources ">
                                     <div class="tab-items ">
@@ -553,8 +564,9 @@
                                                     <ul class="resource-card ">
                                                         <li>
                                                             <div>
-                                                                <p class="title ">Recommendations for standardizing glucose reporting and analysis to optimize clinical decision making in
-                                                                    diabetes: the ambulatory glucose profile</p>
+                                                                <p class="title ">Recommendations for standardizing glucose reporting and analysis
+                                                                    to optimize clinical decision making in diabetes: the
+                                                                    ambulatory glucose profile</p>
                                                                 <p class="desc ">AUTHOR(S)Bergenstal et al</p>
                                                                 <p>
                                                                     <a id="abstract-bergenstal " href="abstract-bergenstal.html ">ABSTRACT</a>
@@ -563,7 +575,8 @@
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <p class="title ">It’s time to move from the A1c to better metrics for diabetes control.</p>
+                                                                <p class="title ">It’s time to move from the A1c to better metrics for diabetes
+                                                                    control.</p>
                                                                 <p class="desc ">AUTHOR(S)Kowalksi AJ</p>
                                                                 <p>
                                                                     <a id="abstract-kowlksi " href="abstract-kowalski.html ">ABSTRACT</a>
@@ -572,7 +585,8 @@
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <p class="title ">Optimal sampling intervals to assess long-term glycemic control using continuous glucose monitoring</p>
+                                                                <p class="title ">Optimal sampling intervals to assess long-term glycemic control
+                                                                    using continuous glucose monitoring</p>
                                                                 <p class="desc ">AUTHOR(S)Xing D, et al</p>
                                                                 <p>
                                                                     <a id="abstract-xing " href="abstract-xing.html ">ABSTRACT</a>
@@ -596,8 +610,10 @@
                                                                 <a id="video-dr-bergenstal ">
                                                                     <img src="../images/img_resources_vid1.jpg " alt="img-name " />
                                                                 </a>
-                                                                <p class="title ">The Ambulatory Glucose Profile: A New Standard of Care in Diabetes</p>
-                                                                <p class="desc ">AUTHOR(S)Dr. Richard Bergenstal, Executive Director of the International Diabetes Center, Minneapolis, MN</p>
+                                                                <p class="title ">The Ambulatory Glucose Profile: A New Standard of Care in
+                                                                    Diabetes</p>
+                                                                <p class="desc ">AUTHOR(S)Dr. Richard Bergenstal, Executive Director of the
+                                                                    International Diabetes Center, Minneapolis, MN</p>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -613,11 +629,13 @@
                                                     <ul class="resource-card ">
                                                         <li>
                                                             <div>
-                                                                <p class="title ">Assessment of the variance of the Ambulatory Glucose Profile over 3 to 20 days of continuous glucose monitoring</p>
+                                                                <p class="title ">Assessment of the variance of the Ambulatory Glucose Profile
+                                                                    over 3 to 20 days of continuous glucose monitoring</p>
                                                                 <p class="desc ">AUTHOR(S)Dunn TC</p>
                                                                 <p>
                                                                     <a id="moreinfo-dunn
-                        " type='application/pdf' href="https://www.diabetesfrontier.us/ourresources/dunn_easd_2010_31aug10.pdf " target="_blank ">MORE INFO
+                        " type='application/pdf' href="https://www.diabetesfrontier.us/ourresources/dunn_easd_2010_31aug10.pdf "
+                                                                        target="_blank ">MORE INFO
                                                                         <span class="as-hidden ">(PDF 728KB)</span>
                                                                     </a>
                                                                 </p>
@@ -625,11 +643,13 @@
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <p class="title ">An innovative use of the Ambulatory Glucose Profile to reveal the glycemic effect of food</p>
+                                                                <p class="title ">An innovative use of the Ambulatory Glucose Profile to reveal
+                                                                    the glycemic effect of food</p>
                                                                 <p class="desc ">AUTHOR(S)Lyons, L; Kulkami, K</p>
                                                                 <p>
                                                                     <a id="moreinfo-lyons
-                        " type='application/pdf' href="https://www.diabetesfrontier.us/ourresources/easd_2014_poster_1052_lyons_kulkarni.pdf " target="_blank ">MORE INFO
+                        " type='application/pdf' href="https://www.diabetesfrontier.us/ourresources/easd_2014_poster_1052_lyons_kulkarni.pdf "
+                                                                        target="_blank ">MORE INFO
                                                                         <span class="as-hidden ">(PDF 623KB)</span>
                                                                     </a>
                                                                 </p>

@@ -321,11 +321,16 @@
         </nav>
         <div class="container-fluid" style="background:#f6cd47; box-shadow:0 3px 11px 0 rgba(0,0,0,0.15);">
             <div class="row">
-                <div class="col-xs-12 col-md-6 mainfont" style="margin-top:10px; font-weight:600; ">
-                    <p>【公式】FreeStyleリブレオフィシャルサイト</p>
+                <div class="col-xs-12 col-md-6" style="margin-bottom:0px;margin-top:10px; font-weight:600; ">
+                    【公式】FreeStyleリブレオフィシャルサイト
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <input class="provider-json" style="width:100%;margin-top:-20px;margin-bottom:10px;margin-left:10px;"/>
+                </div>
+            </div>
+            </div>
 
         <div class="menu pull-right">
             <div class="container">
@@ -351,7 +356,7 @@
                                 <a href="../">AGP</a>
                             </li>
                             <li class="sub">
-                                <a href="../../isf/">ISFとは</a>
+                                <a href="../../new.html">NEW</a>
                             </li>
                         </ul>
                     </div>
@@ -374,14 +379,20 @@
                 </div>
 
                 <div class="col-xs-12 col-md-10 top-nav">
-                    <ul id="menuu" class="list-unstyled head" style="width:100%;">
-                        <li>
-                            <a href="http://jp.abbott-diabetescare.com/" target="_blank">
-                                <img src="../../assets/images/logo.png" style="height:40px;width:auto;text-align:right;float:right;margin-top:20px;" alt="img-name"
-                                />
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-md-5"></div>
+                        
+                        <div class="col-md-4"><input type="button" value="Search" id="searchButton"><input class="provider-json"  id="desktopSearch"/></div>
+                        <div class="col-md-3"><ul id="menuu" class="list-unstyled head" style="width:100%;">
+                        
+                                <li>
+                                    <a href="http://jp.abbott-diabetescare.com/" target="_blank">
+                                        <img src="../../assets/images/logo.png" style="height:40px;width:auto;text-align:right;float:right;margin-top:20px;" alt="img-name"
+                                        />
+                                    </a>
+                                </li>
+                            </ul></div>
+                    </div>
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -419,7 +430,18 @@
                                     <a href="../">AGP</a>
                                 </li>
                                 <li class="sub">
-                                    <a href="../../isf/">ISFとは</a>
+                                    <a href="#">NEW</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a title="ISFとは" href="../../isf/">ISFとは</a>
+                                        </li>
+                                        <li>
+                                            <a title="ビデオストーリー" href="../../video-story.html">ビデオストーリー</a>
+                                        </li>
+                                        <li>
+                                            <a title="新・FreeStyle リブレ&リブレProパンフ" href="../../assets/pdf/CGM-Combined-20180425-FINAL.pdf" target="_blank">新・FreeStyle リブレ&リブレProパンフ</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </nav>
@@ -476,21 +498,24 @@
                                             <br>
                                         </p>
                                         <p class="heading2">MEETING REPORT</p>
-                                        <p>Recommendations for Standardizing Glucose Reporting and Analysis to Optimize Clinical Decision Making in Diabetes:
-                                            The Ambulatory Glucose Profile (AGP) Bergenstal, et al</p>
+                                        <p>Recommendations for Standardizing Glucose Reporting and Analysis to Optimize Clinical
+                                            Decision Making in Diabetes: The Ambulatory Glucose Profile (AGP) Bergenstal,
+                                            et al</p>
                                     </div>
-                                    <p>Despite advances in diabetes treatment, glycemic control remains suboptimal. In 2012, an expert panel of diabetes
-                                        specialists identified the following as barriers:</p>
+                                    <p>Despite advances in diabetes treatment, glycemic control remains suboptimal. In 2012,
+                                        an expert panel of diabetes specialists identified the following as barriers:</p>
                                     <ul>
                                         <li>The inability of the HbA1c level to characterize diurnal glucose patterns.</li>
-                                        <li>Underutilization of self-monitoring of blood glucose (SMBG) and continuous glucose monitoring (CGM) data.</li>
-                                        <li>Lack of easy and standardized glucose data collection, analysis, and visualization. Poor adherence to insulin therapy,
-                                            possibly related to fear of hypoglycemia.</li>
+                                        <li>Underutilization of self-monitoring of blood glucose (SMBG) and continuous glucose
+                                            monitoring (CGM) data.</li>
+                                        <li>Lack of easy and standardized glucose data collection, analysis, and visualization.
+                                            Poor adherence to insulin therapy, possibly related to fear of hypoglycemia.</li>
                                     </ul>
-                                    <p>With the goal of developing recommendations for standardized reporting and analysis, panel members reviewed a universal
-                                        software report, the Ambulatory Glucose Profile (AGP), created by Mazze et al. Participants agreed, the AGP ‘‘Dashboard’’
-                                        approach is analogous to the electrocardiogram, which visualizes standardized data. Piloting is underway to incorporate
-                                        the AGP ‘‘Dashboard’’ into an electronic medical record.</p>
+                                    <p>With the goal of developing recommendations for standardized reporting and analysis,
+                                        panel members reviewed a universal software report, the Ambulatory Glucose Profile
+                                        (AGP), created by Mazze et al. Participants agreed, the AGP ‘‘Dashboard’’ approach
+                                        is analogous to the electrocardiogram, which visualizes standardized data. Piloting
+                                        is underway to incorporate the AGP ‘‘Dashboard’’ into an electronic medical record.</p>
 
                                 </div>
                             </div>
@@ -545,6 +570,8 @@
     <!--[if lte IE 8]>
      <script src="../../assets/js/ie8.js"></script>
      <![endif]-->
+     <script src="../../assets/js/jquery.easy-autocomplete.min.js"></script> 
+    <script src="../../assets/js/customSearch.js"></script>
     <script src="../../assets/js/jquery.flexslider-min.js"></script>
     <script type="text/javascript">
         $(window).load(function () {
@@ -556,16 +583,16 @@
             var o = Cookies.get("visit_check");
             console.log(Cookies.get("visit_check")), "yes" != "JP" != currentCountry && (console.log(
                 "You are not in JAPAN show model now..."), $(".geo-popup").reveal({
-                animation: "fadeAndPop",
-                animationspeed: 300,
-                closeonbackgroundclick: !0,
-                dismissmodalclass: "close-reveal-modal"
-            }), $(".geo-popup").css({
-                left: "50%",
-                marginLeft: -$(".geo-popup").width() / 2
-            })), $("#closeGeoIp").click(function () {
-                $("#closeGeoIp2").click()
-            })
+                    animation: "fadeAndPop",
+                    animationspeed: 300,
+                    closeonbackgroundclick: !0,
+                    dismissmodalclass: "close-reveal-modal"
+                }), $(".geo-popup").css({
+                    left: "50%",
+                    marginLeft: -$(".geo-popup").width() / 2
+                })), $("#closeGeoIp").click(function () {
+                    $("#closeGeoIp2").click()
+                })
         });
     </script>
     <script type="text/javascript">
@@ -592,10 +619,10 @@
                     var e = $(this).find(".active").attr("data-interval");
                     $("#carousel-home").carousel("pause"), o = setTimeout("$('#carousel-home').carousel();", e - 1e3)
                 }), $(".custom-control.right").on("click", function () {
-                clearTimeout(o)
-            }), $(".custom-control.left").on("click", function () {
-                clearTimeout(o)
-            })
+                    clearTimeout(o)
+                }), $(".custom-control.left").on("click", function () {
+                    clearTimeout(o)
+                })
         });
 
         jQuery.ajax({

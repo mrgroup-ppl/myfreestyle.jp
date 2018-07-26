@@ -321,11 +321,16 @@
         </nav>
         <div class="container-fluid" style="background:#f6cd47; box-shadow:0 3px 11px 0 rgba(0,0,0,0.15);">
             <div class="row">
-                <div class="col-xs-12 col-md-6 mainfont" style="margin-top:10px; font-weight:600; ">
-                    <p>【公式】FreeStyleリブレオフィシャルサイト</p>
+                <div class="col-xs-12 col-md-6" style="margin-bottom:0px;margin-top:10px; font-weight:600; ">
+                    【公式】FreeStyleリブレオフィシャルサイト
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <input class="provider-json" style="width:100%;margin-top:-20px;margin-bottom:10px;margin-left:10px;"/>
+                </div>
+            </div>
+            </div>
 
         <div class="menu pull-right">
             <div class="container">
@@ -351,7 +356,7 @@
                                 <a href="../">AGP</a>
                             </li>
                             <li class="sub">
-                                <a href="../../isf/">ISFとは</a>
+                                <a href="../../new.html">NEW</a>
                             </li>
                         </ul>
                     </div>
@@ -374,14 +379,20 @@
                 </div>
 
                 <div class="col-xs-12 col-md-10 top-nav">
-                    <ul id="menuu" class="list-unstyled head" style="width:100%;">
-                        <li>
-                            <a href="http://jp.abbott-diabetescare.com/" target="_blank">
-                                <img src="../../assets/images/logo.png" style="height:40px;width:auto;text-align:right;float:right;margin-top:20px;" alt="img-name"
-                                />
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-md-5"></div>
+                        
+                        <div class="col-md-4"><input type="button" value="Search" id="searchButton"><input class="provider-json"  id="desktopSearch"/></div>
+                        <div class="col-md-3"><ul id="menuu" class="list-unstyled head" style="width:100%;">
+                        
+                                <li>
+                                    <a href="http://jp.abbott-diabetescare.com/" target="_blank">
+                                        <img src="../../assets/images/logo.png" style="height:40px;width:auto;text-align:right;float:right;margin-top:20px;" alt="img-name"
+                                        />
+                                    </a>
+                                </li>
+                            </ul></div>
+                    </div>
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -419,7 +430,18 @@
                                     <a href="../">AGP</a>
                                 </li>
                                 <li class="sub">
-                                    <a href="../../isf/">ISFとは</a>
+                                    <a href="#">NEW</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a title="ISFとは" href="../../isf/">ISFとは</a>
+                                        </li>
+                                        <li>
+                                            <a title="ビデオストーリー" href="../../video-story.html">ビデオストーリー</a>
+                                        </li>
+                                        <li>
+                                            <a title="新・FreeStyle リブレ&リブレProパンフ" href="../../assets/pdf/CGM-Combined-20180425-FINAL.pdf" target="_blank">新・FreeStyle リブレ&リブレProパンフ</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </nav>
@@ -476,15 +498,17 @@
                                         <p>It’s Time to Move from the A1c to Better Metrics for Diabetes Control
                                             <br />Kowalski, et al</p>
                                     </div>
-                                    <p>Despite recent advances in diabetes treatment, the goal of minimizing hyperglycemic and hypoglycemic exposure remains
-                                        a challenge.
-                                        <a id="link-bergenstal-et-al" href="abstract-bergenstal.html">Bergenstal et al.</a> have provided a critical step in the right direction by defining and prioritizing key diabetes
-                                        glucose control metrics. They also describe a new tool, called the Ambulatory Glucose Profile (AGP), which presents
-                                        thousands of glucose data points on a visual “Dashboard.”</p>
+                                    <p>Despite recent advances in diabetes treatment, the goal of minimizing hyperglycemic and
+                                        hypoglycemic exposure remains a challenge.
+                                        <a id="link-bergenstal-et-al" href="abstract-bergenstal.html">Bergenstal et al.</a> have provided a critical step in the right direction by defining
+                                        and prioritizing key diabetes glucose control metrics. They also describe a new tool,
+                                        called the Ambulatory Glucose Profile (AGP), which presents thousands of glucose
+                                        data points on a visual “Dashboard.”</p>
 
-                                    <p>Tools, such as the AGP, could empower both provider and patient with data-driven recommendations, potentially transforming
-                                        the diabetes ecosystem. However, without standardized outcome metrics and formalization of these recommendations,
-                                        optimal adoption and use will be blunted, and that, say authors, is an “unacceptable outcome.”</p>
+                                    <p>Tools, such as the AGP, could empower both provider and patient with data-driven recommendations,
+                                        potentially transforming the diabetes ecosystem. However, without standardized outcome
+                                        metrics and formalization of these recommendations, optimal adoption and use will
+                                        be blunted, and that, say authors, is an “unacceptable outcome.”</p>
 
                                 </div>
                             </div>
@@ -539,6 +563,8 @@
     <!--[if lte IE 8]>
      <script src="../../assets/js/ie8.js"></script>
      <![endif]-->
+     <script src="../../assets/js/jquery.easy-autocomplete.min.js"></script> 
+    <script src="../../assets/js/customSearch.js"></script>
     <script src="../../assets/js/jquery.flexslider-min.js"></script>
     <script type="text/javascript">
         $(window).load(function () {
@@ -550,16 +576,16 @@
             var o = Cookies.get("visit_check");
             console.log(Cookies.get("visit_check")), "yes" != "JP" != currentCountry && (console.log(
                 "You are not in JAPAN show model now..."), $(".geo-popup").reveal({
-                animation: "fadeAndPop",
-                animationspeed: 300,
-                closeonbackgroundclick: !0,
-                dismissmodalclass: "close-reveal-modal"
-            }), $(".geo-popup").css({
-                left: "50%",
-                marginLeft: -$(".geo-popup").width() / 2
-            })), $("#closeGeoIp").click(function () {
-                $("#closeGeoIp2").click()
-            })
+                    animation: "fadeAndPop",
+                    animationspeed: 300,
+                    closeonbackgroundclick: !0,
+                    dismissmodalclass: "close-reveal-modal"
+                }), $(".geo-popup").css({
+                    left: "50%",
+                    marginLeft: -$(".geo-popup").width() / 2
+                })), $("#closeGeoIp").click(function () {
+                    $("#closeGeoIp2").click()
+                })
         });
     </script>
     <script type="text/javascript">
@@ -586,10 +612,10 @@
                     var e = $(this).find(".active").attr("data-interval");
                     $("#carousel-home").carousel("pause"), o = setTimeout("$('#carousel-home').carousel();", e - 1e3)
                 }), $(".custom-control.right").on("click", function () {
-                clearTimeout(o)
-            }), $(".custom-control.left").on("click", function () {
-                clearTimeout(o)
-            })
+                    clearTimeout(o)
+                }), $(".custom-control.left").on("click", function () {
+                    clearTimeout(o)
+                })
         });
 
         jQuery.ajax({

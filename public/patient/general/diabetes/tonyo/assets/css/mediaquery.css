@@ -1,0 +1,131 @@
+@media (min-width: 1000px) and (max-width: 1400px){
+    #main-wrapper{margin-top: -23px;}
+    
+}
+@media only screen and (max-width: 1200px){
+  .banner-main-cnt h1{
+        font-size: 22px;
+        margin-top: -100px;
+        line-height: 23px;
+    }
+    .break{
+        display: none;
+    }
+    .banner-main{
+        height: auto!important;
+    }
+    .banner-main-cnt{width: 74%;}
+    .hideit{display: none;}
+    .banner-main-cnt h1{
+        font-size: 36px;
+        margin-top: 10px;
+        line-height: 22px;
+    }
+    
+    
+}
+@media only screen and (max-width: 945px){
+    .em-02 tr td{
+    width: 100%!important;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;}
+    
+   
+    .tabledata tr th{
+        width:100%;
+        display:block;
+        text-align: center;
+        background-color: #00b4ed;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .tabledata tr td{
+        width:100%;
+        display:block;
+        background-color: #fbfbfb;
+        padding: 10px;
+    }
+    .banner-main{
+        height: auto!important;
+    }
+    .banner-main-cnt h1{
+        font-size: 28px;
+        margin-top: 0px;
+        line-height: 22px;
+    }
+    .break{
+        display: none;
+    }
+    .banner-main-cnt{width: 74%;}
+    .banner-main-cnt .pt24{
+        margin-bottom: 0px;
+    }
+    
+}
+    
+@media only screen and (max-width: 738px){
+    .diabetes-talk-well{
+        margin:auto;
+        padding-bottom: 100px;
+    }
+    .diabetes-talk-well .img-professor{
+        float: right;
+    }
+    .diabetes-talk-well .img-thread{
+        float: left!important;
+        margin-top: -430px;
+        margin-left: -40px;
+    }
+    .region{
+        margin-top: -14px;
+    }
+    .footer-product-links-container{
+        border-right: none!important;
+        width: 100%!important;
+        margin-right: 0px;
+    }
+    .col-xs-push-1{left: 0px;}
+    .footer-links-container{
+        width: 100%!important;
+        float: none;
+    }
+    .banner-main{
+        height: auto!important;
+    }
+    .banner-main-cnt h1{
+        font-size: 22px;
+        margin-top: -85px;
+        line-height: 18px;
+    }
+    .pt24{font-size: 13px!important;}
+    .banner-main-cnt .pt24{line-height: 13px;}
+
+    }
+
+@media only screen and (max-width: 520px){
+    .nav-btn-01 ul li{width: 85px;}
+    .diabetes-talk-well .img-professor{
+        left: 0px!important;
+        margin-top: 100px!important;
+    }
+}
+
+@media only screen and (max-width: 585px){
+    
+.light-blue-circle, .light-green-cirle, .blue-circle{
+    position: static!important;
+    margin: auto;
+    }
+    .gap4{margin-top: 370px;}
+    
+    .light-green-circle{
+        position: static;
+        margin: auto;
+    }
+    .tbl-data-01 th, .tbl-data-01 td{font-size: 75%;}
+    .hdg-1-01{font-size: 100%;}
+    .image-layout.image-parallel.image-R div.image{float: none;}
+    
+    }

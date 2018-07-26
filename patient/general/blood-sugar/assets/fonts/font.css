@@ -1,0 +1,57 @@
+@font-face {
+	font-family:'Georgia-Regular';
+	src: url('Georgia_gdi.eot');
+	src: url('Georgia_gdid41d.eot?#iefix') format('embedded-opentype'),
+		url('Georgia_gdi.woff') format('woff'),
+		url('Georgia_gdi.ttf') format('truetype'),
+		url('Georgia_gdi.otf') format('opentype'),
+		url('Georgia_gdi.svg#Georgia-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA, U+000-5FF, U+1e00-1fff, U+2000-2300;
+}
+
+@font-face {
+	font-family:'Georgia-Bold';
+	src: url('Georgia-Bold_gdi.eot');
+	src: url('Georgia-Bold_gdid41d.eot?#iefix') format('embedded-opentype'),
+		url('Georgia-Bold_gdi.woff') format('woff'),
+		url('Georgia-Bold_gdi.ttf') format('truetype'),
+		url('Georgia-Bold_gdi.otf') format('opentype'),
+		url('Georgia-Bold_gdi.svg#Georgia-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA, U+000-5FF, U+1e00-1fff, U+2000-2300;
+}
+
+
+@font-face {
+	font-family:'BrandonGrotesque-Black';
+	src: url('BrandonGrotesque-Black_gdi.eot');
+	src: url('BrandonGrotesque-Black_gdid41d.eot?#iefix') format('embedded-opentype'),
+		url('BrandonGrotesque-Black_gdi.woff') format('woff'),
+		url('BrandonGrotesque-Black_gdi.ttf') format('truetype'),
+		url('BrandonGrotesque-Black_gdi.otf') format('opentype'),
+		url('BrandonGrotesque-Black_gdi.svg#BrandonGrotesque-Black') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-2122, U+000-5FF, U+1e00-1fff, U+2000-2300;
+}
+
+
+@font-face {
+	font-family:'input_14344305569203-Regular';
+	src: url('input_14344305569203_gdi.eot');
+	src: url('input_14344305569203_gdid41d.eot?#iefix') format('embedded-opentype'),
+		url('input_14344305569203_gdi.woff') format('woff'),
+		url('input_14344305569203_gdi.ttf') format('truetype'),
+		url('input_14344305569203_gdi.otf') format('opentype'),
+		url('input_14344305569203_gdi.svg#input_14344305569203-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-22A5, U+000-5FF, U+1e00-1fff, U+2000-2300;
+}

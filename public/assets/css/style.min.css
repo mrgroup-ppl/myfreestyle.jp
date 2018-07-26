@@ -3,7 +3,7 @@
     white-space: nowrap;
     overflow: hidden;
     position: absolute;
-   
+
     z-index: 9999; }
 .easy-autocomplete-container ul li.selected { background: #f0f0f0; padding-left:5px; padding-right:5px; }
 .easy-autocomplete-container ul li { font-weight: normal;
@@ -18,11 +18,11 @@
     padding-left:5px; padding-right:5px;
     }
 #provider-json{float:right;}
-.easy-autocomplete{float:right;margin-top:35px;}
+.easy-autocomplete{float:right;margin-top:35px; display:none !important;}
 @media (max-width: 991px){
     header.mobile .menu .easy-autocomplete-container ul {    font-size: 1.2em;
         white-space: nowrap;
-        
+
         overflow: hidden;
         position: absolute;
         margin-top: 25px;
@@ -50,4 +50,5 @@
 #searchButton{    float: right;
     margin-top: 36px;
     padding-left: 10px;
-    padding-right: 10px;}
+    padding-right: 10px;
+    display: none !important;}

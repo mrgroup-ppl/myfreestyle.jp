@@ -1,8 +1,13 @@
-{
-  "extends": "airbnb-base",
-  "env": {
-    "browser": true,
-    "jest": true
-  },
-  "rules": {}
-}
+---
+root: true
+env:
+  browser: true
+  es6: true
+extends: eslint:recommended
+parserOptions:
+  ecmaVersion: 6
+  sourceType: module
+rules:
+  semi:
+    - error
+    - never

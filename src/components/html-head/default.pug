@@ -1,0 +1,25 @@
+//- Set Character encoding
+meta(charset=locals.charset || "UTF-8")
+
+//- Check for viewport
+if locals.viewport
+  meta(name="viewport", content=locals.viewport)
+
+//- Check for meta data to include
+if locals.meta
+  if locals.meta.title
+    title= locals.meta.title
+  if locals.meta.description
+    meta(name="description" content=locals.meta.description)
+  if locals.meta.keywords
+    meta(name="keywords" content=locals.meta.keywords)
+
+  //- Facebook's open-graph
+  if locals.meta.og
+    each val, prop in locals.meta.og
+      meta(prioperty=`og:${prop}`, content=val)
+
+//- Include CSS - handled by HTMLWebpackPlugin
+if locals.css
+  each link in locals.css
+    link(rel="stylesheet" href=link)

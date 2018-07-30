@@ -1,0 +1,21 @@
+extends /layouts/base
+
+block append locals
+  -
+    locals.meta = {
+      title: '【公式】FreeStyleリブレオフィシャルサイト',
+      description: '他の一部のウェブサイトにおいて、FreeStyleリブレについて誤解を招きかねない表現が散見されます。 本サイトがアボットの公式サイトであり、FreeStyleリブレの適正使用については、このサイトをご覧ください。',
+      keywords: '血糖測定関連製品, 血糖, 血糖測定, 血糖測定機, 血糖測定関連製品, 糖尿, 糖尿病, フリースタイル, プレシジョンネオ, ネオ, フリースタイルフリーダムライト, プレシジョン エクシード, フリースタイルプレシジョンプロ, プレシジョンプロ, MyFreeStyle, Neo, Lite, Xceed, PrecisionPro, diabetes, DM, diabetes-mellitus, インスリン, インスリン患者, insulin, insulin patient, ポケットランセット™, ポケットランセット, ランセット, 電極, 電極β-ケトン測定電極, プレシジョン血糖測定電極, FreeStyle Auto-Assist Neo, 自己検査用グルコース測定器',
+      og: {
+        title: '【公式】FreeStyleリブレオフィシャルサイト',
+        image: 'http://myfreestyle.jp/assets/img/Libre_Header_160726.jpg',
+        description: '「糖尿病と生きる」皆様のニーズに応じた製品を、ダイアベティスケア事業部は提供しています。また、製品を提供するだけでなく、糖尿病指導の現場を考えた教育ツールの提供や、医療スタッフのためのセミナーを開催するなど、さまざまなサービスの提供により糖尿病の患者様やその治療にたずさわる皆様をサポートしています'
+      }
+    }
+  +addCss('/css/sub-junk/plop.css')
+
+block content
+  h1 Hello, World!!
+  p How are you today?
+  img(src=require('assets/img/test/bird.png'))
+  //- img(src=require("assets/img/test/bird.png"))

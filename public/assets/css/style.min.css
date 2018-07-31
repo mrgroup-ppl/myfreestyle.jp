@@ -52,3 +52,7 @@
     padding-left: 10px;
     padding-right: 10px;
     display: none !important;}
+
+#desktopSearch {
+  display: none !important;
+}

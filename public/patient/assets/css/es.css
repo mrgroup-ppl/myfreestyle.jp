@@ -19,8 +19,16 @@
   display: inline-block;
 }
 
+.nav_menu #menu {
+  transform: translateX(-16px);
+}
+
 .nav_menu #menu > ul {
   display: inline-block;
+}
+
+.nav_menu #menu > ul > li {
+  position: static;
 }
 
 .nav_menu #menu > ul > li > a {
@@ -38,6 +46,16 @@
 
 .nav_menu #menu > ul > li > div > ul > li a:hover {
   color: #5bc2e7;
+}
+
+@media screen and (min-width: 768px) {
+  .nav_menu #menu li.sub:hover > div {
+    position: absolute;
+    left: 0;
+  }
+  .nav_menu #menu li.sub:hover > div > ul {
+    left: 0;
+  }
 }
 
 .nav_menu_map {
@@ -68,3 +86,8 @@
 .nav_container + .subnav > .container {
   display: none;
 }
+
+.logo-name-2.mob-of {
+  display: none !important;
+}
+

@@ -1,0 +1,64 @@
+/**
+ * Custon CSS for /patient pages
+ */
+.nav_container {
+  height: 38px;
+  /*background:#ffd100;*/
+  background:#ffffff;
+}
+
+.nav_container .logo-name-2 {
+  padding: 9px 15px 9px 0px;
+}
+
+.nav_container .logo-name-2 a:hover {
+  color: #5bc2e7;
+}
+
+.nav_menu {
+  display: inline-block;
+}
+
+.nav_menu #menu > ul {
+  display: inline-block;
+}
+
+.nav_menu #menu > ul > li > a {
+  padding: 10px 16px 12px;
+}
+
+.nav_menu #menu > ul > li > a:hover {
+  color: #5bc2e7;
+  background-color: #d9d9d6;
+}
+
+.nav_menu #menu > ul > li:hover div:after {
+  background-color: #d9d9d6;
+}
+
+.nav_menu #menu > ul > li > div > ul > li a:hover {
+  color: #5bc2e7;
+}
+
+.nav_menu_map {
+  text-indent: -9999em;
+  display: inline-block;
+  float: right;
+  padding: 4px 10px;
+}
+
+.nav_menu_map_link {
+  display: block;
+  width: 42px;
+  background: url(../images/icons/icon-map.png) left top no-repeat;
+  text-decoration: none;
+  /*padding: 4px 0px;*/
+}
+
+.toggleNav {
+  background: url(../images/icons/menu_icon.png) center center no-repeat;
+  width: 40px;
+  height: 38px;
+  float: right;
+  /*display: none;*/
+}

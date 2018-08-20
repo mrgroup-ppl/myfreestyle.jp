@@ -19,8 +19,16 @@
   display: inline-block;
 }
 
+.nav_menu #menu {
+  transform: translateX(-16px);
+}
+
 .nav_menu #menu > ul {
   display: inline-block;
+}
+
+.nav_menu #menu > ul > li {
+  position: static;
 }
 
 .nav_menu #menu > ul > li > a {
@@ -40,11 +48,23 @@
   color: #5bc2e7;
 }
 
+@media screen and (min-width: 768px) {
+  .nav_menu #menu li.sub:hover > div {
+    position: absolute;
+    left: 0;
+  }
+  .nav_menu #menu li.sub:hover > div > ul {
+    left: 0;
+  }
+}
+
 .nav_menu_map {
   text-indent: -9999em;
   display: inline-block;
   float: right;
   padding: 4px 10px;
+  position: absolute;
+  right: 0;
 }
 
 .nav_menu_map_link {
@@ -62,3 +82,12 @@
   float: right;
   /*display: none;*/
 }
+
+.nav_container + .subnav > .container {
+  display: none;
+}
+
+.logo-name-2.mob-of {
+  display: none !important;
+}
+

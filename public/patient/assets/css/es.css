@@ -64,3 +64,7 @@
   float: right;
   /*display: none;*/
 }
+
+.nav_container + .subnav > .container {
+  display: none;
+}

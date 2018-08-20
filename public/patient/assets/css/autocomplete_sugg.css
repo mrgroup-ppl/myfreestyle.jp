@@ -249,11 +249,6 @@ header {
     background: #191b22
 }
 
-.header-row-2 {
-    height: 38px;
-    background: #ffd100
-}
-
 .logo {
     float: left;
     margin-top: 15px
@@ -333,7 +328,7 @@ header {
     /*max-width: 940px;*/
     width: 100%;
     margin: 0 auto;
-    position: absolute;
+    /*position: absolute;*/
     top: 0px;
 }
 

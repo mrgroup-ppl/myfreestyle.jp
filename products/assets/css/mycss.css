@@ -1,0 +1,3035 @@
+.miniheader1{
+    background-color: transparent!important;
+    color: black!important;
+    padding-top: 10px;
+    text-align: center!important;
+    font-size: 20px;
+    display: -webkit-box;
+    border-bottom: 2px solid grey;
+}
+.miniheader1 a{
+
+    color: black!important;
+
+
+}
+.smalltab{
+   border: 2px solid grey;
+    width: 20%;
+}
+
+.link1{
+    color:white!important;
+}
+.link1:hover
+{
+    color:#ffd100!important;
+}
+.col-md-8{
+    padding-left:
+        0px;
+    padding-right:
+        0px;
+}
+.dropdown-menu{
+    min-width: 212px;
+}
+
+ #firstscreen {
+    width: 100%;
+	background-image: url("../images/1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #secondscreen {
+    width: 100%;
+	background-image: url("../images/2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #thirdscreen {
+    width: 100%;
+	background-image: url("../images/3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #fourthscreen {
+    width: 100%;
+	background-image: url("../images/4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #fifthscreen {
+    width: 100%;
+	background-image: url("../images/5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #sixthscreen {
+    width: 100%;
+	background-image: url("../images/6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #seventhscreen {
+    width: 100%;
+	background-image: url("../images/7.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #eightscreen {
+    width: 100%;
+	background-image: url("../images/8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #ninescreen {
+    width: 100%;
+	background-image: url("../images/9.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #tenscreen {
+    width: 100%;
+/*	background-image: url("../images/10.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    display:block;
+}
+ #elevenscreen {
+    width: 100%;
+/*	background-image: url("../images/11.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    display:block;
+}
+ #twelvescreen {
+    width: 100%;
+/*	background-image: url("../images/12.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    display:block;
+}
+ #thirteenscreen {
+    width: 100%;
+/*	background-image: url("../images/13.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    display:block;
+}
+ #fourteenscreen {
+    width: 100%;
+/*	background-image: url("../images/14.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    display:block;
+}
+ #fifteenscreen {
+    width: 100%;
+/*	background-image: url("../images/15.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    display:block;
+}
+ #sixteenscreen {
+    width: 100%;
+/*	background-image: url("../images/16.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    display:block;
+}
+ #seventeenscreen {
+    width: 100%;
+/*	background-image: url("../images/17.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #eighteenscreen {
+    width: 100%;
+/*	background-image: url("../images/22.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    display:block;
+}
+ #nineteenscreen {
+    width: 100%;
+	background-image: url("../images/23.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #twentyscreen {
+    width: 100%;
+	background-image: url("../images/24.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #twentyonescreen {
+    width: 100%;
+	background-image: url("../images/25.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+ #twentytwoscreen {
+    width: 100%;
+	background-image: url("../images/26.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 750px;
+    display:block;
+}
+
+
+ #flashcard {
+    width: 100%;
+	background-image: url("../images/17.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 91%;
+    height: 620px;
+
+}
+ #deck {
+    width: 100%;
+	background-image: url("../images/18.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 91%;
+    height: 620px;
+
+}
+
+ #subcategory {
+    width: 100%;
+	background-image: url("../images/19.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 91%;
+    height: 620px;
+
+}
+
+ #category {
+    width: 100%;
+	background-image: url("../images/20.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 91%;
+    height: 620px;
+
+}
+
+ #category1 {
+    width: 100%;
+	background-image: url("../images/21.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 91%;
+    height: 620px;
+
+}
+
+
+
+
+
+.firstbtn{
+    position: relative;
+    z-index: 98;
+    float: right;
+    right: 10%;
+    background-color:#e85729;
+    width: 17%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color:white!important;
+    border-radius:50px;
+    display:block!important;
+    transition: transform .9s;
+    text-decoration: none!important;
+    margin-top: 30%;
+
+}
+.firstbtn:hover{
+    text-decoration: none!important;
+    transform: scale(1.1);
+    transition: transform .9s;
+}
+.firstbtn a{
+    color:white!important;
+    display:block!important;
+}
+.firstbtn1{
+    position: relative;
+    z-index: 98;
+    float: right;
+    right: 10%;
+    background-color:#e85729;
+    width: 17%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color:white!important;
+    border-radius:50px;
+    display:block!important;
+    transition: transform .9s;
+    text-decoration: none!important;
+    margin-top: 25%;
+    margin-bottom: 15%;
+
+}
+/*
+.yellowbox{
+    background-color: #FFDE00;
+}
+*/
+.yellowbox{
+    border-left: 2px solid #FFDE00;
+    border-right: 2px solid #FFDE00;
+/*    background-color: #FFDE00;*/
+}
+
+.firstbtn1:hover{
+    text-decoration: none!important;
+    transform: scale(1.1);
+    transition: transform .9s;
+}
+.firstbtn1 a{
+    color:white!important;
+    display:block!important;
+}
+
+.secondbtn{
+    z-index: 99;
+    float: left;
+    margin-left: 3%;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    /* color:#e85729!important; */
+    border-radius:50px;
+    display:inline-flex!important;
+}
+
+
+
+
+.gap3{
+    margin-bottom: 20px!important;
+}
+
+
+.nav-tabs>li a:hover{
+    background-color: #e85729!important;
+    color: white!important;
+}
+
+
+.data{
+    width: 400px;
+    padding-left: 50px;
+    font-size: 18px;
+
+
+}
+.data1{
+    width: 520px;
+    padding-left: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    /*text-decoration: underline;*/
+}
+
+.data1 ul.data1-list {
+    border-top: 1px solid #e85729;
+}
+
+.data1 ul.data1-list > li {
+    border-bottom: 1px solid #e85729;
+    font-size: 0.95em;
+}
+
+.data2{
+    width: 320px;
+    padding-left: 50px;
+    font-size: 18px;
+
+}
+
+.data3{
+    width: 520px;
+    padding-left: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+
+}
+
+.data4 p{
+    font-size: 20px;
+}
+
+.liftedtext{
+    position: absolute;
+    z-index: 9999;
+}
+
+.footer{
+    background-color: black;
+    padding-left: 50px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+.footer p{
+    color: white!important;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-tabs>li a{
+        background-color: #ffd100;
+    }
+.dropdown-menu{
+ padding: 0px 0;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.playbtn{
+    background-color: #f44d10;
+    color: white;width: 100px;
+    border-radius: 20px;
+    margin-top: 25%;
+    margin-left: 30%;
+}
+
+.nav-tabs .dropdown-menu{
+    z-index: 99999;
+}
+.playbtn:focus
+    {
+    outline: none!important;
+}
+
+
+
+.dropdown {
+    float: left;
+    text-decoration: none!important;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: transparent;
+}
+.dropdown .dropbtn1 {
+    cursor: pointer;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn1, .dropbtn1:focus {
+    background-color: transparent;
+}
+.dropdown .dropbtn2 {
+    cursor: pointer;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn2, .dropbtn2:focus {
+    background-color: transparent;
+}
+.dropdown .dropbtn3 {
+    cursor: pointer;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn3, .dropbtn3:focus {
+    background-color: transparent;
+}
+
+.dropdown .dropbtn4 {
+    cursor: pointer;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn4, .dropbtn4:focus {
+    background-color: transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffd100;
+    width: 900%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+    margin-top: 6px;
+    margin-left: -13px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 390%;
+    padding-top: 20px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 2px solid white;
+}
+
+.dropdown-content a:hover {
+    background-color: #E85729;
+}
+
+.show {
+    display: block;
+}
+
+#zero{
+    border-right: none!important;
+}
+
+.main{
+    display: block!important;
+}
+
+.mybox{
+    width: 19%;
+    display: inline-block;
+}
+.redbtn{
+    width: 10%!important;
+    float:right;
+    margin-left: 70px;
+    margin-right: 10px;
+}
+
+.nav{
+    background-color: black!important;
+}
+
+.nav-tabs>li {
+    margin-bottom: -1px;
+    width: 19%;
+    text-align: center;
+}
+
+.nav>li>a{
+        text-decoration: none;
+    background-color: transparent!important;
+    color: white!important;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent!important;
+    color: #ffd100!important;
+}
+
+.nav-tabs>li>a{
+    border-right: 2px solid grey;
+
+}
+
+.nav-tabs>li>a:hover{
+    border-right: 2px solid grey!important;
+}
+.nav-tabs>li>a:hover{
+    border-color: transparent;
+}
+
+#zero img{
+    width: 20px;
+    margin: auto;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
+    border-color: grey!important;
+}
+.smallnav a{color: white!important;}
+.smallnav .navbar{
+    background-color: black!important;
+    margin-bottom: 0px!important;
+    min-height: 20px!important;
+}
+.smallnav .navbar a{
+        padding: 8px 16px!important;
+}
+
+.smallnav .navbar-toggle {
+    padding: 10px 8px;
+    margin-top: 7px;
+    margin-right: 8px;
+}
+.smallnav .nav {
+    background-color: #FFD100!important;
+}
+.smallnav .navbar-nav {
+    margin: 0px -15px;
+}
+
+.smallnav .navbar ul li{
+    display: table!important;
+    margin-left: 20px;
+    width: 90%!important;
+}
+
+.smallnav .navbar ul li:hover{
+    display: table!important;
+    margin-left: 20px;
+    width: 90%!important;
+
+}
+
+.smallnav .navbar ul li a{
+    font-size: 14px!important;
+    width: 100%!important;
+    text-align: left!important;
+
+}
+.smallnav .navbar ul li a:hover{
+    font-size: 14px!important;
+    background-color: #E85729!important;
+    width: 100%!important;
+    text-align: left!important;
+}
+.smallnav .navbar-brand {
+    float: left;
+    height: 30px;
+}
+.nav .dropdown a.active {
+    background-color: #FFD100!important;
+    color: black!important;
+}
+.pausebtn{
+    background-color: black;
+    position: absolute;
+    left: 0!important;
+    bottom: -182px!important;
+    padding: 10px;
+    border: none!important;
+}
+
+.imgbox{
+    width: 100%;
+}
+.smlimg{margin: auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 250px) and (max-width: 400px) {
+
+    h1{
+    font-size: 15px;
+    margin-top: 3px;
+    margin-bottom: -5px;
+    }
+
+    .smallnav .navbar-toggle {
+    padding: 0px 0px;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+    .smallnav .navbar a {
+    padding: 3px 16px!important;
+}
+    .homesize{
+        height: 20px;
+    }
+
+    .pausebtn {
+    background-color: black;
+    position: absolute;
+    left: 0!important;
+    bottom: -61px!important;
+    padding: 3px;
+    border: none!important;
+    width: 15px;
+}
+
+.nav>li>a {
+    position: relative!important;
+    display: block!important;
+    padding: 5px 0px!important;
+    font-size: 6px!important;
+}
+
+ #firstscreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #secondscreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #thirdscreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #fourthscreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #fifthscreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #sixthscreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #seventhscreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #eightscreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #ninescreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #tenscreen {
+     height: 180px;
+     margin: auto;
+     background-size:contain;
+}
+ #elevenscreen {
+     height: 180px;
+     margin: auto;
+     background-size:contain;
+}
+ #twelvescreen {
+     height: 180px;
+     margin: auto;
+     background-size:contain;
+}
+ #thirteenscreen {
+     height: 180px;
+     margin: auto;
+     background-size:contain;
+}
+ #fourteenscreen {
+     height: 180px;
+     margin: auto;
+     background-size:contain;
+}
+ #fifteenscreen {
+     height: 180px;
+     margin: auto;
+     background-size:contain;
+}
+ #sixteenscreen {
+     height: 180px;
+     margin: auto;
+     background-size:contain;
+}
+ #seventeenscreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #eighteenscreen {
+     height: 180px;
+     margin: auto;
+     background-size:contain;
+}
+ #nineteenscreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #twentyscreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #twentyonescreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+ #twentytwoscreen {
+     height: 170px;
+     margin: auto;
+     background-size:contain;
+}
+.footer{
+    padding-left: 5px;
+    padding-top: 2px!important;
+}
+.footer p {
+    font-size: 7px;
+    margin-bottom: 2px;
+}
+.firstbtn{
+    font-size: 8px;
+    width: 24%;
+    right: 7%;
+    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+    .firstbtn1{
+    font-size: 12px;
+    width: 24%;
+    right: 36%;
+    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-left: 10px;
+    min-width: 100px;
+}
+.redbtn {
+    width: 10%!important;
+    float: right;
+    margin-left: 16px;
+    right: 0%;
+    position: absolute;
+    top: 30%;
+}
+.data {
+    width: 120px;
+    padding-left: 0px;
+    font-size: 6px;
+}
+
+.data h2{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+.secondbtn a {
+    font-size: 13px;
+}
+.secondbtn {
+    z-index: 99;
+    float: left;
+    margin-left: 1%;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+}
+    .nav-tabs>li a{
+        background-color: #ffd100;
+        font-size: 8px;
+    }
+    .dropdown-menu{
+    padding: 0px 0;
+    margin: 2px 0 0;
+    min-width: 75px!important;
+    }
+
+.data1 {
+    width: 130px;
+    padding-left: 0px;
+    font-size: 6px;
+    letter-spacing: .7px;
+}
+.data1 h2{
+    font-size: 9px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+.gap3{
+    margin-bottom: 0px!important;
+    font-size: 8px;
+    margin-top: 0px;
+}
+.data2 {
+    width: 83px;
+    padding-left: 0px;
+    font-size: 6px;
+}
+.data2 h2{
+    font-size: 9px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+
+.data3 {
+    width: 150px;
+    padding-left: 0px;
+    font-size: 6px;
+}
+.data3 h2{
+    font-size: 9px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+    .thirdbtn{
+    margin-left: 0%;
+    padding-left: 0px;
+    padding-top: 0px;
+    }
+.thirdbtn a {
+    font-size: 13px;
+}
+
+.playbtn {
+    background-color: #f44d10;
+    color: white;
+    width: 54px;
+    margin-top: 0%!important;
+    border-radius: 18px;
+    margin-left: 0%!important;
+    font-size: 8px!important;
+}
+#myVideo{
+    background-color: #F4F4F4;
+    width: 245px;
+    height: 178px;
+}
+#myVideo1{
+    background-color: #F4F4F4;
+    width: 245px;
+    height: 178px;
+}
+#myVideo2{
+    background-color: #F4F4F4;
+    width: 245px;
+    height: 178px;
+}
+#myVideo3{
+    background-color: #F4F4F4;
+    width: 245px;
+    height: 178px;
+}
+#myVideo4{
+    background-color: #F4F4F4;
+    width: 245px;
+    height: 178px;
+}
+#myVideo5{
+    background-color: #F4F4F4;
+    width: 245px;
+    height: 178px;
+}
+#myVideo6{
+    background-color: #F4F4F4;
+    width: 245px;
+    height: 178px;
+}
+#myVideo7{
+    background-color: #F4F4F4;
+    width: 245px;
+    height: 178px;
+}
+    #seventeenscreen h1{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: -6px;
+    }
+.miniheader1 {
+    padding-top: 10px;
+    text-align: center!important;
+    font-size: 10px;
+    border-bottom: 1px solid grey;
+}
+
+ #flashcard {
+    width: 246px;
+    height: 129px;
+
+}
+ #deck {
+    width: 246px;
+    height: 129px;
+
+}
+
+ #subcategory {
+    width: 246px;
+    height: 129px;
+
+}
+
+ #category {
+    width: 246px;
+    height: 129px;
+
+}
+
+ #category1 {
+    width: 246px;
+    height: 129px;
+
+}
+    .fourthbtn{
+    margin-left: 0%;
+    padding-left: 0px;
+    padding-right: 15px;
+    padding-top: 0px;
+    }
+.fourthbtn a {
+    font-size: 13px;
+}
+.data4 {
+    width: 100%;
+    padding-left: 0px;
+
+}
+.data4 h2{
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+ .data4 p {
+    font-size: 12px;
+}
+.nav-tabs>li {
+    width: 19%;
+}
+#zero img {
+    width: 9px;
+}
+    #zero{
+        border-right: none!important;
+    }
+.dropdown-menu>li>a{
+padding: 3px 10px;
+}
+
+
+    .secondbtn a{
+        font-size: 14px!important;
+    }
+    .thirdbtn a{
+      font-size: 14px!important;
+    }
+    .thirdbtn span{
+        font-size: 10px!important;
+    }
+    .secondbtn span{
+        font-size: 10px!important;
+    }
+    .fourthbtn a{
+        font-size: 14px!important;
+    }
+    .fourthbtn span{
+        font-size: 10px!important;
+    }
+
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 499px) {
+
+.nav>li>a {
+    position: relative!important;
+    display: block!important;
+    padding: 5px 0px!important;
+    font-size: 6px!important;
+}
+
+ #firstscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #secondscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #thirdscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #fourthscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #fifthscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #sixthscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #seventhscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #eightscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #ninescreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #tenscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #elevenscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #twelvescreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #thirteenscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #fourteenscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #fifteenscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #sixteenscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #seventeenscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #eighteenscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #nineteenscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #twentyscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #twentyonescreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+ #twentytwoscreen {
+     height: 225px;
+     margin: auto;
+     background-size:contain;
+}
+.footer{
+    padding-left: 5px;
+    padding-top: 4px!important;
+}
+.footer p {
+    font-size: 8px;
+    margin-bottom: 4px!important;
+}
+.firstbtn{
+    font-size: 8px;
+    width: 24%;
+    right: 7%;
+    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.firstbtn1{
+    font-size: 8px;
+    width: 24%;
+    right: 7%;
+    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.redbtn {
+    width: 10%!important;
+    float: right;
+    margin-left: 16px;
+    right: 0%;
+    position: absolute;
+    top: 30%;
+}
+.data {
+    width: 170px;
+    padding-left: 0px;
+    font-size: 6px;
+}
+
+.data h2{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+    .data p{
+    font-size: 9px;
+
+    }
+        .data1 p{
+    font-size: 9px;
+
+    }
+        .data2 p{
+    font-size: 9px;
+
+    }
+.secondbtn a {
+    font-size: 13px;
+}
+.secondbtn {
+    z-index: 99;
+    float: left;
+    margin-left: 1%;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+}
+    .nav-tabs>li a{
+        background-color: #ffd100;
+        font-size: 8px;
+    }
+    .dropdown-menu{
+    padding: 0px 0;
+    margin: 2px 0 0;
+    min-width: 75px!important;
+    }
+
+.data1 {
+    width: 190px;
+    padding-left: 0px;
+    font-size: 6px;
+    letter-spacing: .7px;
+}
+.data1 h2{
+    font-size: 9px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+.gap3{
+    margin-bottom: 0px!important;
+    font-size: 8px;
+    margin-top: 0px;
+}
+.data2 {
+    width: 110px;
+    padding-left: 0px;
+    font-size: 6px;
+}
+.data2 h2{
+    font-size: 9px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+
+.data3 {
+    width: 150px;
+    padding-left: 0px;
+    font-size: 6px;
+}
+.data3 h2{
+    font-size: 9px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+    .thirdbtn{
+    margin-left: 0%;
+    padding-left: 0px;
+    padding-top: 0px;
+    }
+.thirdbtn a {
+    font-size: 13px;
+}
+
+.playbtn {
+    background-color: #f44d10;
+    color: white;
+    width: 54px;
+    margin-top: 0%!important;
+    border-radius: 18px;
+    margin-left: 0%!important;
+    font-size: 8px!important;
+}
+#myVideo{
+    height: 224px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo1{
+    height: 224px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo2{
+    height: 224px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo3{
+    height: 224px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo4{
+    height: 224px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo5{
+    height: 224px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo6{
+    height: 224px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo7{
+    height: 224px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+    #seventeenscreen h1{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: -6px;
+    }
+.miniheader1 {
+    padding-top: 10px;
+    text-align: center!important;
+    font-size: 10px;
+    border-bottom: 1px solid grey;
+}
+
+ #flashcard {
+    width: 350px;
+    height: 185px;
+
+}
+ #deck {
+    width: 350px;
+    height: 185px;
+
+}
+
+ #subcategory {
+    width: 350px;
+    height: 185px;
+
+}
+
+ #category {
+    width: 350px;
+    height: 185px;
+
+}
+
+ #category1 {
+    width: 350px;
+    height: 185px;
+
+}
+    .fourthbtn{
+    margin-left: 0%;
+    padding-left: 0px;
+    padding-right: 15px;
+    padding-top: 0px;
+    }
+.fourthbtn a {
+    font-size: 13px;
+}
+.data4 {
+    width: 100%;
+    padding-left: 0px;
+    font-size: 16px;
+}
+.data4 h2{
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+ .data4 p {
+    font-size: 12px;
+}
+.nav-tabs>li {
+    width: 19%;
+}
+#zero img {
+    width: 9px;
+}
+    #zero{
+        border-right: none!important;
+    }
+.dropdown-menu>li>a{
+padding: 3px 10px;
+}
+        .secondbtn a{
+        font-size: 14px!important;
+    }
+    .thirdbtn a{
+      font-size: 14px!important;
+    }
+    .thirdbtn span{
+        font-size: 11px!important;
+    }
+    .secondbtn span{
+        font-size: 11px!important;
+    }
+    .fourthbtn a{
+        font-size: 14px!important;
+    }
+    .fourthbtn span{
+        font-size: 11px!important;
+    }
+    .pausebtn {
+    background-color: black;
+    position: absolute;
+    left: 0!important;
+    bottom: -103px!important;
+    padding: 3px;
+    border: none!important;
+    width: 15px;
+}
+
+}
+
+
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+
+    .pausebtn {
+    background-color: black;
+    position: absolute;
+    left: 0!important;
+    bottom: -142px!important;
+    padding: 3px;
+    border: none!important;
+    width: 15px;
+}
+
+.nav>li>a {
+    position: relative!important;
+    display: block!important;
+    padding: 5px 0px!important;
+    font-size: 10px!important;
+}
+
+ #firstscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #secondscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #thirdscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #fourthscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #fifthscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #sixthscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #seventhscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #eightscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #ninescreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #tenscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #elevenscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #twelvescreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #thirteenscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #fourteenscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #fifteenscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #sixteenscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #seventeenscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #eighteenscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #nineteenscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #twentyscreen {
+     height: 283px;
+     margin: auto;
+     background-size:contain;
+}
+ #twentyonescreen {
+     height: 300px;
+     margin: auto;
+     background-size:contain;
+}
+ #twentytwoscreen {
+     height: 300px;
+     margin: auto;
+     background-size:contain;
+}
+.footer{
+    padding-left: 15px;
+}
+.footer p {
+    font-size: 11px;
+}
+.firstbtn{
+    font-size: 10px;
+    width: 25%;
+    right: 7%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+    .firstbtn1{
+    font-size: 10px;
+    width: 25%;
+    right: 7%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.redbtn {
+    width: 10%!important;
+    float: right;
+    margin-left: 16px;
+    right: 0%;
+    position: absolute;
+    top: 30%;
+}
+.data {
+    width: 170px;
+    padding-left: 0px;
+    font-size: 8px;
+}
+.data h2{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+.secondbtn a {
+    font-size: 14px;
+}
+.secondbtn {
+    z-index: 99;
+    float: left;
+    margin-left: 1%;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+}
+    .nav-tabs>li a{
+        background-color: #ffd100;
+    }
+    .dropdown-menu{
+    padding: 0px 0;
+    margin: 2px 0 0;
+    }
+
+.data1 {
+    width: 190px;
+    padding-left: 0px;
+    font-size: 8px;
+}
+.data1 h2{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+.gap3{
+    margin-bottom: 0px!important;
+    font-size: 9px;
+    margin-top: 0px;
+}
+.data2 {
+    width: 110px;
+    padding-left: 0px;
+    font-size: 8px;
+}
+.data2 h2{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+
+.data3 {
+    width: 190px;
+    padding-left: 0px;
+    font-size: 8px;
+}
+.data3 h2{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+    .thirdbtn{
+    margin-left: 0%;
+    padding-left: 0px;
+    padding-top: 0px;
+    }
+.thirdbtn a {
+    font-size: 14px;
+}
+
+.playbtn {
+    background-color: #f44d10;
+    color: white;
+    width: 54px;
+    margin-top: 0%!important;
+    border-radius: 18px;
+    margin-left: 0%!important;
+    font-size: 8px!important;
+}
+#myVideo{
+    height: 280px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo1{
+    height: 280px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo2{
+    height: 280px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo3{
+    height: 280px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo4{
+    height: 280px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo5{
+    height: 280px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo6{
+    height: 280px;
+    margin-top: 0px;
+    background-color: #F4F4F4;
+}
+#myVideo7{
+    height: 280px;
+    margin-top: 22px;
+    background-color: #F4F4F4;
+}
+    #seventeenscreen h1{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: -6px;
+    }
+.miniheader1 {
+    padding-top: 10px;
+    text-align: center!important;
+    font-size: 10px;
+    border-bottom: 1px solid grey;
+}
+
+ #flashcard {
+    width: 92%;
+    height: 250px;
+    margin: auto;
+    background-size:contain;
+
+}
+ #deck {
+    width: 92%;
+    height: 250px;
+    margin: auto;
+    background-size:contain;
+
+}
+
+ #subcategory {
+    width: 92%;
+    height: 250px;
+    margin: auto;
+    background-size:contain;
+
+}
+
+ #category {
+    width: 92%;
+    height: 250px;
+    margin: auto;
+    background-size:contain;
+
+}
+
+ #category1 {
+    width: 92%;
+    height: 250px;
+    margin: auto;
+    background-size:contain;
+
+}
+    .fourthbtn{
+    margin-left: 0%;
+    padding-left: 0px;
+    padding-right: 15px;
+    padding-top: 0px;
+    }
+.fourthbtn a {
+    font-size: 14px;
+}
+.data4 {
+    width: 100%;
+    padding-left: 0px;
+    font-size: 8px;
+}
+.data4 h2{
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+ .data4 p {
+    font-size: 14px;
+}
+.nav-tabs>li {
+    width: 19%;
+}
+#zero img {
+    width: 13px;
+}
+    #zero{
+        border-right: none!important;
+    }
+    .dropdown-menu{
+        min-width: 117px;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 600px) and (max-width: 850px)  {
+    .pausebtn {
+    background-color: black;
+    position: absolute;
+    left: 0!important;
+    bottom: -186px!important;
+    padding: 3px;
+    border: none!important;
+    width: 15px;
+}
+
+
+
+.nav>li>a {
+    position: relative!important;
+    display: block!important;
+    padding: 5px 0px!important;
+    font-size: 10px!important;
+}
+
+ #firstscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #secondscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #thirdscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #fourthscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #fifthscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #sixthscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #seventhscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #eightscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #ninescreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #tenscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #elevenscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #twelvescreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #thirteenscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #fourteenscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #fifteenscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #sixteenscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #seventeenscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #eighteenscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #nineteenscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #twentyscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #twentyonescreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+ #twentytwoscreen {
+    height: 444px;
+    margin: auto;
+    background-size:contain;
+}
+.footer{
+    padding-left: 15px;
+}
+.footer p {
+    font-size: 11px;
+}
+.firstbtn{
+    font-size: 10px;
+    width: 12%;
+    right: 7%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+    .firstbtn1{
+    font-size: 10px;
+    width: 21%;
+    right: 7%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.redbtn {
+    width: 10%!important;
+    float: right;
+    margin-left: 16px;
+    right: 0%;
+    position: absolute;
+    top: 30%;
+}
+.data {
+    width: 340px;
+    padding-left: 0px;
+    font-size: 12px!important;
+}
+.data h2{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+.secondbtn a {
+    font-size: 10px;
+}
+.secondbtn {
+    z-index: 99;
+    float: left;
+    margin-left: 1%;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+}
+    .nav-tabs>li a{
+        background-color: #ffd100;
+    }
+    .dropdown-menu{
+    padding: 0px 0;
+    margin: 2px 0 0;
+    }
+
+.data1 {
+    width: 290px;
+    padding-left: 0px;
+    font-size: 12px;
+}
+.data1 h2{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+.gap3{
+    margin-bottom: 10px!important;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.data2 {
+    width: 200px;
+    padding-left: 15px;
+    font-size: 12px;
+}
+.data2 h2{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+    .data2 p{
+        font-size: 12px;
+    }
+    .data1 p{
+        font-size: 12px;
+    }
+     .data p{
+        font-size: 12px;
+    }
+
+.data3 {
+    width: 300px;
+    padding-left: 0px;
+    font-size: 12px;
+}
+.data3 h2{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+    .thirdbtn{
+    margin-left: 0%;
+    padding-left: 0px;
+    padding-top: 0px;
+    }
+.thirdbtn a {
+    font-size: 10px;
+}
+
+.playbtn {
+    background-color: #f44d10;
+    color: white;
+    width: 54px;
+    margin-top: 0%!important;
+    border-radius: 18px;
+    margin-left: 0%!important;
+    font-size: 8px!important;
+}
+#myVideo{
+    height: 440px;
+    margin-top: 0px;
+}
+#myVideo1{
+    height: 440px;
+    margin-top: 0px;
+}
+#myVideo2{
+    height: 440px;
+    margin-top: 0px;
+}
+#myVideo3{
+    height: 440px;
+    margin-top: 0px;
+}
+#myVideo4{
+    height: 440px;
+    margin-top: 0px;
+}
+#myVideo5{
+    height: 440px;
+    margin-top: 0px;
+}
+#myVideo6{
+    height: 440px;
+    margin-top: 0px;
+}
+#myVideo7{
+    height: 440px;
+    margin-top: 0px;
+}
+    #seventeenscreen h1{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: -6px;
+    }
+.miniheader1 {
+    padding-top: 10px;
+    text-align: center!important;
+    font-size: 10px;
+    border-bottom: 1px solid grey;
+}
+
+ #flashcard {
+    width: 695px;
+    height: 376px;
+
+}
+ #deck {
+    width: 695px;
+    height: 376px;
+
+}
+
+ #subcategory {
+    width: 695px;
+    height: 376px;
+
+}
+
+ #category {
+    width: 695px;
+    height: 376px;
+
+}
+
+ #category1 {
+    width: 695px;
+    height: 376px;
+
+}
+    .fourthbtn{
+    margin-left: 6%;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-top: 0px;
+    }
+.fourthbtn a {
+    font-size: 10px;
+}
+.data4 {
+    width: 100%;
+    padding-left: 0px;
+    font-size: 12px;
+}
+.data4 h2{
+    font-size: 27px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+ .data4 p {
+    font-size: 16px;
+}
+.nav-tabs>li {
+    width: 19%;
+}
+#zero img {
+    width: 14px;
+}
+    #zero{
+        border-right: none!important;
+    }
+.dropdown-menu {
+    min-width: 134px;
+}
+
+}
+
+@media screen and (min-width: 851px) and (max-width: 990px)  {
+
+.nav>li>a {
+    position: relative!important;
+    display: block!important;
+    padding: 5px 0px!important;
+    font-size: 10px!important;
+}
+
+ #firstscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #secondscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #thirdscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #fourthscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #fifthscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #sixthscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #seventhscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #eightscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #ninescreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #tenscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #elevenscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #twelvescreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #thirteenscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #fourteenscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #fifteenscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #sixteenscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #seventeenscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #eighteenscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #nineteenscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #twentyscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #twentyonescreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+ #twentytwoscreen {
+    height: 510px;
+    margin: auto;
+    background-size: contain;
+}
+.footer{
+    padding-left: 15px;
+}
+.footer p {
+    font-size: 11px;
+}
+.firstbtn{
+    font-size: 10px;
+    width: 12%;
+    right: 7%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+    .firstbtn1{
+    font-size: 10px;
+    width: 12%;
+    right: 7%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.redbtn {
+    width: 10%!important;
+    float: right;
+    margin-left: 16px;
+    right: 0%;
+    position: absolute;
+    top: 30%;
+}
+.data {
+    width: 340px;
+    padding-left: 0px;
+    font-size: 12px!important;
+}
+.data h2{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+.secondbtn a {
+    font-size: 14px;
+}
+.secondbtn {
+    z-index: 99;
+    float: left;
+    margin-left: 1%;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+}
+    .nav-tabs>li a{
+        background-color: #ffd100;
+    }
+    .dropdown-menu{
+    padding: 0px 0;
+    margin: 2px 0 0;
+    }
+
+.data1 {
+    width: 290px;
+    padding-left: 0px;
+    font-size: 12px;
+}
+.data1 h2{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+.gap3{
+    margin-bottom: 10px!important;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.data2 {
+    width: 200px;
+    padding-left: 0px;
+    font-size: 12px;
+}
+.data2 h2{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+    .data2 p{
+        font-size: 14px;
+    }
+    .data1 p{
+        font-size: 14px;
+    }
+     .data p{
+        font-size: 14px;
+    }
+
+.data3 {
+    width: 300px;
+    padding-left: 0px;
+    font-size: 12px;
+}
+.data3 h2{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+    .thirdbtn{
+    margin-left: 0%;
+    padding-left: 0px;
+    padding-top: 0px;
+    }
+.thirdbtn a {
+    font-size: 14px;
+}
+
+.playbtn {
+    background-color: #f44d10;
+    color: white;
+    width: 54px;
+    margin-top: 0%!important;
+    /* border-radius: 18px; */
+    margin-left: 0%!important;
+    /* font-size: 8px!important; */
+}
+#myVideo{
+    height: 490px;
+}
+#myVideo1{
+    height: 490px;
+}
+#myVideo2{
+    height: 490px;
+}
+#myVideo3{
+    height: 490px;
+}
+#myVideo4{
+    height: 490px;
+}
+#myVideo5{
+    height: 490px;
+}
+#myVideo6{
+    height: 490px;
+}
+#myVideo7{
+    height: 490px;
+}
+    #seventeenscreen h1{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: -6px;
+    }
+.miniheader1 {
+    padding-top: 10px;
+    text-align: center!important;
+    font-size: 10px;
+    border-bottom: 1px solid grey;
+}
+
+ #flashcard {
+    width: 630px;
+    height: 500px;
+
+}
+ #deck {
+    width: 630px;
+    height: 500px;
+
+}
+
+ #subcategory {
+    width: 630px;
+    height: 500px;
+
+}
+
+ #category {
+    width: 630px;
+    height: 500px;
+
+}
+
+ #category1 {
+    width: 630px;
+    height: 500px;
+
+}
+    .fourthbtn{
+    margin-left: 6%;
+    padding-left: 0px;
+    padding-right: 15px;
+    padding-top: 0px;
+    }
+.fourthbtn a {
+    font-size: 10px;
+}
+.data4 {
+    width: 100%;
+    padding-left: 0px;
+    font-size: 12px;
+}
+.data4 h2{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+ .data4 p {
+    font-size: 12px;
+}
+.nav-tabs>li {
+    width: 19%;
+}
+#zero img {
+    width: 14px;
+}
+    #zero{
+        border-right: none!important;
+    }
+.dropdown-menu {
+    min-width: 134px;
+}
+ .pausebtn {
+    background-color: black;
+    position: absolute;
+    left: 0!important;
+    bottom: -240px!important;
+    padding: 3px;
+    border: none!important;
+    width: 15px;
+}
+
+}
+
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1199px)  {
+
+.nav>li>a {
+    position: relative!important;
+    display: block!important;
+    padding: 5px 0px!important;
+    font-size: 10px!important;
+}
+
+ #firstscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #secondscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #thirdscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #fourthscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #fifthscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #sixthscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #seventhscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #eightscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #ninescreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #tenscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #elevenscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #twelvescreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #thirteenscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #fourteenscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #fifteenscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #sixteenscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #seventeenscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #eighteenscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #nineteenscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #twentyscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #twentyonescreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+ #twentytwoscreen {
+    height: 610px;
+    margin: auto;
+    background-size: contain;
+}
+.footer{
+    padding-left: 15px;
+}
+.footer p {
+    font-size: 11px;
+}
+.firstbtn{
+    font-size: 10px;
+    width: 12%;
+    right: 7%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.firstbtn1{
+    font-size: 10px;
+    width: 12%;
+    right: 7%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.redbtn {
+    width: 10%!important;
+    float: right;
+    margin-left: 16px;
+    right: 0%;
+    position: absolute;
+    top: 30%;
+}
+.data {
+    width: 340px;
+    padding-left: 0px;
+    font-size: 12px!important;
+}
+.data h2{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+.secondbtn a {
+    font-size: 14px;
+}
+.secondbtn {
+    z-index: 99;
+    float: left;
+    margin-left: 1%;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+}
+    .nav-tabs>li a{
+        background-color: #ffd100;
+    }
+    .dropdown-menu{
+    padding: 0px 0;
+    margin: 2px 0 0;
+    }
+
+.data1 {
+    width: 290px;
+    padding-left: 0px;
+    font-size: 12px;
+}
+.data1 h2{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+.gap3{
+    margin-bottom: 10px!important;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.data2 {
+    width: 200px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+.data2 h2{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+    .data2 p{
+        font-size: 14px;
+    }
+    .data1 p{
+        font-size: 14px;
+    }
+     .data p{
+        font-size: 14px;
+    }
+
+.data3 {
+    width: 300px;
+    padding-left: 0px;
+    font-size: 12px;
+}
+.data3 h2{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+    .thirdbtn{
+    margin-left: 0%;
+    padding-left: 0px;
+    padding-top: 0px;
+    }
+.thirdbtn a {
+    font-size: 14px;
+}
+
+.playbtn {
+    background-color: #f44d10;
+    color: white;
+    width: 54px;
+    margin-top: 0%!important;
+    border-radius: 18px;
+    margin-left: 0%!important;
+    font-size: 8px!important;
+}
+#myVideo{
+    height: 590px;
+}
+#myVideo1{
+    height: 590px;
+}
+#myVideo2{
+    height: 590px;
+}
+#myVideo3{
+    height: 590px;
+}
+#myVideo4{
+    height: 590px;
+}
+#myVideo5{
+    height: 590px;
+}
+#myVideo6{
+    height: 590px;
+}
+#myVideo7{
+    height: 590px;
+}
+    #seventeenscreen h1{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: -6px;
+    }
+.miniheader1 {
+    padding-top: 10px;
+    text-align: center!important;
+    font-size: 10px;
+    border-bottom: 1px solid grey;
+}
+
+ #flashcard {
+    width: 860px;
+    height: 465px;
+
+}
+ #deck {
+    width: 860px;
+    height: 465px;
+
+}
+
+ #subcategory {
+    width: 860px;
+    height: 465px;
+
+}
+
+ #category {
+    width: 860px;
+    height: 465px;
+
+}
+
+ #category1 {
+    width: 860px;
+    height: 465px;
+
+}
+    .fourthbtn{
+    margin-left: 6%;
+    padding-left: 0px;
+    padding-right: 15px;
+    padding-top: 0px;
+    }
+.fourthbtn a {
+    font-size: 10px;
+}
+.data4 {
+    width: 100%;
+    padding-left: 0px;
+    font-size: 12px;
+}
+.data4 h2{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    }
+ .data4 p {
+    font-size: 12px;
+}
+.nav-tabs>li {
+    width: 19%;
+}
+#zero img {
+    width: 14px;
+}
+    #zero{
+        border-right: none!important;
+    }
+.dropdown-menu {
+    min-width: 134px;
+}
+ .pausebtn {
+    background-color: black;
+    position: absolute;
+    left: 0!important;
+    bottom: -345px!important;
+    padding: 3px;
+    border: none!important;
+    width: 15px;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 600px)  {
+    .simulator-content{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.next-back-btn{
+    background-color: #e85729;
+    color: white!important;
+    border-radius: 50px;
+    display: block!important;
+    transition: transform .9s;
+    text-decoration: none!important;
+    width: 50px;
+    text-align: center;
+    font-size: 12px;
+    padding: 4px;
+    margin-right: 15px;
+    float: left;
+    margin-bottom: 15px;
+}
